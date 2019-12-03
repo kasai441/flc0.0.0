@@ -1,0 +1,28 @@
+<% provide(:title, "ホーム") %>
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a href="#home_page" class="nav-link active" data-toggle="tab">ホーム</a>
+  </li>
+  <li class="nav-item">
+    <a href="#list_up" class="nav-link active" data-toggle="tab">一覧</a>
+  </li>
+  <li class="nav-item">
+    <a href="#register" class="nav-link active" data-toggle="tab">登録</a>
+  </li>
+</ul>
+
+<div class="tab-content">
+  <div id="home_page" class="tab-pane active">
+    <h1>今日の練習</h1>
+    <p>残り：      ●●題</p>
+    <h1>1日の学習時間</h1>
+    <p>実績●●分／　目標●●分</p>
+  </div>
+  <div id="list_up" class="tab-pane">
+    <h1>list</h1>
+  </div>
+  <div id="register" class="tab-pane">
+    <h1>register</h1>
+  </div>
+</div>

@@ -1,5 +1,30 @@
 <% provide(:title, "ホーム") %>
-<h1>今日の練習</h1>
-<p>残り：      ●●題</p>
-<h1>1日の学習時間</h1>
-<p>実績●●分／　目標●●分</p>
+
+<div>
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation">
+      <a aria-controls="home_page" data-toggle="tab" href="#home_page" role="tab">ホーム</a>
+    </li>
+    <li role="presentation">
+      <a aria-controls="list_up" data-toggle="tab" href="#list_up" role="tab">一覧</a>
+    </li>
+    <li role="presentation">
+      <a aria-controls="register" data-toggle="tab" href="#register" role="tab">登録</a>
+    </li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home_page" class="tab-pane active" role="tabpanel">
+      <h1>今日の練習</h1>
+      <p>残り：      ●●題</p>
+      <h1>1日の学習時間</h1>
+      <p>実績●●分／　目標●●分</p>
+    </div>
+    <div id="list_up" class="tab-pane" role="tabpanel">
+      <h1>list</h1>
+    </div>
+    <div id="register" class="tab-pane" role="tabpanel">
+      <h1>register</h1>
+    </div>
+  </div>
+</div>
