@@ -1,0 +1,54 @@
+<% provide(:title, "ホーム") %>
+
+<div class="center">
+  <ul class="nav nav-tabs nav-justified" role="tablist">
+    <li role="presentation">
+      <a aria-controls="home_page" data-toggle="tab" href="#home_page" role="tab">ホーム</a>
+    </li>
+    <li role="presentation">
+      <a aria-controls="list_up" data-toggle="tab" href="#list_up" role="tab">一覧</a>
+    </li>
+    <li role="presentation">
+      <a aria-controls="register" data-toggle="tab" href="#register" role="tab">登録</a>
+    </li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home_page" class="tab-pane active" role="tabpanel">
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th>
+              <h1>今日の練習</h1>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <h2>残り：      
+              <%= link_to "●●題", '#' %>
+              </h2>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <h1>1日の学習時間</h1>
+      <h2>
+      <%= link_to "実績●●分／　目標●●分", '#' %>
+      </h2>
+      <h1>解答時間</h1>
+      <h2>●●秒</h2>
+      <h1>登録目安</h1>
+      <h2>●日に1度</h2>
+      <%= link_to "ユーザー登録", '#', class: "btn btn-lg btn-primary" %>
+    </div>
+    <div id="list_up" class="tab-pane" role="tabpanel">
+      <h1>list</h1>
+    </div>
+    <div id="register" class="tab-pane" role="tabpanel">
+      <h1>register</h1>
+    </div>
+  </div>
+</div>
