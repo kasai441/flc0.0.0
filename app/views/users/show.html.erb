@@ -1,11 +1,11 @@
 <%= provide(:title, @user.name) %>
-<div class="row">
-  <aside class="col-md-4">
-    <section class="user_info">
-      <h1>
-        <%= gravatar_for @user %>
-        <%= @user.name %>
-      </h1>
-    </section>
-  </aside>
-</div>
+<h3 class="profile">
+  <%= gravatar_for @user %>
+</h3>
+<h3>ユーザー名</h3>
+<h4><%= @user.name %></h4>
+<h3>Eメール</h3>
+<h4><%= @user.email %></h4>
+<h3>
+  <%= link_to "ユーザー情報変更", edit_user_path(@user) =%>
+</h3>

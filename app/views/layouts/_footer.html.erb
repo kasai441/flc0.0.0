@@ -6,7 +6,7 @@
   <nav>
     <ul>
       <% if logged_in? %>
-      <li><%= link_to "設定",   current_user %></li>
+      <li><%= link_to "ユーザー情報",   current_user %></li>
       <li><%= link_to "ログアウト",   logout_path, method: :delete %></li>
       <% else %>
       <li><%= link_to "ログイン",   login_path %></li>

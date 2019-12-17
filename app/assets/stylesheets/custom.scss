@@ -32,6 +32,11 @@ body {
   border-radius: 5px;
 }
 
+.profile {
+  display: block;
+
+  margin: auto
+}
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
@@ -54,6 +59,26 @@ h2 {
   font-weight: normal;
   color: #777;
   border-width: 5px;
+}
+
+h3 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  text-align: left;
+  font-weight: normal;
+  color: #777;
+}
+
+h4 {
+  font-size: 1.0em;
+  letter-spacing: -1px;
+  margin-left: 40px;
+  margin-bottom: 30px;
+  text-align: left;
+  font-weight: normal;
+  color: #777;
 }
 
 /* footer */
