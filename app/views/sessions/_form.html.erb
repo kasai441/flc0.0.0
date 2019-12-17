@@ -1,0 +1,10 @@
+<%= form_for(:session, url: login_path) do |f| %>
+
+  <%= f.label :email, "Eメールアドレス" %>
+  <%= f.email_field :email, class: 'form-control' %>
+
+  <%= f.label :password, "パスワード" %>
+  <%= f.password_field :password, class: 'form-control' %>
+
+  <%= f.submit yield(:button_text), class: "btn btn-primary" %>
+<% end %>
