@@ -6,5 +6,10 @@
   <%= f.label :password, "パスワード" %>
   <%= f.password_field :password, class: 'form-control' %>
 
+  <%= f.label :remember_me, class: "checkbox inline" do %>
+        <%= f.check_box :remember_me %>
+        <span>パスワードを記憶</span>
+  <% end %>
+
   <%= f.submit yield(:button_text), class: "btn btn-primary" %>
 <% end %>
