@@ -1,0 +1,6 @@
+<%= @user.name %>　様
+
+＜Flashcards｜ユーザー登録＞
+次のリンクよりユーザー登録を完了させてください（発行より２時間で期限切れとなります）
+
+<%= edit_account_activation_url(@user.activation_token, email: @user.email) %>

@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, only: [:edit, :update]
-  before_action :is_current_user, only: [:edit, :update, :destroy]
+  before_action :logged_in_user, only: [:show, :edit, :update]
+  before_action :is_current_user, only: [:show, :edit, :update, :destroy]
 
   def show
     @user = User.find(params[:id])
@@ -13,8 +13,11 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      flash[:success] = "ユーザーが登録されました！"
-      redirect_to @user
+      UserMailer.account_activation(@user).deliver_now
+      flash[:info] = "ユーザー有効化のためのメールを送信しました"
+      redirect_to root_url
+      # flash[:success] = "ユーザーが登録されました！"
+      # redirect_to @user
       # render 'show' showアクションにデバッガーを仕掛けても素通りするのでviewを直接通っているっぽい
     else
       render 'new'

@@ -8,13 +8,21 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     @non_acitve = users(:malory)
   end
 
-  # test "should redirect show when not activated" do
-  #   log_in_as(@non_acitve)
-  #   get @non_active
-  #   # assert_redirected_to root_url
-  #   # follow_rediret!
-  #   assert_template 'static_pages/home'
-  # end
+  test "should redirect show when other user" do
+    log_in_as(@other_user)
+    get user_path(@user)
+    assert_redirected_to root_url
+    follow_redirect!
+    assert_template 'home_page/show'
+  end
+
+  test "should redirect show when not activated" do
+    log_in_as(@non_acitve)
+    get @non_active
+    # assert_redirected_to root_url
+    # follow_rediret!
+    assert_template 'home_page/index'
+  end
 
   test "should get new" do
     get signup_path
