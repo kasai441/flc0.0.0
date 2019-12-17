@@ -1,0 +1,7 @@
+<%= form_for(:password_reset, url: password_resets_path) do |f| %>
+
+  <%= f.label :email, "Eメールアドレス" %>
+  <%= f.email_field :email, class: 'form-control' %>
+
+  <%= f.submit yield(:button_text), class: "btn btn-primary" %>
+<% end %>

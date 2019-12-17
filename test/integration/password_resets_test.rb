@@ -57,11 +57,11 @@ class PasswordResetsTest < ActionDispatch::IntegrationTest
                             password_confirmation: "foobaz" } }
     assert is_logged_in?
     assert_not flash.empty?
-    assert_redirected_to user
-    
+    assert_redirected_to root_url
+
     assert_nil user.reload.reset_digest
   end
-  
+
   test "expired token" do
     get new_password_reset_path
     post password_resets_path,
@@ -75,6 +75,6 @@ class PasswordResetsTest < ActionDispatch::IntegrationTest
                             password_confirmation: "foobar" } }
     assert_response :redirect
     follow_redirect!
-    assert_match /expired/i, response.body
+    assert_match /期限切れ/i, response.body
   end
 end
