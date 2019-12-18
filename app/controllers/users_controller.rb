@@ -4,6 +4,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @quizcards = @user.quizcards.paginate(page: params[:page])
   end
 
   def new

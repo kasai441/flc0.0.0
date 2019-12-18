@@ -1,0 +1,13 @@
+
+%button#modal-open-btn チャレンジ
+= link_to "", bye_path, method: :DELETE, id: 'item-delete-btn'
+#overlay
+  #modalWindow
+    .modal-message-box
+      %div #{@user.quizcards.first.description}
+      = form_for @quizcard do |f|
+        = f.label :name, "答え"
+        = f.text_field :name, autofocus: true, autocomplete: "name", placeholder: "答え", class: 'practice-input-text'
+    %button#modal-close-btn キャンセル
+    %button#delete-comformation-btn 解答
+    

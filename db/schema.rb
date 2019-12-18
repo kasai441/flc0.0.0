@@ -10,7 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20191217081058) do
+ActiveRecord::Schema.define(version: 20191218071905) do
+
+  create_table "quizcards", force: :cascade do |t|
+    t.text "description"
+    t.datetime "registered_at"
+    t.string "name"
+    t.string "connotation"
+    t.string "origin"
+    t.decimal "wait_seconds"
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.datetime "appearing_at"
+    t.index ["appearing_at"], name: "index_quizcards_on_appearing_at"
+    t.index ["user_id", "created_at"], name: "index_quizcards_on_user_id_and_created_at"
+    t.index ["user_id"], name: "index_quizcards_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "name"
@@ -24,6 +40,18 @@ ActiveRecord::Schema.define(version: 20191217081058) do
     t.datetime "activated_at"
     t.string "reset_digest"
     t.datetime "reset_sent_at"
+  end
+
+  create_table "waitdays", force: :cascade do |t|
+    t.string "wait_sequence"
+    t.string "wait_day"
+    t.integer "quizcard_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.datetime "appearing_at"
+    t.index ["appearing_at"], name: "index_waitdays_on_appearing_at"
+    t.index ["quizcard_id", "created_at"], name: "index_waitdays_on_quizcard_id_and_created_at"
+    t.index ["quizcard_id"], name: "index_waitdays_on_quizcard_id"
   end
 
 end

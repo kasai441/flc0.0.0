@@ -1,0 +1,8 @@
+<li id="quizcard-<%= quizcard.id %>">
+  <%= link_to gravatar_for(quizcard.user, size: 50), quizcard.user %>
+  <span class="user"><%= link_to quizcard.user.name, quizcard.user %></span>
+  <span class="description"><%= quizcard.description %></span>
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(quizcard.created_at) %> ago.
+  </span>
+</li>

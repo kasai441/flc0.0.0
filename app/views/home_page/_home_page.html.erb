@@ -4,8 +4,9 @@
   <%= link_to "●●題", '#' %>
   </h2>
   <p class="center">
-    <%= link_to "チャレンジ", '#', class: "btn btn-lg btn-primary" %>
+    <%= render 'box' if @user.quizcards.any?%>
   </p>
+  
 </span>
 <span class="border">
 <h1>1日の学習時間</h1>
