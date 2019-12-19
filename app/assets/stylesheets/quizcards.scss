@@ -1,3 +1,64 @@
-// Place all the styles related to the Quizcards controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+#overlay {
+//モーダルウィンドウの背景を設定
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+//透過度をつける
+  background: rgba(0, 0, 0, 0.3);
+  display: none;
+  z-index: 1;
+}
+
+#modalWindow {
+// モーダルウィンドウの画面を設定(高さ・幅は調整ください)
+  width: 800px;
+  height: 400px;
+  position: absolute;
+//トップからの場所を指定（topをいじれば高さが調整できます）
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  z-index: 2;
+//flexboxで子要素のボタンとメッセージボックスの要素を配置する
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .modal-message-box {
+    width: 100%;
+//下記heightの60pxはボタンの高さで、それを画面の大きさから引いています。
+    height: calc(100% - 60px);
+    text-align: center;
+//flexboxで文字の配置を決める（縦方向、中央揃え）
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .practice-input-text {
+      width: 50%;
+    }
+  }
+
+  #submit_btn {
+  //削除ボタンの非表示
+    display: none;
+  }
+
+  #modal-close-btn {
+    width: 50%;
+    height: 60px;
+  }
+
+  #answer-comformation-btn{
+    width: 50%;
+    height: 60px;
+  }
+
+  #next-btn{
+    width: 50%;
+    height: 60px;
+  }
+}

@@ -1,5 +1,6 @@
 class HomePageController < ApplicationController
   def index
+    session[:box_mode] ||= '0'
     if logged_in?
       @user = current_user
       @quizcard = @user.quizcards.first if @user.quizcards.any?

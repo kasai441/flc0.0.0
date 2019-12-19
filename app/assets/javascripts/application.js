@@ -26,8 +26,13 @@ document.addEventListener(
       document.getElementById('modal-close-btn').onclick = function () {
         $('#overlay').fadeOut();
       };
-      document.getElementById("delete-comformation-btn").onclick = function () {
-        document.getElementById("item-delete-btn").click();
+      document.getElementById("answer-comformation-btn").onclick = function () {
+        document.getElementById("submit_btn").click();
+        // $('#overlay').reload();
+        windowObj.refresh()
+      };
+      document.getElementById("next-btn").onclick = function () {
+        $('#overlay').reload();
       };
     };
   },

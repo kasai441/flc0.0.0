@@ -1,0 +1,11 @@
+.modal-message-box
+  %div #{@user.quizcards.first.description}
+  / %div #{session[:box_mode]}
+  / %div #{session[:success]}
+  = form_for @quizcard, url: judge_path, method: :post do |f|
+    = f.hidden_field :right_name, :value => @quizcard.name
+    = f.label :name, "答え"
+    = f.text_field :name, autofocus: true, autocomplete: "name", placeholder: "答え", class: 'practice-input-text'
+    = f.submit "解答", id: 'submit_btn'
+%button#modal-close-btn キャンセル
+%button#answer-comformation-btn 解答
