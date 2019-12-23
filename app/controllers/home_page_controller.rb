@@ -5,13 +5,13 @@ class HomePageController < ApplicationController
       @user = current_user
       @quizcards_today = @user.quizcards.where('appearing_at > ?', 1.day.ago) if @user.quizcards.any?
       @quizcards = @user.quizcards.paginate(page: params[:page])
-      @quizcard = @quizcards_today.first if @quizcards_today.any?
+      @quizcard = @quizcards_today.first if @quizcards_today
       render 'show'
     else
       @user = User.first
       @quizcards_today = @user.quizcards.where('appearing_at > ?', 1.day.ago) if @user.quizcards.any?
       @quizcards = @user.quizcards.paginate(page: params[:page])
-      @quizcard = @quizcards_today.first if @quizcards_today.any?
+      @quizcard = @quizcards_today.first if @quizcards_today
       render 'index'
     end
   end
