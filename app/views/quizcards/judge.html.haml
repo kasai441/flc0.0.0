@@ -1,0 +1,12 @@
+#{provide :title, '結果'}
+#{provide :button_text, '次へ'}
+%h1 結果
+%div.row
+  %div.col-md-6.col-md-offset-3
+    %h2 問題
+    %h1 #{@quizcard.description}
+    %h2 解答
+    %h1 #{@answer}
+    %h2 正解
+    %h1 #{@quizcard.name}
+    = link_to "#{yield(:button_text)}", practice_path, id: 'next_btn'

@@ -26,15 +26,28 @@ document.addEventListener(
       document.getElementById('modal-close-btn').onclick = function () {
         $('#overlay').fadeOut();
       };
-      document.getElementById("answer-comformation-btn").onclick = function () {
-        document.getElementById("submit_btn").click();
+      document.getElementById("try-btn").onclick = function () {
+        document.getElementById("practice_btn").click();
         // $('#overlay').reload();
-        windowObj.refresh()
-      };
-      document.getElementById("next-btn").onclick = function () {
-        $('#overlay').reload();
+        // windowObj.refresh()
       };
     };
   },
   false
 );
+
+// document.addEventListener(
+//   "DOMContentLoaded", e => {
+//     let modal_result_open = document.getElementById("submit_btn");
+//     modal_result_open.onclick = function () {
+//       $('#overlay').fadeIn();
+//       document.getElementById('modal-close-btn').onclick = function () {
+//         $('#overlay').fadeOut();
+//       };
+//       document.getElementById("try-btn").onclick = function () {
+//         document.getElementById("practice_btn").click();
+//       };
+//     };
+//   },
+//   false
+// );

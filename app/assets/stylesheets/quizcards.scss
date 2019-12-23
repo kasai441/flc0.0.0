@@ -13,7 +13,7 @@
 
 #modalWindow {
 // モーダルウィンドウの画面を設定(高さ・幅は調整ください)
-  width: 800px;
+  width: 500px;
   height: 400px;
   position: absolute;
 //トップからの場所を指定（topをいじれば高さが調整できます）
@@ -42,6 +42,11 @@
     }
   }
 
+  #practice_btn {
+  //削除ボタンの非表示
+    display: none;
+  }
+
   #submit_btn {
   //削除ボタンの非表示
     display: none;
@@ -52,13 +57,9 @@
     height: 60px;
   }
 
-  #answer-comformation-btn{
+  #try-btn{
     width: 50%;
     height: 60px;
   }
 
-  #next-btn{
-    width: 50%;
-    height: 60px;
-  }
 }

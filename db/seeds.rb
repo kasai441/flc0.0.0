@@ -20,10 +20,10 @@ end
 
 @user.quizcards.create(description: "プログラミングの勉強で最初に出力するお決まりの文句は？（全小文字、ローマ字のみ）",
                       name: "helloworld",
-                      appearing_at: "2019-12-01")
-                      
+                      appearing_at: Time.zone.today)
+
 users = User.order(:created_at).take(6)
 50.times do
   description = Faker::Lorem.sentence(5)
-  users.each { |user| user.quizcards.create!(description: description) }
+  users.each { |user| user.quizcards.create!(description: description, name: description[0], appearing_at: Time.zone.today) }
 end

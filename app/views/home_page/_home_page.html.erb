@@ -1,12 +1,12 @@
 <span class="border">
   <h1>今日の練習</h1>
   <h2>残り：
-  <%= link_to "●●題", '#' %>
+  <%= link_to "#{@quizcards_today.count}題", '#' %>
   </h2>
   <p class="center">
-    <%= render 'box' if @user.quizcards.any?%>
+    <%= render 'box' if @quizcards_today.any?%>
   </p>
-  
+
 </span>
 <span class="border">
 <h1>1日の学習時間</h1>

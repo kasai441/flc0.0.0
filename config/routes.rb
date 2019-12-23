@@ -8,7 +8,9 @@ Rails.application.routes.draw do
   delete '/logout', to: 'sessions#destroy'
   get '/welcome/index', to: 'welcome#index'
   delete '/bye', to: 'welcome#destroy'
+  get '/practice', to: 'quizcards#practice'
   post '/judge', to: 'quizcards#judge'
+  get '/judge', to: 'quizcards#judge'
   resources :users
   resources :account_activations, only: [:edit]
   resources :password_resets, only: [:new, :create, :edit, :update]

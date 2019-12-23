@@ -1,18 +1,47 @@
 class QuizcardsController < ApplicationController
+  def practice
+    if logged_in?
+      @user = current_user
+      if @user.quizcards.any?
+        @quizcards_today = @user.quizcards.where('appearing_at > ?', 1.day.ago)
+          if @quizcards_today.any?
+            @quizcard = @quizcards_today.first
+          else
+            redirect_to root_url
+          end
+      else
+        redirect_to root_url
+      end
+    else
+      @user = User.first
+      if @user.quizcards.any?
+        @quizcards_today = @user.quizcards.where('appearing_at > ?', 1.day.ago)
+          if @quizcards_today.any?
+            @quizcard = @quizcards_today.first
+          else
+            redirect_to root_url
+          end
+      else
+        redirect_to root_url
+      end
+    end
+  end
+
   def judge
-    if params[:quizcard][:right_name] == (params[:quizcard][:name])
-      session[:success] = "正解"
-      session[:box_mode] = "1" #0: practice 1:right 2:fault
+    @quizcard = Quizcard.find(params[:quizcard][:card_id])
+    @answer = params[:quizcard][:name]
+    if @quizcard.name == @answer
+      flash.now[:success] = "正解"
       # 解答時間　quizcarad wait_seconds
       # record_wait_seconds 現在時刻　ー　開始時間hiddenparams[:starttime]
       # record_waitdays 現在時刻　ー　last_appeard_at
       # calc_waidays beta * model_wait(wait_sequence)
       # waitdays更新　wait_sequence++. wait_day, appering_at
       # quizcard更新　wait_seconds, last_appeard_at, appearing_at
-      redirect_to root_url
+      @quizcard.update_attribute(:appearing_at, 1.month.ago)
     else
-      session[:danger] = "不正解"
-      session[:box_mode] = "2"
+      flash.now[:danger] = "不正解"
     end
   end
+
 end
