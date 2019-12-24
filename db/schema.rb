@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20191218071905) do
+ActiveRecord::Schema.define(version: 20191224055813) do
 
   create_table "quizcards", force: :cascade do |t|
     t.text "description"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 20191218071905) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.datetime "appearing_at"
+    t.float "beta"
     t.index ["appearing_at"], name: "index_quizcards_on_appearing_at"
     t.index ["user_id", "created_at"], name: "index_quizcards_on_user_id_and_created_at"
     t.index ["user_id"], name: "index_quizcards_on_user_id"
@@ -48,8 +49,6 @@ ActiveRecord::Schema.define(version: 20191218071905) do
     t.integer "quizcard_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.datetime "appearing_at"
-    t.index ["appearing_at"], name: "index_waitdays_on_appearing_at"
     t.index ["quizcard_id", "created_at"], name: "index_waitdays_on_quizcard_id_and_created_at"
     t.index ["quizcard_id"], name: "index_waitdays_on_quizcard_id"
   end
