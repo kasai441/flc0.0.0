@@ -1,0 +1,21 @@
+#{provide :title, '解答'}
+#{provide :button_text, '次へ'}
+%div.row
+  %div.col-md-6.col-md-offset-3
+
+    %div.row.border.grayback
+      %div.col-md-2
+        %h2 問題：
+      %div.col-md-10
+        %h1 #{@quizcard.description}
+    %div.row.border.grayback
+      %div.col-md-2
+        %h2 正解：
+      %div.col-md-10
+        %h1 #{@quizcard.name}
+    %div.row.border
+      %div.col-md-2
+        %h2 解答：
+      %div.col-md-10
+        %h1 #{@answer}
+    = link_to "#{yield(:button_text)}", temp_practice_path, id: 'next_btn', class: 'btn btn-default'

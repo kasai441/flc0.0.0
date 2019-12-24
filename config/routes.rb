@@ -9,8 +9,11 @@ Rails.application.routes.draw do
   get '/welcome/index', to: 'welcome#index'
   delete '/bye', to: 'welcome#destroy'
   get '/practice', to: 'quizcards#practice'
-  post '/judge', to: 'quizcards#judge'
+  get '/temp_practice', to: 'quizcards#temp_practice'
   get '/judge', to: 'quizcards#judge'
+  get '/temp_judge', to: 'quizcards#temp_judge'
+  post '/judge', to: 'quizcards#judge'
+  post '/temp_judge', to: 'quizcards#temp_judge'
   resources :users
   resources :account_activations, only: [:edit]
   resources :password_resets, only: [:new, :create, :edit, :update]

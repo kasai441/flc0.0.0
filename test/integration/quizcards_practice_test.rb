@@ -12,13 +12,13 @@ class QuizcardsPracticeTest < ActionDispatch::IntegrationTest
     assert_template 'home_page/index'
     assert_not is_logged_in?
     assert_equal @user.name, assigns(:user).name
-    assert_select 'a[href=?]', practice_path, count: 1
-    get practice_path
+    assert_select 'a[href=?]', temp_practice_path, count: 1
+    get temp_practice_path
     assert_not is_logged_in?
     assert_equal @user.name, assigns(:user).name
     assert assigns(:user).quizcards
     assert_equal assigns(:quizcards_today).count, 2
-    assert_template 'quizcards/practice'
+    assert_template 'quizcards/temp_practice'
   end
 
   test "practice with login having cards" do
