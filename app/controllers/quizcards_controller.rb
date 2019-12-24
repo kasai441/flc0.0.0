@@ -2,28 +2,19 @@ class QuizcardsController < ApplicationController
   def practice
     if logged_in?
       @user = current_user
-      if @user.quizcards.any?
-        @quizcards_today = @user.quizcards.where('appearing_at > ?', 1.day.ago)
-          if @quizcards_today.any?
-            @quizcard = @quizcards_today.first
-          else
-            redirect_to root_url
-          end
-      else
-        redirect_to root_url
-      end
     else
-      @user = User.first
-      if @user.quizcards.any?
-        @quizcards_today = @user.quizcards.where('appearing_at > ?', 1.day.ago)
-          if @quizcards_today.any?
-            @quizcard = @quizcards_today.first
-          else
-            redirect_to root_url
-          end
-      else
-        redirect_to root_url
-      end
+      @user = User.find_by(email: "example@railstutorial.org")
+    end
+
+    if @user.quizcards.any?
+      @quizcards_today = @user.quizcards.where('appearing_at > ?', 1.day.ago)
+        if @quizcards_today
+          @quizcard = @quizcards_today.first
+        else
+          redirect_to root_url
+        end
+    else
+      redirect_to root_url
     end
   end
 

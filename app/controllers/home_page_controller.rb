@@ -8,7 +8,7 @@ class HomePageController < ApplicationController
       @quizcard = @quizcards_today.first if @quizcards_today
       render 'show'
     else
-      @user = User.first
+      @user = User.find_by(email: "example@railstutorial.org")
       @quizcards_today = @user.quizcards.where('appearing_at > ?', 1.day.ago) if @user.quizcards.any?
       @quizcards = @user.quizcards.paginate(page: params[:page])
       @quizcard = @quizcards_today.first if @quizcards_today
