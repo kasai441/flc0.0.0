@@ -3,7 +3,7 @@ require 'test_helper'
 class SiteLayoutTest < ActionDispatch::IntegrationTest
   test "layout links" do
     get root_path
-    assert_template 'home_page/index'
+    assert_template 'home_page/temp_show'
     assert_select "a[href=?]", root_path
     assert_select "a[href=?]", signup_path
     assert_no_match /list/, response.body

@@ -1,10 +1,10 @@
 <span class="border">
   <h1>今日の練習</h1>
   <h2>残り：
-  <%= link_to "#{@quizcards_today.count if @quizcards_today}題", '#' %>
+  <%= link_to "#{@quizcards_today.count if @quizcards_today} 題", '#' %>
   </h2>
   <p class="center">
-    <%= render 'temp_box' if @quizcards_today%>
+    <%= render 'temp_box' if @quizcards_today && @quizcards_today.any? %>
   </p>
 
 </span>

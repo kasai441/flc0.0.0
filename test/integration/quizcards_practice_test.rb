@@ -9,7 +9,7 @@ class QuizcardsPracticeTest < ActionDispatch::IntegrationTest
 
   test "practice without login" do
     get root_path
-    assert_template 'home_page/index'
+    assert_template 'home_page/temp_show'
     assert_not is_logged_in?
     assert_equal @user.name, assigns(:user).name
     assert_select 'a[href=?]', temp_practice_path, count: 1
@@ -17,7 +17,7 @@ class QuizcardsPracticeTest < ActionDispatch::IntegrationTest
     assert_not is_logged_in?
     assert_equal @user.name, assigns(:user).name
     assert assigns(:user).quizcards
-    assert_equal assigns(:quizcards_today).count, 2
+    assert_equal assigns(:quizcards_today).count, 3
     assert_template 'quizcards/temp_practice'
   end
 

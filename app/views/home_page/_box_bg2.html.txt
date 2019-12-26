@@ -1,7 +1,0 @@
-
-%button#modal-open-btn チャレンジ
-#overlay
-  #modalWindow
-    =render 'box_practice' if session[:box_mode] == "0"
-    =render 'box_right' if session[:box_mode] == "1"
-    =render 'box_false' if session[:box_mode] == "2"

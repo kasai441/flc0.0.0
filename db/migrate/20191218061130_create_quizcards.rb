@@ -5,6 +5,7 @@ class CreateQuizcards < ActiveRecord::Migration[5.1]
       t.datetime :registered_at
       t.string :name
       t.string :connotation
+      t.string :pronunciation
       t.string :origin
       t.decimal :wait_seconds
       t.references :user, foreign_key: true

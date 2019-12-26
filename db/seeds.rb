@@ -23,7 +23,7 @@ end
                       appearing_at: Time.zone.today)
 
 users = User.order(:created_at).take(6)
-50.times do
-  description = Faker::Lorem.sentence(5)
+10.times do
+  description = Faker::Lorem.sentence(10)
   users.each { |user| user.quizcards.create!(description: description, name: description[0], appearing_at: Time.zone.today) }
 end

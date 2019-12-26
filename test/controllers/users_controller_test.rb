@@ -21,7 +21,7 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     get @non_active
     # assert_redirected_to root_url
     # follow_rediret!
-    assert_template 'home_page/index'
+    assert_template 'home_page/temp_show'
   end
 
   test "should get new" do

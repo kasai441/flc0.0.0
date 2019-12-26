@@ -1,9 +1,10 @@
-%button#modal-open-btn チャレンジ
+
 #overlay
   #modalWindow
     .modal-message-box
       %div 本日の課題は残り#{@quizcards_today.count}あります
-      %div 課題に挑戦しますか？
+      %div 続けて挑戦しますか？
       = link_to "", practice_path, id: 'practice_btn'
+      /  = f.hidden_field :right_name, :value => @quizcard.name
     %button#modal-close-btn キャンセル
-    %button#try-btn 挑戦
+    %button#try-btn 続ける

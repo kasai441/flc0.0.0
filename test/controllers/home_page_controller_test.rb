@@ -7,4 +7,8 @@ class HomePageControllerTest < ActionDispatch::IntegrationTest
     assert_select "title", full_title("ホーム")
   end
 
+  # if logged in
+
+  # if not logged in, if cookies
+
 end
