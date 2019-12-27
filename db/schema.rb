@@ -27,7 +27,6 @@ ActiveRecord::Schema.define(version: 20191227045402) do
     t.datetime "appearing_at"
     t.float "beta"
     t.index ["appearing_at"], name: "index_quizcards_on_appearing_at"
-    t.index ["name", "user_id"], name: "index_quizcards_on_name_and_user_id", unique: true
     t.index ["user_id"], name: "index_quizcards_on_user_id"
   end
 

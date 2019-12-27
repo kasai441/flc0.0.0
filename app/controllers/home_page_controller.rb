@@ -24,7 +24,7 @@ class HomePageController < ApplicationController
          @quizcards_today = ids.map { |id| Quizcard.find(id) }
       else
         # クッキーにない場合はデータベースから新たに取得
-        @quizcards_today = @user.quizcards.all if @user.quizcards.any?
+        @quizcards_today = @user.quizcards.take(500) if @user.quizcards.any?
         cookies[:quizcards_today_ids] = JSON.generate(@quizcards_today.map { |quizcard| quizcard.id })
       end
       @quizcard = @quizcards_today.first if @quizcards_today
