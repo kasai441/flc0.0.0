@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 1.5em;
-  letter-spacing: -2px;
+  letter-spacing: 0px;
   margin-bottom: 30px;
   text-align: center;
   border-width: 5px;
@@ -54,7 +54,7 @@ h1 {
 
 h2 {
   font-size: 1.2em;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
@@ -64,8 +64,10 @@ h2 {
 
 h3 {
   font-size: 1.2em;
-  letter-spacing: -1px;
-  margin-left: 30px;
+  line-height: 1.4;
+  letter-spacing: 0px;
+  margin-left: 10px;
+  margin-left: 10px;
   margin-bottom: 20px;
   text-align: left;
   font-weight: normal;

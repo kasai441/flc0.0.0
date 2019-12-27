@@ -10,13 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20191224055813) do
+ActiveRecord::Schema.define(version: 20191227045402) do
 
   create_table "quizcards", force: :cascade do |t|
+    t.string "fail_seq"
     t.text "description"
     t.datetime "registered_at"
     t.string "name"
     t.string "connotation"
+    t.string "pronunciation"
     t.string "origin"
     t.decimal "wait_seconds"
     t.integer "user_id"
@@ -25,7 +27,7 @@ ActiveRecord::Schema.define(version: 20191224055813) do
     t.datetime "appearing_at"
     t.float "beta"
     t.index ["appearing_at"], name: "index_quizcards_on_appearing_at"
-    t.index ["user_id", "created_at"], name: "index_quizcards_on_user_id_and_created_at"
+    t.index ["name", "user_id"], name: "index_quizcards_on_name_and_user_id", unique: true
     t.index ["user_id"], name: "index_quizcards_on_user_id"
   end
 

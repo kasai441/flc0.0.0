@@ -1,6 +1,7 @@
 class CreateQuizcards < ActiveRecord::Migration[5.1]
   def change
     create_table :quizcards do |t|
+      t.string :fail_seq
       t.text :description
       t.datetime :registered_at
       t.string :name
