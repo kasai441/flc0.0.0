@@ -15,6 +15,11 @@ class HomePageController < ApplicationController
       @user = User.find_by(email: "example@railstutorial.org")
       # 一覧のためのユーザー所属カード全取得
       @quizcards = @user.quizcards.paginate(page: params[:page])
+      
+      #＃＃＃＃＃＃＃＃＃＃＃＃＃全ユーザーのモデルシークエンスを平均してデータベース更新
+      
+      #＃＃＃＃＃＃＃＃＃＃＃＃
+      
       # クッキーにユーザーIDを記憶
       cookies[:temp_user_id] = @user.id
       # 今日のクッキーが保存されているか確認（ログイン時はクッキーを利用しないのでクッキー情報は必ず一時利用ユーザー）

@@ -4,6 +4,12 @@ class SessionsController < ApplicationController
 
   def create
     @user = User.find_by(email: params[:session][:email])
+    
+    ##################### model sequence reproduce ユーザーごと
+    
+    #####################
+    
+    
     if @user && @user.authenticate(params[:session][:password])
       if @user.activated?
         log_in(@user)
