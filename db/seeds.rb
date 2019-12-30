@@ -34,9 +34,16 @@ get_num.times do |number|
   csv_data = CSV.read("db/xlsx_csv/#{number}.csv")
 
   csv_data.each do |data|
+    next if data[3].nil?
     fail_seq = data[0]
     description = data[1]
-    registered_at = data[2]
+    # csv がmmddyyyyなのでddmmyyyyに変換
+    registered_at = nil
+    if !data[2].nil?
+      date_a = data[2].split("/")
+      date_a[0], date_a[1] = date_a[1], date_a[0]
+      registered_at = date_a.join("/")
+    end
     name = data[3]
     connotation = data[4]
     pronunciation = data[5]
@@ -70,7 +77,7 @@ users = User.order(:created_at).take(6)
 10.times do |number|
   description = Faker::Lorem.sentence(10)
   name = description[0] + "#{number}"
-  users.each do|user| 
+  users.each do|user|
     quizcard = user.quizcards.create!(description: description, name: name, appearing_at: Time.zone.today)
     quizcard.waitdays.create(wait_sequence: "0", wait_day: "1")
   end

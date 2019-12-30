@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20191227045402) do
+ActiveRecord::Schema.define(version: 20191230083927) do
 
   create_table "quizcards", force: :cascade do |t|
     t.string "fail_seq"
@@ -52,6 +52,7 @@ ActiveRecord::Schema.define(version: 20191227045402) do
     t.datetime "updated_at", null: false
     t.index ["quizcard_id", "created_at"], name: "index_waitdays_on_quizcard_id_and_created_at"
     t.index ["quizcard_id"], name: "index_waitdays_on_quizcard_id"
+    t.index ["wait_sequence"], name: "index_waitdays_on_wait_sequence"
   end
 
 end
