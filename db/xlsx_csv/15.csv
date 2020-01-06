@@ -1,27 +1,3 @@
-0 0 11,"NOUN
-
-A person sent as a diplomatic representative on a special mission.",3/1/2018,emissary,,,
-14,"c__ NOUN
-
-1A kind of stew that is cooked slowly in an oven.
-‘a chicken ___’
-1.1 A large covered dish used for cooking __s.
-‘heat the oil in a flameproof ___’",3/4/2018,casserole,,,
-7 11,"p__ NOUN
-
-1A point of high land that juts out into the sea or a large lake; a headland.
-‘a rocky ___’
-2Anatomy 
-A protuberance on an organ or other bodily structure.",1/21/2018,promontory,,,
-,"An ___ is a combinational digital electronic circuit that performs arithmetic and bitwise operations on integer binary numbers. This is in contrast to a floating-point unit (FPU), which operates on floating point numbers. An ___ is a fundamental building block of many types of computing circuits, including the central processing unit (CPU) of computers, FPUs, and graphics processing units (GPUs). A single CPU, FPU or GPU may contain multiple ___s.",3/5/2018,arithmetic logic unit (ALU) ,,,
-13 14 13 12 11 13,"noun
-A large undulating mass of something, typically cloud, smoke, or steam.
-? archaic A large sea wave.
-verb [no object, with adverbial of direction]
-(Of fabric) fill with air and swell outwards:
-her dress ___d out around her",6/15/2016,billow,,,
-,"__s are an aspect of the instruction set architecture in most central processing unit (CPU) designs. The various __s that are defined in a given instruction set architecture define how machine language instructions in that architecture identify the operand(s) of each instruction. An ___ specifies how to calculate the effective memory address of an operand by using information held in registers and/or constants contained within a machine instruction or elsewhere.
-",,Addressing mode,,,
 ,"Instruction __s, such as the classic RISC ___, which are used in central processing units (CPUs) to allow overlapping execution of multiple instructions with the same circuitry. The circuitry is usually divided up into stages and each stage processes one instruction at a time. Examples of stages are instruction decode, arithmetic/logic and register fetch.",3/8/2018,pipeline,,,
 ,"___, in contrast to non-___, is computer memory that requires power to maintain the stored information; it retains its contents while powered on but when the power is interrupted, the stored data is quickly lost.
 ",3/9/2018,Volatile memory,,,
@@ -44,11 +20,6 @@ often as adjective __ing
 ‘dozens of ___ing babies’
 1.1 (of a cat or gull) _*_.
 ‘the ___ing cry of a hawk’",1/13/2018,mewl,* mew,,
-0,"c__ VERB
-
-[NO OBJECT]
-Cease to resist an opponent or an unwelcome demand; yield.
-‘the patriots had to ___ to the enemy forces’",12/5/2017,capitulate,,,
 ,"In computing, ___ is a design made to compensate for the relatively slow speed of dynamic random-access memory (DRAM) or core memory, by spreading memory addresses evenly across memory banks. That way, contiguous memory reads and writes are using each memory bank in turn, resulting in higher memory throughputs due to reduced waiting for memory banks to become ready for desired operations.",3/10/2018,Interleaved memory,,,
 0 0 10 11,"_8_ VERB
 
@@ -74,7 +45,7 @@ formal
 ‘perhaps the ___ of Babylonian influence on Greek astronomy is incorrect’",10/26/2017,postulate,,,
 0 11 10,"s__ adjective
 (Of a place) isolated and hidden away:
-a wild ___ spot",8/15/2017,sequestered,, /s??kw?st?d/,
+a wild ___ spot",8/15/2017,sequestered,, /sɪˈkwɛstəd/,
 ,"ADJECTIVE
 
 Computing 
@@ -83,7 +54,7 @@ Relating to or using a system of numerical notation that has 16 rather than 10 a
 0 1 10 10 12 14,"s__ adjective
 Superficially plausible, but actually wrong:
 a ___ argument
-? Misleading in appearance, especially misleadingly attractive:
+• Misleading in appearance, especially misleadingly attractive:
 the music trade gives Golden Oldies a ___ appearance of novelty",8/27/2017,specious,,,
 ,"Anatomy 
 1The inner and typically larger of the two bones between the knee and the ankle (or the equivalent joints in other terrestrial vertebrates), parallel with the fibula.
@@ -133,7 +104,7 @@ with object ‘she opened a book and ___d the pages’
 9 12 13,"NOUN
 
 A group of models or motionless figures representing a scene from a story or from history; a __ vivant.
-‘in the first act the action is presented in a series of __s’",1/9/2018,tableau,"plural tableaux, plural tableaus",/?tabl??/,
+‘in the first act the action is presented in a series of __s’",1/9/2018,tableau,"plural tableaux, plural tableaus",/ˈtabləʊ/,
 ,"o__ NOUN
 
 1A lyric poem, typically one in the form of an address to a particular subject, written in varied or irregular metre.
@@ -225,20 +196,15 @@ A tall stand with a sloping top to hold a book or notes, from which someone, typ
 3British The dashboard of a motor vehicle.
 3.1 A board or panel of controls on any piece of equipment.
 4Anatomy 
-A thin sheath of fibrous tissue enclosing a muscle or other organ.",4/10/2018,fascia,(British facia),/?fe???//?fe????/,
+A thin sheath of fibrous tissue enclosing a muscle or other organ.",4/10/2018,fascia,(British facia),/ˈfeɪʃə//ˈfeɪʃɪə/,
 11 12 13 14,"_s_ ADJECTIVE
 
 (of a difficulty or obstacle) impossible to overcome.
-‘___ financial problems’",12/20/2017,insuperable,,/?n?su?p(?)r?b(?)l/,
+‘___ financial problems’",12/20/2017,insuperable,,/ɪnˈsuːp(ə)rəb(ə)l/,
 ,"In electronics, a ___ or latch is a circuit that has two stable states and can be used to store state information. A ___ is a bistable multivibrator. The circuit can be made to change state by signals applied to one or more control inputs and will have one or two outputs. It is the basic storage element in sequential logic. __s and latches are fundamental building blocks of digital electronics systems used in computers, communications, and many other types of systems.",4/11/2018,flip-flop,,,
 13,"NOUN
 
 The fruit of the oak tree, a smooth oval nut in a rough cup-shaped base.団栗",4/7/2018,acorn,,,
-14,"2Electronics 
-A circuit which retains whatever output state results from a momentary input signal until reset by another signal.
-‘The actuator ___ of a hard disk drive selectively intercepts the movement of the locking protrusion at the actuator so that the actuator is locked and unlocked.’
-‘The compare circuit includes a holding circuitry that includes a number of __s for holding an encoded version of a memory address.’
-‘In one embodiment, the storage element is a data ___ comprising a clock-enabled inverter serially coupled with a flip-flop.’",4/12/2018,latch,,,
 12,"s__ ADJECTIVE
 
 Biology 
@@ -333,7 +299,7 @@ v preempt",,
 
 Unpleasantly bitter or pungent.
 ‘___ smoke’
-‘an ___ smell’",2/1/2018,acrid,,/?akr?d/,
+‘an ___ smell’",2/1/2018,acrid,,/ˈakrɪd/,
 ,"In computer operating systems, ___ is a memory management scheme by which a computer stores and retrieves data from secondary storage for use in main memory. In this scheme, the operating system retrieves data from secondary storage in same-size blocks called _n_s. ___ is an important part of virtual memory implementations in modern operating systems, using secondary storage to let programs exceed the size of available physical memory.",4/30/2018,Paging,,,
 ,"In the 1960s, ___ was an early virtual memory technique. An entire program would be _v_d out (or rolled out) from RAM to disk, and another one would be _v_d in (or rolled in). A _v_d-out program would be current but its execution would be suspended while its RAM was in use by another program.",5/1/2018,Swapping,,,
 10 11 12,"a__ NOUN
@@ -390,9 +356,9 @@ n cardinality",,
 ,"The ___ (also mantissa or coefficient) is part of a number in scientific notation or a floating-point number, consisting of its _adj_ digits. Depending on the interpretation of the exponent, the ___ may represent an integer or a fraction. The word mantissa seems to have been introduced by Arthur Burks in 1946 writing for the Institute for Advanced Study at Princeton, although this use of the word is discouraged by the IEEE floating-point standard committee as well as some professionals such as the creator of the standard, William Kahan.仮数",5/13/2018,Significand,adj significant,,
 8,"c__ Anatomy 
 The large bone forming the heel. It articulates with the cuboid bone of the foot and the talus bone of the ankle, and the Achilles tendon is attached to it.",3/14/2018,calcaneus,(also calcaneum),,
-,"A ___ is a mathematical table used in logic?specifically in connection with Boolean algebra, boolean functions, and propositional calculus?which sets out the functional values of logical expressions on each of their functional arguments, that is, for each combination of values taken by their logical variables (Enderton, 2001). In particular, __s can be used to show whether a propositional expression is true for all legitimate input values, that is, logically valid.真理値表",5/14/2018,Truth table,,,
+,"A ___ is a mathematical table used in logic—specifically in connection with Boolean algebra, boolean functions, and propositional calculus—which sets out the functional values of logical expressions on each of their functional arguments, that is, for each combination of values taken by their logical variables (Enderton, 2001). In particular, __s can be used to show whether a propositional expression is true for all legitimate input values, that is, logically valid.真理値表",5/14/2018,Truth table,,,
 ,"A ___ (also called primary diagram, set diagram or logic diagram) is a diagram that shows all possible logical relations between a finite collection of different sets. These diagrams depict elements as points in the plane, and sets as regions inside closed curves. A ___ consists of multiple overlapping closed curves, usually circles, each representing a set.",5/15/2018,Venn diagram,,,
-,"In logic, mathematics and linguistics, And (∧) is the truth-functional operator of ___; the and of a set of operands is true if and only if all of its operands are true. The logical connective that represents this operator is typically written as ∧ or ? .",5/16/2018,Logical conjunction,,,
+,"In logic, mathematics and linguistics, And (∧) is the truth-functional operator of ___; the and of a set of operands is true if and only if all of its operands are true. The logical connective that represents this operator is typically written as ∧ or ⋅ .",5/16/2018,Logical conjunction,,,
 ,"In logic and mathematics, or is the truth-functional operator of (inclusive) ___, also known as alternation; the or of a set of operands is true if and only if one or more of its operands is true. The logical connective that represents this operator is typically written as ∨ or +.",5/17/2018,Logical disjunction,,,
 8 9 10 14,"c__ NOUN
 
@@ -427,5 +393,34 @@ Botany
 12,"___ is a method used to digitally represent sampled analog signals. It is the standard form of digital audio in computers, compact discs, digital telephony and other digital audio applications. In a ___ stream, the amplitude of the analog signal is sampled regularly at uniform intervals, and each sample is quantized to the nearest value within a range of digital steps.",5/20/2018,"Pulse-code modulation
 PCM",,,
 ,"___ in computer science is a method where the solution to a problem depends on solutions to smaller instances of the same problem (as opposed to iteration). The approach can be applied to many types of problems, and ___ is one of the central ideas of computer science.",5/28/2018,Recursion (computer science),,,
-,,,,,,
-,,,,,,
+0 0 0 1 4 8 9 9,"a__ NOUN
+
+1A military officer who acts as an administrative assistant to a senior officer.
+‘he eventually became ___ to the commander of the tactical air force’
+1.1 A person's assistant or deputy.
+‘Hoare was his ___ in all the talks with the government’
+2A large black-and-white stork with a massive bill and a bare head and neck, found in India and SE Asia.",11/4/2017,adjutant,,,
+,"___ is a type of software testing that ensures that previously developed and tested software still performs the same way after it is changed or interfaced with other software. Changes may include software enhancements, patches, configuration changes, etc. During ___, new software bugs may be uncovered. Sometimes a software change-impact analysis is performed to determine which areas could be affected by the proposed changes. These areas may include functional and non-functional areas of the system.",5/30/2018,Regression testing,,,
+9 8 9 9 12 13,"VERB
+
+[WITH OBJECT]
+1usually as adjective __d Remove the moisture from (something), typically in order to preserve it.
+‘__d coconut’
+2as adjective __d Lacking interest, passion, or energy.
+‘a __d history of ideas’",11/12/2017,desiccate,,,
+9 14,"NOUN
+
+1The rhythm of a piece of poetry, determined by the number and length of feet in a line.
+‘the Horatian ode has an intricate governing ___’
+mass noun ‘unexpected changes of stress and ___’
+1.1 The basic rhythmic pattern of beats in a piece of music.
+‘a dance song in fast quadratic ___’
+‘Prokofiev's complex ___s’",3/28/2018,metre,(US meter),,
+,"In computer programming, an ___ is a statement that a predicate (Boolean-valued function, i.e. a true–false expression) is always true at that point in code execution. It can help a programmer read the code, help a compiler compile it, or help the program detect its own defects.",5/31/2018,assertion,,,
+,"z__ NOUN
+
+Biology 
+A diploid cell resulting from the fusion of two haploid gametes; a fertilized ovum. 受精卵",6/1/2018,zygote,,,
+8 9 11 10 9 8 13,"s__9_ adjective
+Tempting and attractive; enticing:
+a ___ voice",5/15/2017,seductive,,,

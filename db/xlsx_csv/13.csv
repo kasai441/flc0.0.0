@@ -1,25 +1,11 @@
-,,,,,,
-,,,,,,
-,,,,,,
-0 0 9 10 10 11,"___ is a production planning, scheduling, and inventory control system used to manage manufacturing processes. Most ___ systems are software-based, but it is possible to conduct ___ by hand as well.
-An ___ system is intended to simultaneously meet three objectives:
-Ensure materials are available for production and products are available for delivery to customers.
-Maintain the lowest possible material and product levels in store
-Plan manufacturing activities, delivery schedules and purchasing activities.",9/1/2018,Material requirements planning (MRP),,,
-,"l__ In statistics and business, a ___ of some distributions of numbers is the portion of the distribution having a large number of occurrences far from the ""head"" or central part of the distribution. The distribution could involve popularities, random numbers of occurrences of events with various probabilities, etc. The term is often used loosely, with no definition or arbitrary definition, but precise definitions are possible.",9/7/2018,long tail,,,
-,"___: initially, writing is done only to the cache. The write to the backing store is postponed until the modified content is about to be replaced by another cache block.",9/12/2018,Write-back (also called write-behind),,,
-8,___: write is done synchronously both to the cache and to the backing store.,9/11/2018,Write-through,,,
-5 8,"In computer architecture, ___ is one aspect of a processor's performance: the average number of clock ___ for a program or program fragment.",9/9/2018,"cycles per instruction (aka clock cycles per instruction, clocks per instruction, or CPI)",,,
-,"The best known application of ___ is in ___ LCDs, an implementation of LCD technology. Transistors are embedded within the panel itself, reducing crosstalk between pixels and improving image stability.
-As of 2008, many color LCD TVs and monitors use this technology. ___ panels are frequently used in digital radiography applications in general radiography. A ___ is used in both direct and indirect capture[jargon] as a base for the image receptor in medical radiography.",9/16/2018,thin-film transistors TFT,,,
 ,"In electrical and electronic engineering a ___ is a wiring scheme in which multiple devices are wired together in sequence or in a ring. Other than a full, single loop, systems which contain internal loops cannot be called __s.",9/18/2018,daisy chain,,,
 ,"NOUN
 
 mass noun
 1The process of printing from a flat surface treated so as to repel the ink except where it is required for printing.
-1.1Electronics A method analogous to ___, used in making printed circuits.",9/20/2018,lithography,/l??慮??r?fi/,,
+1.1Electronics A method analogous to ___, used in making printed circuits.",9/20/2018,lithography,/lɪˈθɒɡrəfi/,,
 7,"The ___ is a vacuum tube that contains one or more electron guns and a phosphorescent screen, and is used to display images. It modulates, accelerates, and deflects electron beam(s) onto the screen to create the images. The images may represent electrical waveforms (oscilloscope), pictures (television, computer monitor), radar targets, or other phenomena.",9/17/2018,cathode ray tube (CRT),,,
-,"In artificial intelligence, an ___ is a computer system that emulates the decision-making ability of a human expert. __s are designed to solve complex problems by reasoning through bodies of knowledge, represented mainly as if?then rules rather than through conventional procedural code. The first __s were created in the 1970s and then proliferated in the 1980s. __s were among the first truly successful forms of artificial intelligence (AI) software.",9/21/2018,expert system,,,
+,"In artificial intelligence, an ___ is a computer system that emulates the decision-making ability of a human expert. __s are designed to solve complex problems by reasoning through bodies of knowledge, represented mainly as if–then rules rather than through conventional procedural code. The first __s were created in the 1970s and then proliferated in the 1980s. __s were among the first truly successful forms of artificial intelligence (AI) software.",9/21/2018,expert system,,,
 12,"A ___ is a set of markup declarations that define a document type for an SGML-family markup language (SGML, XML, HTML).",9/24/2018,document type definition (DTD),,,
 12,"i__ In computing, an ___ is the part of a CPU's control unit that holds the instruction currently being executed or decoded. In simple processors each instruction to be executed is loaded into the ___ which holds it while it is decoded, prepared and ultimately executed, which can take several steps.",9/26/2018,instruction register (IR),,,
 0,"r__ In computer science, ___ systems are used as a way to store and manipulate knowledge to interpret information in a useful way. They are often used in artificial intelligence applications and research.
@@ -83,7 +69,7 @@ A long lock of a woman's hair.
 ‘her golden __s tumbled about her face’",11/4/2018,tress,,,
 0 10 12,"NOUN
 
-1A picture or photograph mounted between a piece of glass and a sheet of card (or two pieces of glass) stuck together at the edges with adhesive tape.",10/29/2018,passepartout,,/?pasp???tu?//?p??sp???tu?/,
+1A picture or photograph mounted between a piece of glass and a sheet of card (or two pieces of glass) stuck together at the edges with adhesive tape.",10/29/2018,passepartout,,/ˌpaspɑːˈtuː//ˌpɑːspɑːˈtuː/,
 0 12,"VERB
 
 [WITH OBJECT]
@@ -202,7 +188,7 @@ Think deeply about something; meditate or reflect.
 
 literary, archaic 
 Before (in time)
-as preposition ‘we hope you will return ___ long’",11/23/2018,ere,,/??/,
+as preposition ‘we hope you will return ___ long’",11/23/2018,ere,,/ɛː/,
 12,"f__ NOUN
 
 A Muslim (or, loosely, a Hindu) religious ascetic who lives solely on alms.",11/29/2018,"fakir
@@ -211,7 +197,7 @@ A Muslim (or, loosely, a Hindu) religious ascetic who lives solely on alms.",11/
 
 literary, archaic 
 To or towards that place.
-‘no trickery had been necessary to attract him ___’",11/24/2018,thither,,/?????/,
+‘no trickery had been necessary to attract him ___’",11/24/2018,thither,,/ˈðɪðə/,
 ,"ADJECTIVE
 
 Anatomy Medicine Zoology 
@@ -239,7 +225,7 @@ archaic
 ‘the __s of the electorate’
 mass noun ‘a land where men were ruled by law and not by ___’
 2Music 
-‘the ___ was divided into a theme and eleven variations’",11/27/2018,caprice,/k??pri?s/,,
+‘the ___ was divided into a theme and eleven variations’",11/27/2018,caprice,/kəˈpriːs/,,
 ,"NOUN
 
 1(in folklore) a man-eating giant.
@@ -287,3 +273,35 @@ Catch sight of.
 1A small picturesque cave, especially an artificial one in a park or garden.
 1.1 An indoor structure resembling a cave.
 ‘visits to Father Christmas's ___’",12/11/2018,grotto,,,
+11,"m__ NOUN
+
+1A tall headdress worn by bishops and senior abbots as a symbol of office, tapering to a point at front and back with a deep cleft between.
+2A joint made between two pieces of wood or other material at an angle of 90°, such that the line of junction bisects this angle.
+as modifier ‘a ___ saw’",12/14/2018,"mitre
+(US miter)",,,
+,"t__ VERB
+
+[WITH OBJECT]
+1Cause (someone) to become motionless with horror, wonder, or astonishment.
+‘he was __d by the pain in her face’
+‘she stared at him, __d’",12/13/2018,transfix,,,
+9,"PLURAL NOUN
+
+The liver, heart, gizzard, and neck of a chicken or other fowl, usually removed before the bird is cooked, and often used to make gravy, stuffing, or soup.",12/12/2018,giblets,,,
+6 7 9 10 11 12,"a__ NOUN
+
+mass noun
+Brisk and cheerful readiness.
+‘she accepted the invitation with ___’",12/3/2018,alacrity,,,
+0 1 6 7,"NOUN
+
+mass noun
+Botany 
+The vascular tissue in plants which conducts sugars and other metabolic products downwards from the leaves. 師部",12/5/2018,phloem,,/ˈfləʊɛm/,
+11,"f__ ADVERB
+
+(especially in official use) immediately; without delay.
+‘we undertake to pay ___ the money required’",12/18/2018,forthwith,,,
+11,"v__ NOUN
+
+A long bridge-like structure, typically a series of arches, carrying a road or railway across a valley or other low ground.",12/20/2018,viaduct,,,

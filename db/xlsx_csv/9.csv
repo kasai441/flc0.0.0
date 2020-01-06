@@ -1,43 +1,3 @@
-0 8,"g__ PLURAL NOUN
-
-Zoology 
-A small phylum of minute aquatic wormlike animals that bear bristles and cilia. They are thought to be related to the nematode worms and rotifers. 腹毛動物 
-‘These are the horsehair worms or Nematomorpha and the ___.’",8/14/2019,Gastrotricha,,/??astr??tr??k?/,
-,"NOUN
-
-1The nose of a mammal, especially when it is long and mobile such as the trunk of an elephant or the snout of a tapir.  
-1.1Entomology (in many insects) an elongated sucking mouthpart that is typically tubular and flexible.  
-1.2Zoology (in some worms) an extensible tubular sucking organ.",8/12/2019,proboscis,"probosces, proboscides, proboscises",/pr??b?s?s/ ,
-0,"e__ NOUN
-
-mass noun
-Medicine 
-Obstruction of an artery, typically by a clot of blood or an air bubble. 塞栓症
-‘causes of cerebral ___’
-count noun ‘one patient died of a pulmonary ___’",8/13/2019,embolism,,,
-,"ADJECTIVE
-
-Biology 
-Concerned with the classification of things, especially organisms.
-‘the ___ diversity of bees’
-‘extensive ___ sampling’",8/15/2019,"taxonomic
-(also taxonomical)",,,
-0,"ADJECTIVE
-
-Biology 
-(of a group of organisms) descended from a common evolutionary ancestor or ancestral group, especially one not shared with any other group.  
-‘Given two ___ groups of taxa, the site patterns found in an alignment of sequences can be described in terms of five classes.’",8/16/2019,monophyletic,,/?m?n?(?)f???l?t?k/ ,
-,"NOUN
-
-Biology 
-A group of organisms believed to comprise all the evolutionary descendants of a common ancestor.
-‘the great ape and human ___’  
-‘Species in the two primary __s in the genus tend to be found in different parts of North America.’",8/17/2019,clade,,,
-0,"l__ PLURAL NOUN
-
-Zoology 
-A minor phylum of minute marine invertebrates (genus Nanaloricus ), resembling rotifers and living in gravel.
-胴甲動物",8/18/2019,Loricifera,,/?l?r??s?f?r?/,
 ,"NOUN
 
 mass noun
@@ -48,13 +8,13 @@ A compound consisting of an adenosine molecule bonded to three phosphate groups,
 
 Biology 
 Any of a number of organized or specialized structures within a living cell.  
-‘Scattered throughout the plasma in cells are __s called mitochondria.’",8/20/2019,organelle,,/??????n?l/ ,
+‘Scattered throughout the plasma in cells are __s called mitochondria.’",8/20/2019,organelle,,/ˌɔːɡəˈnɛl/ ,
 7,"NOUN
 
 mass noun
 Biology 
 The material or protoplasm within a living cell, excluding the nucleus. 細胞質  
-‘Because tissues were lyophilized it was not possible to discriminate between cell walls and ___ in the root material.’",8/21/2019,cytoplasm,,/?s??t?(?)plaz(?)m/,
+‘Because tissues were lyophilized it was not possible to discriminate between cell walls and ___ in the root material.’",8/21/2019,cytoplasm,,/ˈsʌɪtə(ʊ)plaz(ə)m/,
 0 7 8,"a__ VERB
 
 [WITH OBJECT]
@@ -70,22 +30,22 @@ mass noun
 ‘the ___ of the cystic duct’  
 2Biochemistry 
 The joining of two DNA strands or other molecules by a phosphate ester linkage.  
-‘A mechanism leading to ___ sequence duplication may involve DNA damage followed by DNA synthesis, strand displacement, and ___.’",8/22/2019,ligation,＊ ligature,/l???e??(?)n/,
+‘A mechanism leading to ___ sequence duplication may involve DNA damage followed by DNA synthesis, strand displacement, and ___.’",8/22/2019,ligation,＊ ligature,/lɪˈɡeɪʃ(ə)n/,
 0 5,"NOUN
 
 Biochemistry 
-An enzyme involved in prostaglandin synthesis that introduces oxygen molecules into arachidonic acid at carbons 9 and 15, forms a peroxide bridge between carbons 9 and 11, and bonds carbons 8 and 12 to form a five-carbon ring. Abbreviated COX.",8/24/2019,cyclooxygenase,,/?s??kl????ks?d??ne?z/ /?s??kl????ks?d??ne?z/,
+An enzyme involved in prostaglandin synthesis that introduces oxygen molecules into arachidonic acid at carbons 9 and 15, forms a peroxide bridge between carbons 9 and 11, and bonds carbons 8 and 12 to form a five-carbon ring. Abbreviated COX.",8/24/2019,cyclooxygenase,,/ˌsʌɪkləʊˈɒksɪdʒɪneɪz/ /ˌsʌɪkləʊˈɒksɪdʒəneɪz/,
 ,"NOUN
 
 mass noun
 1Biochemistry 
 A crystalline compound found in blood and urine which is an intermediate in the metabolic breakdown of nucleic acids to uric acid.
-A purine derivative; chemical formula: C?H?N?O?  
-1.1count noun Any of the derivatives of ___, including caffeine and related alkaloids.",8/25/2019,xanthine,,/?zanθi?n/,
+A purine derivative; chemical formula: C₅H₄N₄O₂  
+1.1count noun Any of the derivatives of ___, including caffeine and related alkaloids.",8/25/2019,xanthine,,/ˈzanθiːn/,
 8,"p__ NOUN
 
 Biochemistry 
-A compound consisting of two or more amino acids linked in a chain, the carboxyl group of each acid being joined to the amino group of the next by a bond of the type ?OC?NH?.  
+A compound consisting of two or more amino acids linked in a chain, the carboxyl group of each acid being joined to the amino group of the next by a bond of the type OCNH.  
 ‘Among the amino acids of the ___, the most dramatic change was the Phe residue.’",8/27/2019,peptide,,,
 ,酢酸,8/26/2019,acetic acid,,,
 ,"ADJECTIVE & ADVERB
@@ -101,7 +61,7 @@ Late 19th century Latin, literally ‘in glass’.",8/28/2019,in vitro,,,
 
 mass noun
 A colourless volatile liquid hydrocarbon present in coal tar and petroleum, and used in chemical synthesis. Its use as a solvent has been reduced because of its carcinogenic properties.
-Chemical formula: C?H?",8/29/2019,benzene,,/?b?nzi?n/ ,
+Chemical formula: C₆H₆",8/29/2019,benzene,,/ˈbɛnziːn/ ,
 ,"NOUN
 
 mass noun
@@ -110,12 +70,12 @@ mass noun
 0 0 2 6 7,"i__ NOUN
 
 Chemistry 
-A compound containing the group ?N=C=S as a substituent or ligand.
+A compound containing the group —N=C=S as a substituent or ligand.
 ‘Raw cabbage is rich in glucosinolate, which fermentation breaks down into __s and other cancer-fighting compounds.’
-‘The pungency of wasabi, horseradish, Brussels sprouts, and mustards comes from compounds called __s.’",9/1/2019,isothiocyanate,,/???s?(?)?θ???(?)?s???ne?t/ ,
+‘The pungency of wasabi, horseradish, Brussels sprouts, and mustards comes from compounds called __s.’",9/1/2019,isothiocyanate,,/ˌʌɪsə(ʊ)ˌθʌɪə(ʊ)ˈsʌɪəneɪt/ ,
 ,"NOUN
 
-A nocturnal hoofed mammal with a stout body, sturdy limbs, and a short flexible proboscis, native to the forests of tropical America and Malaysia. バク",8/31/2019,tapir,,/?te?p?/ /?te?p??/,
+A nocturnal hoofed mammal with a stout body, sturdy limbs, and a short flexible proboscis, native to the forests of tropical America and Malaysia. バク",8/31/2019,tapir,,/ˈteɪpə/ /ˈteɪpɪə/,
 8,"NOUN
 
 usually __s
@@ -126,11 +86,11 @@ mass noun ‘the heads are made with natural ___’",9/4/2019,bristle,,,
 ,"a__ NOUN
 
 A segmented worm of the phylum _＊_, such as an earthworm or leech. 
-‘Most biologists are familiar with only a few of the approximately 40 extant animal phyla such as __s, arthropods, molluscs, echinoderms and chordates.’",9/2/2019,annelid,＊ Annelida,/?an(?)l?d/,
+‘Most biologists are familiar with only a few of the approximately 40 extant animal phyla such as __s, arthropods, molluscs, echinoderms and chordates.’",9/2/2019,annelid,＊ Annelida,/ˈan(ə)lɪd/,
 0,"NOUN
 
 Zoology 
-Each of the second pair of appendages attached to the cephalothorax of most arachnids. They are variously specialized as pincers in scorpions, sensory organs in spiders, and locomotory organs in horseshoe crabs.",9/3/2019,pedipalp,,/?p?d?palp/ /?pi?d?palp/,
+Each of the second pair of appendages attached to the cephalothorax of most arachnids. They are variously specialized as pincers in scorpions, sensory organs in spiders, and locomotory organs in horseshoe crabs.",9/3/2019,pedipalp,,/ˈpɛdɪpalp/ /ˈpiːdɪpalp/,
 ,"NOUN
 
 Zoology 
@@ -139,21 +99,21 @@ A minute multicellular aquatic animal of the phylum _＊_.輪形動物
 6 8,"u__ NOUN
 
 Zoology 
-Treated as plural: a subphylum or phylum of arthropods having unbranched (_＊_) limbs, comprising the insects and myriapods, and formerly (in Manton's original scheme) also the onychophorans.単枝亜門",6/7/2019,Uniramia,＊ uniramous,/?ju?n??re?m??/,
+Treated as plural: a subphylum or phylum of arthropods having unbranched (_＊_) limbs, comprising the insects and myriapods, and formerly (in Manton's original scheme) also the onychophorans.単枝亜門",6/7/2019,Uniramia,＊ uniramous,/ˌjuːnɪˈreɪmɪə/,
 ,"NOUN
 
-With plural (or occasionally singular) concord: a large group of extinct multi-legged arthropods that occurred abundantly in Palaeozoic seas, typically having a flattened oval body with a solid head section (cephalon) with antennae and compound eyes, a flexible segmented thorax, and a solid tail section (pygidium), all of which are divided into three longitudinal lobes. Also treated as plural: animals of this group (collectively or individually); 三葉虫",9/6/2019,Trilobita,,/?tr??l?(?)?b??t?/ /?tr?l?(?)?b??t?/,
+With plural (or occasionally singular) concord: a large group of extinct multi-legged arthropods that occurred abundantly in Palaeozoic seas, typically having a flattened oval body with a solid head section (cephalon) with antennae and compound eyes, a flexible segmented thorax, and a solid tail section (pygidium), all of which are divided into three longitudinal lobes. Also treated as plural: animals of this group (collectively or individually); 三葉虫",9/6/2019,Trilobita,,/ˌtrʌɪlə(ʊ)ˈbʌɪtə/ /ˌtrɪlə(ʊ)ˈbʌɪtə/,
 ,"p__ PLURAL NOUN
 
 Zoology 
 A small class of myriapod invertebrates which resemble the centipedes. They are small soft-bodied animals with one pair of legs per segment, living chiefly in forest litter.エダヒゲムシ  
-‘He presented evidence for a single origination of the tracheal system in Dignatha (___ + Diplopoda), a group whose monophyly is widely accepted.’",9/8/2019,Pauropoda,,/?p??r?p?d?/ ,
+‘He presented evidence for a single origination of the tracheal system in Dignatha (___ + Diplopoda), a group whose monophyly is widely accepted.’",9/8/2019,Pauropoda,,/ˈpɔːrəpɒdə/ ,
 ,"PLURAL NOUN
 
 Zoology 
 A small class of myriapod invertebrates which resemble the centipedes. They are small eyeless animals with one pair of legs per segment, typically living in soil and leaf mould.
 コムカデ綱  
-‘Two of them, the ___ and Pauropoda, consist of tiny arthropods living in leaf litter and soil; both superficially resemble centipedes.’",9/9/2019,Symphyla,,/s?m?f??l?/ ,
+‘Two of them, the ___ and Pauropoda, consist of tiny arthropods living in leaf litter and soil; both superficially resemble centipedes.’",9/9/2019,Symphyla,,/sɪmˈfʌɪlə/ ,
 0 0 6,"NOUN
 
 1Biology 
@@ -170,17 +130,17 @@ ___, a nucleic acid present in all living cells. Its principal role is to act as
 Biochemistry 
 An enzyme which brings about the formation of a particular polymer, especially DNA or RNA.
 ‘DNA ___’  
-‘Replicative DNA __s are very accurate enzymes with error rates usually in the range of 10-5 per replicated nucleotide.’",9/12/2019,polymerase,,/?p?l?m?re?z/ /p??l?m?re?z/ ,
+‘Replicative DNA __s are very accurate enzymes with error rates usually in the range of 10-5 per replicated nucleotide.’",9/12/2019,polymerase,,/ˈpɒlɪməreɪz/ /pəˈlɪməreɪz/ ,
 ,"_9_ NOUN
 
 mass noun
 Biochemistry 
 A compound consisting of adenine combined with ribose, present in all living tissue in combined form as nucleotides.  
-‘The nucleotide elements of DNA are ___, guanine, cytosine, and thymine, abbreviated A, G, C, and T, respectively.’",9/13/2019,adenosine,,/??d?n?(?)si?n/ ,
+‘The nucleotide elements of DNA are ___, guanine, cytosine, and thymine, abbreviated A, G, C, and T, respectively.’",9/13/2019,adenosine,,/əˈdɛnə(ʊ)siːn/ ,
 0,"NOUN
 
 1Chemistry 
-A salt or ester of phosphoric acid, containing PO??? or a related anion or a group such as ?OPO(OH)?.  リン酸塩
+A salt or ester of phosphoric acid, containing PO₄³⁻ or a related anion or a group such as —OPO(OH)₂.  リン酸塩
 2US dated An effervescent soft drink containing phosphoric acid, soda water, and flavouring.",9/14/2019,phosphate,,,
 ,"NOUN
 
@@ -195,7 +155,7 @@ technical
 Freeze-dry (a substance)
 ‘the resulting precipitate was dissolved in benzene and __d to give a powder’  
 ‘Cell wall material was then __d and weighed.’",9/16/2019,"lyophilize
-(British lyophilise)",,/l????f?l??z/ ,
+(British lyophilise)",,/lʌɪˈɒfɪlʌɪz/ ,
 ,"NOUN
 
 1A thing used for tying or binding something tightly.
@@ -205,8 +165,8 @@ Freeze-dry (a substance)
 A slur or tie.
 ‘The ___ equivalent to two semibreves persisted for some time and is still found in the early 18th century in the works of J. J. Fux.’
 3Printing 
-A character consisting of two or more joined letters, e.g. ?, fl.  
-3.1A stroke that joins adjacent letters in writing or printing.",9/17/2019,ligature,,/?l???t??/ ,
+A character consisting of two or more joined letters, e.g. æ, fl.  
+3.1A stroke that joins adjacent letters in writing or printing.",9/17/2019,ligature,,/ˈlɪɡətʃə/ ,
 ,"c__ NOUN
 
 1Biology 
@@ -215,4 +175,52 @@ A thin-walled hollow organ or cavity in an animal or plant, containing a liquid 
 2Medicine 
 A membranous sac or cavity of abnormal character in the body, containing fluid.  
 3Zoology 
-A tough protective capsule enclosing the larva of a parasitic worm or the resting stage of an organism.",9/18/2019,cyst,,/s?st/ ,
+A tough protective capsule enclosing the larva of a parasitic worm or the resting stage of an organism.",9/18/2019,cyst,,/sɪst/ ,
+0 2 6 7,"p__ NOUN
+
+Biochemistry 
+Any of a group of compounds with varying hormone-like effects, notably the promotion of uterine contractions. They are cyclic fatty acids.  
+‘Aspirin blocks a group of enzymes that synthesize __s, which are hormones that assist in pain, inflammation and blood clotting.’",9/20/2019,prostaglandin,,/ˌprɒstəˈɡlandɪn/ ,
+,"NOUN
+
+1A bicycle with seats and pedals for two riders, one behind the other.  
+1.1A carriage driven by two animals harnessed one in front of the other.  
+1.2A group of two people or machines working together.
+‘the Giants had the greatest pitching ___ in baseball history’",9/19/2019,tandem,,,
+,"NOUN
+
+1Chemistry 
+A compound containing two oxygen atoms bonded together in its molecule or as the anion O₂²⁻
+‘the peptide neutralizes free radicals and __s, both of which can prevent cells from operating properly’
+‘benzoyl ___’
+‘sodium ___’  
+1.1mass noun Hydrogen ___, especially as used as a bleach for the hair.
+as modifier ‘a ___ blonde’",9/22/2019,peroxide,,/pəˈrɒksʌɪd/ ,
+8,"p__ NOUN
+
+mass noun
+1Chemistry 
+A colourless crystalline compound with basic properties, forming uric acid on oxidation.
+A bicyclic compound; chemical formula: C₅H₄N₄  
+1.1count noun A substituted derivative of ___, especially the bases adenine and guanine present in DNA.",9/23/2019,purine,,,
+0 8,"ADJECTIVE
+
+Having the potential to cause cancer.  
+‘There aren't a lot of good in vitro methods to predict ___ potential.’",9/24/2019,carcinogenic,,,
+7,"NOUN
+
+mass noun
+1A liquid made of shellac dissolved in alcohol, or of synthetic substances, that dries to form a hard protective coating for wood, metal, etc.
+‘shot-blasted mild steel finished in grey mottled epoxy ___’
+count noun ‘canned __s which dry by solvent evaporation’  
+2The sap of the ___ tree used as a varnish.  ",9/25/2019,lacquer,,,
+,"NOUN
+
+A salt or ester of nitric acid, containing the anion NO₃⁻ or the group —NO₃
+‘preserved meat and vegetables contain __s’
+mass noun ‘fish-fry populations are damaged by ___’",9/26/2019,nitrate,,,
+7,"NOUN
+
+1Chemistry 
+An ion or molecule attached to a metal atom by coordinate bonding. 配位子 
+‘The bonding between the ___ and the metal ion is intermediate between covalent and electrostatic.’",9/27/2019,ligand,,/ˈlɪɡ(ə)nd/,

@@ -1,34 +1,3 @@
-0 0 0 1 4 8 9 9,"a__ NOUN
-
-1A military officer who acts as an administrative assistant to a senior officer.
-‘he eventually became ___ to the commander of the tactical air force’
-1.1 A person's assistant or deputy.
-‘Hoare was his ___ in all the talks with the government’
-2A large black-and-white stork with a massive bill and a bare head and neck, found in India and SE Asia.",11/4/2017,adjutant,,,
-,"___ is a type of software testing that ensures that previously developed and tested software still performs the same way after it is changed or interfaced with other software. Changes may include software enhancements, patches, configuration changes, etc. During ___, new software bugs may be uncovered. Sometimes a software change-impact analysis is performed to determine which areas could be affected by the proposed changes. These areas may include functional and non-functional areas of the system.",5/30/2018,Regression testing,,,
-9 8 9 9 12 13,"VERB
-
-[WITH OBJECT]
-1usually as adjective __d Remove the moisture from (something), typically in order to preserve it.
-‘__d coconut’
-2as adjective __d Lacking interest, passion, or energy.
-‘a __d history of ideas’",11/12/2017,desiccate,,,
-,"In computer programming, an ___ is a statement that a predicate (Boolean-valued function, i.e. a true?false expression) is always true at that point in code execution. It can help a programmer read the code, help a compiler compile it, or help the program detect its own defects.",5/31/2018,assertion,,,
-9,"NOUN
-
-1The rhythm of a piece of poetry, determined by the number and length of feet in a line.
-‘the Horatian ode has an intricate governing ___’
-mass noun ‘unexpected changes of stress and ___’
-1.1 The basic rhythmic pattern of beats in a piece of music.
-‘a dance song in fast quadratic ___’
-‘Prokofiev's complex ___s’",3/28/2018,metre,(US meter),,
-,"NOUN
-
-Biology 
-A diploid cell resulting from the fusion of two haploid gametes; a fertilized ovum. 受精卵",6/1/2018,zygote,,,
-8 9 11 10 9 8 13,"s__9_ adjective
-Tempting and attractive; enticing:
-a ___ voice",5/15/2017,seductive,,,
 8 10 9 8,"s_10_ ADJECTIVE
 
 Extremely impressive.
@@ -135,7 +104,7 @@ An acronym deliberately formed from a phrase whose initial letters spell out a p
 (also bacronym)",,
 ,"ADJECTIVE
 
-1Of or written in a majuscule script with rounded unjoined letters which is found in European manuscripts of the 4th?8th centuries and from which modern capital letters are derived.
+1Of or written in a majuscule script with rounded unjoined letters which is found in European manuscripts of the 4th–8th centuries and from which modern capital letters are derived.
 2rare Relating to an inch or an ounce.",7/18/2018,uncial,,,
 7,"NOUN
 
@@ -150,17 +119,17 @@ as modifier ‘Insular ___ script’
 ,"In logic, especially mathematical logic, a ___ lists and describes the non-logical symbols of a formal language. In universal algebra, a ___ lists the operations that characterize an algebraic structure. In model theory, __s are used for both purposes.
 
 __s play the same role in mathematics as type __s in computer programming. They are rarely made explicit in more philosophical treatments of logic.",7/26/2018,signature,,,
-,"In cryptography, a ___ is an entity that issues digital certificates. A digital certificate certifies the ownership of a public key by the named subject of the certificate. This allows others (relying parties) to rely upon signatures or on assertions made about the private key that corresponds to the certified public key. A ___ acts as a trusted third party?trusted both by the subject (owner) of the certificate and by the party relying upon the certificate. The format of these certificates is specified by the X.509 standard.",7/31/2018,certificate authority or certification authority (CA),,,
-,"Transport Layer Security (TLS) ? and its predecessor, ___, which is now deprecated by the Internet Engineering Task Force (IETF) ? are cryptographic protocols that provide communications security over a computer network. Several versions of the protocols find widespread use in applications such as web browsing, email, instant messaging, and voice over IP (VoIP). Websites are able to use TLS to secure all communications between their servers and web browsers.",8/1/2018,Secure Sockets Layer (SSL),,,
-,A ___ is a type of challenge?response test used in computing to determine whether or not the user is human.,8/3/2018,"CAPTCHA (/k?p.t??/, an acronym for ""Completely Automated Public Turing test to tell Computers and Humans Apart"")",,,
+,"In cryptography, a ___ is an entity that issues digital certificates. A digital certificate certifies the ownership of a public key by the named subject of the certificate. This allows others (relying parties) to rely upon signatures or on assertions made about the private key that corresponds to the certified public key. A ___ acts as a trusted third party—trusted both by the subject (owner) of the certificate and by the party relying upon the certificate. The format of these certificates is specified by the X.509 standard.",7/31/2018,certificate authority or certification authority (CA),,,
+,"Transport Layer Security (TLS) – and its predecessor, ___, which is now deprecated by the Internet Engineering Task Force (IETF) – are cryptographic protocols that provide communications security over a computer network. Several versions of the protocols find widespread use in applications such as web browsing, email, instant messaging, and voice over IP (VoIP). Websites are able to use TLS to secure all communications between their servers and web browsers.",8/1/2018,Secure Sockets Layer (SSL),,,
+,A ___ is a type of challenge–response test used in computing to determine whether or not the user is human.,8/3/2018,"CAPTCHA (/kæp.tʃə/, an acronym for ""Completely Automated Public Turing test to tell Computers and Humans Apart"")",,,
 6 9 11 12,"___ is a subset of the Rijndael block cipher developed by two Belgian cryptographers, Vincent Rijmen and Joan Daemen, who submitted a proposal to NIST during the ___ selection process. Rijndael is a family of ciphers with different key and block sizes.
 For ___, NIST selected three members of the Rijndael family, each with a block size of 128 bits, but three different key lengths: 128, 192 and 256 bits.",7/28/2018,AES Advanced Encryption Standard,,,
 ,"NOUN
 
 A test for intelligence in a computer, requiring that a human being should be unable to distinguish the machine from another human being by using the replies to questions put to both.",8/5/2018,Turing test,,,
-1 8 11,"The ___ is a symmetric-key algorithm for the encryption of electronic data. Although insecure, it was highly influential in the advancement of modern cryptography.",7/27/2018,"Data Encryption Standard (DES /?di??i???s, d?z/)",,,
+1 8 11,"The ___ is a symmetric-key algorithm for the encryption of electronic data. Although insecure, it was highly influential in the advancement of modern cryptography.",7/27/2018,"Data Encryption Standard (DES /ˌdiːˌiːˈɛs, dɛz/)",,,
 ,"___ is an automated method of biometric identification that uses mathematical pattern-recognition techniques on video images of one or both of the _＊_s of an individual's eyes, whose complex patterns are unique, stable, and can be seen from some distance.虹彩認証",8/6/2018,Iris recognition,＊ iris,,
-1 10,"___ is one of the first public-key cryptosystems and is widely used for secure data transmission. In such a cryptosystem, the encryption key is public and it is different from the decryption key which is kept secret (private). In ___, this asymmetry is based on the practical difficulty of the factorization of the product of two large prime numbers, the ""factoring problem"". ",7/29/2018,RSA (Rivest?Shamir?Adleman),,,
+1 10,"___ is one of the first public-key cryptosystems and is widely used for secure data transmission. In such a cryptosystem, the encryption key is public and it is different from the decryption key which is kept secret (private). In ___, this asymmetry is based on the practical difficulty of the factorization of the product of two large prime numbers, the ""factoring problem"". ",7/29/2018,RSA (Rivest–Shamir–Adleman),,,
 ,"In computer security, a ___ (sometimes referred to as a perimeter network) is a physical or logical subnetwork that contains and exposes an organization's external-facing services to an untrusted network, usually a larger network such as the Internet. The purpose of a ___ is to add an additional layer of security to an organization's local area network (LAN): an external network node can access only what is exposed in the ___, while the rest of the organization's network is firewalled.",8/7/2018,DMZ or demilitarized zone,,,
 ,"The first reported type of network firewall is called a ___. __s act by inspecting packets transferred between computers. When a packet does not match the __'s set of filtering rules, the ___ either drops (silently discards) the packet, or rejects the packet (discards it and generate an Internet Control Message Protocol notification for the sender) else it is allowed to pass.",8/9/2018,packet filter,,,
 ,"In computer networks, a ___ is a server (a computer system or an application) that acts as an intermediary for requests from clients seeking resources from other servers. A client connects to the ___, requesting some service, such as a file, connection, web page, or other resource available from a different server and the ___ evaluates the request as a way to simplify and control its complexity.",8/10/2018,proxy server,,,
@@ -171,5 +140,8 @@ A test for intelligence in a computer, requiring that a human being should be un
 1 1 5 7 8 9 10 13,"___ is a networking protocol, operating on port 1812 that provides centralized Authentication, Authorization, and Accounting (AAA or Triple A) management for users who connect and use a network service. ___ was developed by Livingston Enterprises, Inc. in 1991 as an access server authentication and accounting protocol and later brought into the Internet Engineering Task Force (IETF) standards.",8/4/2018,Remote Authentication Dial-In User Service (RADIUS),,,
 2,"The _4_ is a statistical tool used in project management, which was designed to analyze and represent the tasks involved in completing a given project.
 ",8/15/2018,program (or project) evaluation and review technique (PERT),,,
+,"l__ In statistics and business, a ___ of some distributions of numbers is the portion of the distribution having a large number of occurrences far from the ""head"" or central part of the distribution. The distribution could involve popularities, random numbers of occurrences of events with various probabilities, etc. The term is often used loosely, with no definition or arbitrary definition, but precise definitions are possible.",9/7/2018,long tail,,,
+,"___: initially, writing is done only to the cache. The write to the backing store is postponed until the modified content is about to be replaced by another cache block.",9/12/2018,Write-back (also called write-behind),,,
+8,___: write is done synchronously both to the cache and to the backing store.,9/11/2018,Write-through,,,
 ,,,,,,
 ,,,,,,

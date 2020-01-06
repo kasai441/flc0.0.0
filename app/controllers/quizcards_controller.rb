@@ -29,6 +29,7 @@ class QuizcardsController < ApplicationController
   end
 
   def temp_judge
+    redirect_to root_url and return if params[:quizcard].nil?
     @quizcard = Quizcard.find(params[:quizcard][:card_id])
     @answer = params[:quizcard][:name]
     if @quizcard.name == @answer
@@ -46,6 +47,7 @@ class QuizcardsController < ApplicationController
   end
 
   def judge
+    redirect_to root_url and return if params[:quizcard].nil?
     @quizcard = Quizcard.find(params[:quizcard][:card_id])
     @answer = params[:quizcard][:name]
     if @quizcard.name == @answer

@@ -1,43 +1,12 @@
 ,"NOUN
 
 mass noun
-1Water strongly impregnated with salt.
-‘other vegetables would be pickled in ___’  
-1.1Seawater.
-‘dolphins and whales can't help taking in the odd gulp of ___ as they swallow a fish’",11/9/2019,brine,,,
-,"NOUN
-
-The SI unit of solid angle, equal to the angle at the centre of a sphere subtended by a part of the surface equal in area to the square of the radius.",11/5/2019,"steradian
-(also sr)",,,
-,"NOUN
-
-Geology 
-A belt of the earth's crust involved in the formation of mountains.  
-‘These collision zones are known as __ic belts, and the mountains are referred to as __s.’",11/10/2019,orogen,,,
-,"ADJECTIVE
-
-1(chiefly in names or geographical terms) relating to Scotland or the Scottish Highlands.
-‘the ___ Railway’  
-2Geology 
-Relating to or denoting a mountain-forming period (orogeny) in north-western Europe and Greenland during the Lower Palaeozoic era, especially the late Silurian.",11/11/2019,Caledonian,,,
-6 6,"___ are members of the hydroxyproline (Hyp)-rich cell wall glycoprotein superfamily and are extensively glycosylated. __s contains a protein backbone of varied length (5-30 kDa) with N-terminal secretory peptide followed by ___, fasciclin (FAS) domains, and a C-terminal glycosylphosphatidylinositol (GPI) lipid anchor site.",10/22/2019,Arabinogalactan-proteins (AGP),,,
-,"ADJECTIVE
-
-Relating to or denoting the earliest period of the Mesozoic era, between the Permian and Jurassic periods. 三畳紀
-‘fossil remains of a small ___ reptile have been found’",11/12/2019,Triassic,,,
-,"NOUN
-
-Chemistry 
-Any of a class of organic compounds that are fatty acids or their derivatives and are insoluble in water but soluble in organic solvents. They include many natural oils, waxes, and steroids. 脂質",11/13/2019,lipid,,,
-,"NOUN
-
-mass noun
 Biochemistry 
-An orange-yellow pigment formed in the liver by the breakdown of haemoglobin and excreted in bile.",11/14/2019,bilirubin,,/?b?l??ru?b?n/ ,
+An orange-yellow pigment formed in the liver by the breakdown of haemoglobin and excreted in bile.",11/14/2019,bilirubin,,/ˌbɪlɪˈruːbɪn/ ,
 ,"ADJECTIVE
 
 Denoting a type of consonant made by the friction of breath in a narrow opening, producing a turbulent air flow.
-‘The present work aims at demonstrating the feasibility of high quality articulatory synthesis for ___ consonants, and in particular to match a given reference subject.’",11/15/2019,fricative,,/?fr?k?t?v/,
+‘The present work aims at demonstrating the feasibility of high quality articulatory synthesis for ___ consonants, and in particular to match a given reference subject.’",11/15/2019,fricative,,/ˈfrɪkətɪv/,
 ,"c__ NOUN
 
 mass noun
@@ -56,8 +25,8 @@ A nucleoside composed of cytosine linked to ribose, obtained from RNA by hydroly
 mass noun
 1Chemistry 
 A colourless crystalline compound with basic properties.
-A heteroaromatic compound; chemical formula: C?H?N?  
-1.1count noun A substituted derivative of ___, especially the bases thymine and cytosine present in DNA.",11/17/2019,pyrimidine,,/p??r?m?di?n/ ,
+A heteroaromatic compound; chemical formula: C₄H₄N₂  
+1.1count noun A substituted derivative of ___, especially the bases thymine and cytosine present in DNA.",11/17/2019,pyrimidine,,/pɪˈrɪmɪdiːn/ ,
 ,"ADJECTIVE
 
 Relating to or denoting the era between the Palaeozoic and Cenozoic eras, comprising the Triassic, Jurassic, and Cretaceous periods. 中生代
@@ -67,14 +36,38 @@ Relating to or denoting the era between the Palaeozoic and Cenozoic eras, compri
 mass noun
 Biochemistry 
 An amino acid which is a constituent of most proteins, especially collagen.
-A heterocyclic compound; chemical formula: C?H?NO?",11/20/2019,proline,,,
+A heterocyclic compound; chemical formula: C₅H₉NO₂",11/20/2019,proline,,,
 4,"i__ NOUN
 
 mass noun
 Biochemistry 
 A simple carbohydrate which occurs in animal and plant tissue and is a vitamin of the B group.
-Alternative name: hexahydroxycyclohexane; chemical formula: C?H??O?",11/22/2019,inositol,,/???n??s?t?l/,
+Alternative name: hexahydroxycyclohexane; chemical formula: C₆H₁₂O₆",11/22/2019,inositol,,/ʌɪˈnəʊsɪtɒl/,
 0,"In molecular biology, the ___ domain (FAS1 domain) is an extracellular domain of about 140 amino acid residues. It has been suggested that the FAS1 domain represents an ancient cell adhesion domain common to plants and animals;[1] related FAS1 domains are also found in bacteria.[2]",11/21/2019,fasciclin,,,
 ,"NOUN
 
-1British A garment consisting of trousers with a bib held up by straps over the shoulders, made of calico, denim, or a similar material and worn as casual or working clothes.",11/23/2019,dungarees,,/?d?????ri?/,
+1British A garment consisting of trousers with a bib held up by straps over the shoulders, made of calico, denim, or a similar material and worn as casual or working clothes.",11/23/2019,dungarees,,/ˌdʌŋɡəˈriː/,
+,"___, also known as 5′-uridylic acid (conjugate base uridylate), is a nucleotide that is used as a monomer in RNA. It is an ester of phosphoric acid with the nucleoside uridine. ___ consists of the phosphate group, the pentose sugar ribose, and the nucleobase uracil; hence, it is a ribonucleotide monophosphate.",11/24/2019,Uridine monophosphate (UMP),,,
+,"NOUN
+
+Biochemistry 
+usually with modifier
+An enzyme that catalyses the transfer of a phosphate group from ATP to a specified molecule.",11/25/2019,kinase,,,
+,"NOUN
+
+Zoology 
+A cartilaginous skeletal rod supporting the body in all embryonic and some adult chordate animals.",11/26/2019,notochord,,,
+,"c__ ADJECTIVE
+
+Relating to or denoting the most recent era, following the Mesozoic era and comprising the Tertiary and Quaternary periods. 新生代
+The ___ has lasted from about 65 million years ago to the present day. It has seen the rapid evolution and rise to dominance of mammals, birds, and flowering plants
+",11/27/2019,Cenozoic,also Cainozoic,/ˌsiːnəˈzəʊɪk/,
+,"ADJECTIVE
+
+Relating to or denoting the last period of the Mesozoic era, between the Jurassic and Tertiary periods. 白亜紀
+‘the lizard was believed to have lived during the ___ period’",11/28/2019,Cretaceous,,/krɪˈteɪʃəs/ ,
+0,"NOUN
+
+1historical A calf-high or knee-high boot of cloth or leather.  
+1.1A thick-soled laced boot worn by an ancient Athenian tragic actor to gain height.  
+1.2the ___ The style or spirit of tragic drama.",11/29/2019,buskin,,,
