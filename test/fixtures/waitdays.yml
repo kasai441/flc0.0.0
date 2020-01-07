@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  wait_sequence: MyString
-  wait_day: MyString
-  quizcard: one
+waitday1:
+  wait_sequence: 0
+  wait_day: 1
+  quizcard: q_one
 
-two:
-  wait_sequence: MyString
-  wait_day: MyString
-  quizcard: two
+waitday2:
+  wait_sequence: 0
+  wait_day: 1
+  quizcard: q_two

@@ -50,18 +50,32 @@ class QuizcardsController < ApplicationController
     redirect_to root_url and return if params[:quizcard].nil?
     @quizcard = Quizcard.find(params[:quizcard][:card_id])
     @answer = params[:quizcard][:name]
+
+    # 解答時間　quizcarad wait_seconds
+    # record_wait_seconds 現在時刻　ー　開始時間hiddenparams[:starttime]
+    model_sequences = @quizcard.get_model_sequences
+    linear_function = @quizcard.get_linear_function(model_sequences)
+    # record_waitdays 現在時刻　ー　last_appeard_at
+    @waitday = @quizcard.waitdays.first
+    real_wait_day = @waitday.calc_real_wait_day
+
+    result = false
     if @quizcard.name == @answer
       flash.now[:success] = "正解"
-      # 解答時間　quizcarad wait_seconds
-      # record_wait_seconds 現在時刻　ー　開始時間hiddenparams[:starttime]
-      # record_waitdays 現在時刻　ー　last_appeard_at
       # calc_waidays beta * model_wait(wait_sequence)
-      # waitdays更新　wait_sequence++. wait_day, appering_at
-      # quizcard更新　wait_seconds, last_appeard_at, appearing_at
-      @quizcard.update_attribute(:appearing_at, 1.month.ago)
+      result = true
     else
       flash.now[:danger] = "不正解"
+      result = false
     end
+
+    wait_day = @waitday.calc_waitdays(result)
+    beta = @quizcard.revise_beta(result)
+
+    # waitdays更新　wait_sequence++. wait_day
+    @waitday.begin_new_sequence
+    # quizcard更新　wait_seconds, appearing_at, beta
+    @quizcard.update_record
   end
 
 end

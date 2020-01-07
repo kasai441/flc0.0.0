@@ -93,6 +93,7 @@ GEM
       haml (>= 4.0.6, < 6.0)
       html2haml (>= 1.0.1)
       railties (>= 5.1)
+    hash-deep-merge (0.1.1)
     html2haml (2.2.0)
       erubis (~> 2.7.0)
       haml (>= 4.0, < 6)
@@ -110,6 +111,8 @@ GEM
     jquery-turbolinks (2.1.0)
       railties (>= 3.1.0)
       turbolinks
+    lazy_high_charts (1.5.8)
+      hash-deep-merge
     less (2.6.0)
       commonjs (~> 0.2.7)
     less-rails (2.8.0)
@@ -254,6 +257,7 @@ DEPENDENCIES
   jbuilder (= 2.7.0)
   jquery-rails (= 4.3.1)
   jquery-turbolinks
+  lazy_high_charts
   listen (= 3.1.5)
   minitest (= 5.10.3)
   minitest-reporters (= 1.1.14)

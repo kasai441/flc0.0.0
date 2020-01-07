@@ -4,6 +4,26 @@ class Quizcard < ApplicationRecord
   has_many :waitdays, dependent: :destroy
   default_scope -> { order(appearing_at: :desc) }
 
+  def get_model_sequences
+
+  end
+
+  def get_linear_function(sequences)
+
+  end
+
+  def apply_beta
+
+  end
+
+  def revise_beta(result)
+
+  end
+
+  def update_record
+
+  end
+
   def csv_read
     # q = Quizcard.new
     # q.csv_read
@@ -53,8 +73,8 @@ class Quizcard < ApplicationRecord
     # p wseq
     growth_rate = {}
     32.times do |num|
-      before = wseq[num.to_s]
-      after = wseq[(num + 1).to_s]
+      before = wseq[num]
+      after = wseq[num + 1]
       before ||= 0
       after ||= 0
       rate = 0.0
@@ -63,5 +83,24 @@ class Quizcard < ApplicationRecord
       growth_rate["#{num + 1}- #{after}/#{before}"] = "#{rate.round(2)}"
     end
     growth_rate
+  end
+
+  def get_wait_rate
+    # q = Quizcard.new
+    # q.get_wait_rate
+    wseq = Waitday.group(:wait_sequence).where(quizcard_id: User.first.quizcards.select("id")).count
+    # p wseq
+    wait_rate = {}
+    32.times do |num|
+      seq = num
+      wait = wseq[num]
+      seq ||= 0
+      wait ||= 0
+      rate = 0.0
+      # p seq, wait, rate
+      rate =  wait.to_f / seq.to_f if seq > 0
+      wait_rate["#{num + 1}- #{wait}/#{seq}"] = "#{rate.round(2)}"
+    end
+    wait_rate
   end
 end

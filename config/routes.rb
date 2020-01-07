@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'waitdays/chart'
+
   root 'home_page#index'
   get '/signup', to: 'users#new'
   post  '/signup',    to: 'users#create'

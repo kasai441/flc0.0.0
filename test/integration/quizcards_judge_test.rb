@@ -4,6 +4,7 @@ class QuizcardsJudgeTest < ActionDispatch::IntegrationTest
   def setup
     @user1 = users(:michael)
     @quizcard1 = @user1.quizcards.first
+    @waitday1 = @quizcard1.waitdays.first
   end
 
   test "judge without login" do

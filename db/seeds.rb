@@ -26,7 +26,7 @@ end
 @quizcard = @user.quizcards.create(description: "プログラミングの勉強で最初に出力するお決まりの文句は？（全小文字、ローマ字のみ）",
                       name: "helloworld",
                       appearing_at: Time.zone.today)
-@quizcard.waitdays.create(wait_sequence: "0", wait_day: "1")
+@quizcard.waitdays.create(wait_sequence: 0, wait_day: 1)
 
 # 代表ユーザーの実サンプルカード
 get_num = 32
@@ -62,12 +62,11 @@ get_num.times do |number|
 end
 
 # 実サンプルカードのシーケンスの待機日計算
+wseq = Waitday.group(:wait_sequence).where(quizcard_id: User.first.quizcards.select("id")).count
 (get_num + 6).times do |number|
-  wseq = Waitday.group(:wait_sequence).where(quizcard_id: User.first.quizcards.select("id")).count
-  wait_day = wseq[number.to_s]
+  wait_day = wseq[number]
   wait_day = 0 if wait_day.nil?
-  wait_day = wait_day.to_s
-  Waitday.where(wait_sequence: number.to_s).update_all(wait_day: wait_day)
+  Waitday.where(wait_sequence: number).update_all(wait_day: wait_day)
 end
 
 # 上位サンプルユーザーのためのサンプルカード
@@ -79,6 +78,6 @@ users = User.order(:created_at).take(6)
   name = description[0] + "#{number}"
   users.each do|user|
     quizcard = user.quizcards.create!(description: description, name: name, appearing_at: Time.zone.today)
-    quizcard.waitdays.create(wait_sequence: "0", wait_day: "1")
+    quizcard.waitdays.create(wait_sequence: 0, wait_day: 1)
   end
 end

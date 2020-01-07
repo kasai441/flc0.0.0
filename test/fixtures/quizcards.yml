@@ -1,21 +1,18 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  id: 1
+q_one:
   description: MyString one
   name: name_one
   user: michael
   appearing_at: <%= Time.zone.now %>
 
-two:
-  id: 2
+q_two:
   description: MyString two
   name: name_two
   user: michael
   appearing_at: <%= Time.zone.now %>
 
-three:
-  id: 3
+q_three:
   description: MyString three
   name: name_three
   user: michael

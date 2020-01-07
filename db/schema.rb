@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20191230083927) do
     t.string "connotation"
     t.string "pronunciation"
     t.string "origin"
-    t.decimal "wait_seconds"
+    t.integer "wait_seconds"
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -45,14 +45,13 @@ ActiveRecord::Schema.define(version: 20191230083927) do
   end
 
   create_table "waitdays", force: :cascade do |t|
-    t.string "wait_sequence"
-    t.string "wait_day"
+    t.integer "wait_sequence"
+    t.integer "wait_day"
     t.integer "quizcard_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["quizcard_id", "created_at"], name: "index_waitdays_on_quizcard_id_and_created_at"
     t.index ["quizcard_id"], name: "index_waitdays_on_quizcard_id"
-    t.index ["wait_sequence"], name: "index_waitdays_on_wait_sequence"
   end
 
 end
