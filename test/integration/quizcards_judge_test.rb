@@ -7,7 +7,7 @@ class QuizcardsJudgeTest < ActionDispatch::IntegrationTest
     @waitday1 = @quizcard1.waitdays.first
   end
 
-  test "judge without login" do
+  test "temp judge without login" do
     get root_path
     get temp_practice_path
     post temp_judge_path, params: { quizcard: { card_id: @quizcard1.id,
@@ -25,7 +25,7 @@ class QuizcardsJudgeTest < ActionDispatch::IntegrationTest
     assert_template 'quizcards/judge'
   end
 
-  test "right answer" do
+  test "temp right answer" do
     get root_path
     get temp_practice_path
     post temp_judge_path, params: { quizcard: { card_id: @quizcard1.id,
@@ -33,12 +33,44 @@ class QuizcardsJudgeTest < ActionDispatch::IntegrationTest
     assert_select 'div.alert', "正解"
   end
 
-  test "wrong answer" do
+  test "temp wrong answer" do
     get root_path
     get temp_practice_path
     post temp_judge_path, params: { quizcard: { card_id: @quizcard1.id,
                                     name: " " } }
     assert_select 'div.alert', "不正解"
+  end
+
+  test "right answer" do
+    get root_path
+    get practice_path
+    post judge_path, params: { quizcard: { card_id: @quizcard1.id,
+                                    name: @quizcard1.name } }
+    assert_select 'div.alert', "正解"
+  end
+
+  test "wrong answer" do
+    get root_path
+    get practice_path
+    post judge_path, params: { quizcard: { card_id: @quizcard1.id,
+                                    name: " " } }
+    assert_select 'div.alert', "不正解"
+  end
+
+  test "display temp answer time" do
+    get root_path
+    get temp_practice_path
+    post temp_judge_path, params: { quizcard: { card_id: @quizcard1.id,
+                                    name: @quizcard1.name } }
+    assert_match /解答時間： #{@answer_time} 秒/, response.body
+  end
+
+  test "display answer time" do
+    get root_path
+    get practice_path
+    post judge_path, params: { quizcard: { card_id: @quizcard1.id,
+                                    name: @quizcard1.name } }
+    assert_match /解答時間： #{@answer_time} 秒/, response.body
   end
 
   test "waitdays recording when right answer" do

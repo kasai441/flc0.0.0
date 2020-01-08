@@ -6,8 +6,7 @@
     %h1 #{@quizcard.description}
     = form_for @quizcard, url: judge_path, method: :post do |f|
       = f.hidden_field :card_id, :value => @quizcard.id
+      = f.hidden_field :begin_answer, :value => @begin_answer
       = f.label :name, "答え"
       = f.text_field :name, value: "", autofocus: true, placeholder: "答え", class: 'practice-input-text'
       = f.submit "#{yield(:button_text)}", id: 'submit_btn'
-
-= render 'home_page/box_result'

@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20191230083927) do
     t.string "connotation"
     t.string "pronunciation"
     t.string "origin"
-    t.integer "wait_seconds"
+    t.integer "answer_time"
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

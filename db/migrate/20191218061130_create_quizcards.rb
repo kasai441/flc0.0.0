@@ -8,7 +8,7 @@ class CreateQuizcards < ActiveRecord::Migration[5.1]
       t.string :connotation
       t.string :pronunciation
       t.string :origin
-      t.integer :wait_seconds
+      t.integer :answer_time
       t.references :user, foreign_key: true
       t.timestamps
     end
