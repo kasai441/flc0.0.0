@@ -3,6 +3,7 @@ class Quizcard < ApplicationRecord
   belongs_to :user
   has_many :waitdays, dependent: :destroy
   default_scope -> { order(appearing_at: :desc) }
+  attr_accessor :gradients, :intercepts
 
   def update_answer_time(time)
     later_ave = self.answer_time
@@ -18,11 +19,35 @@ class Quizcard < ApplicationRecord
   end
 
   def get_model_sequences
-
+    user = User.find_by(id: self.user_id)
+    seq = Waitday.group(:wait_sequence).where(quizcard_id: user.quizcards.select("id")).average(:wait_day)
+    seq.map { |key,val| [key,val.to_i] }.to_h
   end
 
-  def get_linear_function(sequences)
-
+  def get_linear_function(seq)
+    # 移動平均を２つとる　wait_dayが２以上　と　最後
+    cut_seq = seq.map { |key, val| [key, val] if val >= 2 }.to_h
+    if cut_seq.size >= 2
+      first = cut_seq.to_a[0..(cut_seq.size / 2 - 1)]
+      second =  cut_seq.to_a[(cut_seq.size / 2)..cut_seq.size]
+      y1 = second.inject(0) { |result, e| result + e[1] } / second.size
+      y2 = first.inject(0) { |result, e| result + e[1] } / first.size
+      x1 = (cut_seq.size / 4 + seq.size - cut_seq.size).to_i
+      x2 = (cut_seq.size * 3 / 4 + seq.size - cut_seq.size).to_i
+      # y1 - ax1 = y2 - ax2 # ax2 - ax1 = y2 - y1
+      # a = (y2 - y1) / (x2 - x1)
+      self.gradients = (y2 - y1) / (x2 - x1)
+      # ax = y - b # a = (y - b) / x
+      #(y1 - b) / x1 = (y2 - b) / x2
+      # x2y1 -x2b = x1y2 - x1b # x1b -x2b = x1y2 - x2y1
+      # b = ( x1 * y2 - x2 * y1 ) / ( x1 - x2 )
+      self.intercepts = ( x1 * y2 - x2 * y1 ) / ( x1 - x2 )
+    else
+      # サンプル数が足りない場合の傾きを設置
+      self.gradients = 10
+      self.intercepts = -50
+    end
+    seq
   end
 
   def apply_beta

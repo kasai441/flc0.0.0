@@ -65,7 +65,7 @@ end
 wseq = Waitday.group(:wait_sequence).where(quizcard_id: User.first.quizcards.select("id")).count
 (get_num + 6).times do |number|
   wait_day = wseq[number]
-  wait_day = 0 if wait_day.nil?
+  wait_day = 1 if wait_day.nil?
   Waitday.where(wait_sequence: number).update_all(wait_day: wait_day)
 end
 

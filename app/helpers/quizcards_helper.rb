@@ -5,8 +5,8 @@ module QuizcardsHelper
   end
 
   def model_sequences(quizcard)
-    model_sequences = quizcard.get_model_sequences
-    linear_function = quizcard.get_linear_function(model_sequences)
+    seq = quizcard.get_model_sequences
+    quizcard.get_linear_function(seq)
   end
 
   def real_wait_day(quizcard)

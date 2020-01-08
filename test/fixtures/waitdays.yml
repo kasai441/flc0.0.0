@@ -2,10 +2,20 @@
 
 waitday1:
   wait_sequence: 0
-  wait_day: 1
+  wait_day: 5
   quizcard: q_one
 
 waitday2:
+  wait_sequence: 1
+  wait_day: 10
+  quizcard: q_one
+
+waitday3:
   wait_sequence: 0
-  wait_day: 1
+  wait_day: 2
   quizcard: q_two
+
+waitday4:
+  wait_sequence: 1
+  wait_day: 4
+  quizcard: q_four
