@@ -3,7 +3,7 @@ class Quizcard < ApplicationRecord
   belongs_to :user
   has_many :waitdays, dependent: :destroy
   default_scope -> { order(appearing_at: :desc) }
-  attr_accessor :gradients, :intercepts
+  attr_accessor :gradients, :beta
 
   def update_answer_time(time)
     later_ave = self.answer_time
@@ -35,9 +35,32 @@ class Quizcard < ApplicationRecord
       x1 = (cut_seq.size / 4 + seq.size - cut_seq.size).to_i
       x2 = (cut_seq.size * 3 / 4 + seq.size - cut_seq.size).to_i
       self.gradients = (y2 - y1) / (x2 - x1)
-      self.intercepts = y1 - gradients * x1
-      [seq, cut_seq, first, second, y1, y2, x1, x2, gradients, intercepts]
+      [seq, cut_seq, first, second, y1, y2, x1, x2, gradients]
     end
+  end
+
+  def calc_beta
+    model_sequences = get_model_sequences
+    wait_seq = get_wait_seq_day[0]
+    wait_day = get_wait_seq_day[1].to_f
+    # 単語ごとの待機期間　／　単語全体平均の待機期間
+    beta = wait_day / model_sequences[wait_seq].to_f
+    self.beta = prize_beta(beta)
+  end
+
+  def prize_beta(beta)
+    # 連続正解期間に応じた成長値
+    wait_seqs = Waitday.where(quizcard_id: self.id)
+    # wait_seqs.map { |e| [e.wait_sequence, e.wait_day] }
+    if (s = wait_seqs.size) >= 2
+      (s - 1).times do |n|
+        after = wait_seqs[s - 1 - n - 1].wait_day
+        before = wait_seqs[s - 1 - n].wait_day
+        p [before, after]
+        beta += 0.1 if after > before
+      end
+    end
+    beta
   end
 
   def real_wait_day
@@ -49,9 +72,9 @@ class Quizcard < ApplicationRecord
 
   def calc_waitday(result)
     if result
-      get_beta * (get_wait_seq_day[1] + self.gradients)
+      self.beta * (get_wait_seq_day[1] + self.gradients)
     else
-      get_beta * (get_wait_seq_day[1] - self.gradients)
+      self.beta * (get_wait_seq_day[1] - self.gradients)
     end
   end
 
@@ -68,20 +91,16 @@ class Quizcard < ApplicationRecord
     self.waitdays.create(wait_sequence: get_wait_seq_day[0] + 1, wait_day: wait_day)
   end
 
-  def update_record
-
+  def update_appearing(wait_day)
+    appearing_at = Time.zone.now + wait_day
+    update_attribute(:appearing_at, appearing_at)
   end
 
   private
-    def initialize_linear
-      # self.gradients = 10
-      # self.intercepts = -50
-    end
-
-    def get_beta
-      self.beta = 1.0 if self.beta.nil?
-      self.beta
-    end
+    # def get_beta
+    #   self.beta = 1.0 if self.beta.nil?
+    #   self.beta
+    # end
 
     def get_wait_seq_day
       sequence = self.waitdays.maximum(:wait_sequence)
@@ -89,86 +108,4 @@ class Quizcard < ApplicationRecord
       waitday = waitday_obj.wait_day
       [sequence, waitday, waitday_obj]
     end
-
-  # def csv_read
-  #   # q = Quizcard.new
-  #   # q.csv_read
-  #   4.times do |num|
-  #     csv_data = CSV.read("db/xlsx_csv/#{num}.csv")
-  #
-  #     p csv_data
-  #
-  #     # csv_data.each do |data|
-  #     #   puts data
-  #     # end
-  #
-  #     csv_data.each do |data|
-  #       f = data[0]
-  #       fail_seq = nil
-  #       fail_seq = f.split(" ") unless f.nil?
-  #       description = data[1]
-  #       # p "data[2]-#{data[2]}"
-  #       # csv がmmddyyyyなのでddmmyyyyに変換
-  #       registered_at = nil
-  #       if !data[2].nil?
-  #         date_a = data[2].split("/")
-  #         date_a[0], date_a[1] = date_a[1], date_a[0]
-  #         registered_at = date_a.join("/")
-  #       end
-  #       # p "registered_at-#{registered_at}"
-  #       name = data[3]
-  #       connotation = data[4]
-  #       pronunciation = data[5]
-  #       origin = data[6]
-  #       User.first.quizcards.create(fail_seq: fail_seq,
-  #                           description: description,
-  #                           registered_at: registered_at,
-  #                           name: name,
-  #                           connotation: connotation,
-  #                           pronunciation: pronunciation,
-  #                           origin: origin,
-  #                           appearing_at: Time.zone.today)
-  #     end
-  #   end
-  # end
-  #
-  # def get_growth_rate
-  #   # q = Quizcard.new
-  #   # q.get_growth_rate
-  #   wseq = Waitday.group(:wait_sequence).where(quizcard_id: User.first.quizcards.select("id")).count
-  #   # p wseq
-  #   growth_rate = {}
-  #   32.times do |num|
-  #     before = wseq[num]
-  #     after = wseq[num + 1]
-  #     before ||= 0
-  #     after ||= 0
-  #     rate = 0.0
-  #     # p before, after, rate
-  #     rate =  after.to_f / before.to_f if before > 0
-  #     growth_rate["#{num + 1}- #{after}/#{before}"] = "#{rate.round(2)}"
-  #   end
-  #   growth_rate
-  # end
-  #
-  # def get_wait_rate
-  #   # q = Quizcard.new
-  #   # q.get_wait_rate
-  #   wseq = Waitday.group(:wait_sequence).where(quizcard_id: User.first.quizcards.select("id")).count
-  #   # p wseq
-  #   wait_rate = {}
-  #   32.times do |num|
-  #     seq = num
-  #     wait = wseq[num]
-  #     seq ||= 0
-  #     wait ||= 0
-  #     rate = 0.0
-  #     # p seq, wait, rate
-  #     rate =  wait.to_f / seq.to_f if seq > 0
-  #     wait_rate["#{num + 1}- #{wait}/#{seq}"] = "#{rate.round(2)}"
-  #   end
-  #   wait_rate
-  # end
-
-
 end

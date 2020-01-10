@@ -10,14 +10,11 @@ module QuizcardsHelper
   end
 
   def next_waitday(quizcard, result)
-    beta = quizcard.calc_beta
+    quizcard.calc_beta
     quizcard.real_wait_day
     wait_day = quizcard.calc_waitday(result)
-    # beta = quizcard.revise_beta(result)
-    # waitdays更新　wait_sequence++. wait_day
     quizcard.next_sequence(wait_day)
-    # quizcard更新 appearing_at, beta
-    quizcard.update_record
+    quizcard.update_appearing(wait_day)
   end
 
   def assort_today_cards(quizcard, result)
