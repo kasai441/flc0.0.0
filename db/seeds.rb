@@ -27,6 +27,27 @@ end
                       name: "helloworld",
                       appearing_at: Time.zone.today)
 @quizcard.waitdays.create(wait_sequence: 0, wait_day: 1)
+# 代表ユーザーの１−５のシーケンスを持つカードを作る
+@quizcard = @user.quizcards.create(description: "ワンとなく動物は？（漢字）",
+                      name: "犬",
+                      appearing_at: Time.zone.today)
+@quizcard.waitdays.create(wait_sequence: 1, wait_day: 1)
+@quizcard = @user.quizcards.create(description: "ニャアとなく動物は？（漢字）",
+                      name: "猫",
+                      appearing_at: Time.zone.today)
+@quizcard.waitdays.create(wait_sequence: 2, wait_day: 1)
+@quizcard = @user.quizcards.create(description: "ブウとなく動物は？",
+                      name: "豚",
+                      appearing_at: Time.zone.today)
+@quizcard.waitdays.create(wait_sequence: 3, wait_day: 1)
+@quizcard = @user.quizcards.create(description: "モウとなく動物は？",
+                      name: "牛",
+                      appearing_at: Time.zone.today)
+@quizcard.waitdays.create(wait_sequence: 4, wait_day: 1)
+@quizcard = @user.quizcards.create(description: "今何問目？(数字のみ)",
+                      name: "6",
+                      appearing_at: Time.zone.today)
+@quizcard.waitdays.create(wait_sequence: 5, wait_day: 1)
 
 # 代表ユーザーの実サンプルカード
 get_num = 32
@@ -66,7 +87,7 @@ wseq = Waitday.group(:wait_sequence).where(quizcard_id: User.first.quizcards.sel
 (get_num + 6).times do |number|
   wait_day = wseq[number]
   wait_day = 1 if wait_day.nil?
-  Waitday.where(wait_sequence: number).update_all(wait_day: wait_day)
+  Waitday.where(wait_sequence: number).where(quizcard_id: User.first.quizcards.select("id")).update_all(wait_day: wait_day)
 end
 
 # 上位サンプルユーザーのためのサンプルカード

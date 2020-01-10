@@ -16,8 +16,15 @@ q_three:
   description: MyString three
   name: name_three
   user: michael
+  appearing_at: <%= Time.zone.now %>
 
 q_four:
   description: MyString four
   name: name_four
   user: malory
+
+q_five:
+  description: MyString three
+  name: name_three
+  user: wanko
+  appearing_at: <%= 3.days.ago %>

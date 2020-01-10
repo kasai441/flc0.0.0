@@ -58,14 +58,14 @@ class QuizcardsController < ApplicationController
     begin_answer = params[:quizcard][:begin_answer]
     @answer_time = answer_time(@quizcard, begin_answer) if begin_answer
     model_sequences(@quizcard)
-    real_wait_day(@quizcard)
-
     if @quizcard.name == @answer
       flash.now[:success] = "正解"
       next_waitday(@quizcard, true)
+      assort_today_cards(@quizcard, true)
     else
       flash.now[:danger] = "不正解"
       next_waitday(@quizcard, false)
+      assort_today_cards(@quizcard, false)
     end
   end
 end

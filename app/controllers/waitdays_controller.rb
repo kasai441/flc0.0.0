@@ -3,12 +3,12 @@ class WaitdaysController < ApplicationController
     wseq = Waitday.group(:wait_sequence).where(quizcard_id: User.first.quizcards.select("id")).count
 
     wait_cards = []
-    32.times do |num|
+    wseq.size.times do |num|
       wait_cards << wseq[num]
     end
 
     wait_rate = {}
-    32.times do |num|
+    wseq.size.times do |num|
       seq = num
       wait = wseq[num]
       seq ||= 0
@@ -18,10 +18,10 @@ class WaitdaysController < ApplicationController
       wait_rate[num + 1] = rate.round(2)
     end
 
-    seq = 1..(wait_rate.size)
+    seq = wait_rate.size.times
     @wait = []
     seq.each do |s|
-      @wait << wait_rate[s]
+      @wait << wait_rate[s+1]
     end
 
     @chart0 = LazyHighCharts::HighChart.new("graph") do |c|

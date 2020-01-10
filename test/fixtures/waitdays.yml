@@ -2,20 +2,29 @@
 
 waitday1:
   wait_sequence: 0
-  wait_day: 5
+  wait_day: 50
   quizcard: q_one
 
 waitday2:
   wait_sequence: 1
-  wait_day: 10
+  wait_day: 100
   quizcard: q_one
 
 waitday3:
   wait_sequence: 0
-  wait_day: 2
+  wait_day: 20
   quizcard: q_two
 
-waitday4:
-  wait_sequence: 1
-  wait_day: 4
+<% 10.times do |n| %>
+waitday_<%= n %>:
+  wait_sequence: <%= n %>
+  wait_day: <%= n * 10 %>
   quizcard: q_four
+<% end %>
+
+<% 10.times do |n| %>
+waitday_q5_<%= n %>:
+  wait_sequence: <%= n %>
+  wait_day: <%= n * 20 %>
+  quizcard: q_five
+<% end %>

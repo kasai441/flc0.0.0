@@ -27,6 +27,13 @@ malory:
   activated: false
   activated_at: nil
 
+wanko:
+  name: Wanko Bowwow
+  email: bow@example.wow
+  password_digest: <%= User.digest('password') %>
+  activated: false
+  activated_at: nil
+
 <% 30.times do |n| %>
 user_<%= n %>:
   name:  <%= "User #{n}" %>

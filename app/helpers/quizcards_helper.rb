@@ -9,22 +9,18 @@ module QuizcardsHelper
     quizcard.get_linear_function(seq)
   end
 
-  def real_wait_day(quizcard)
-    # record_waitdays 現在時刻　ー　last_appeard_at
-    max = quizcard.waitdays.maximum(:wait_sequence)
-    waitday = quizcard.waitdays.find_by(wait_sequence: max)
-    waitday.calc_real_wait_day
+  def next_waitday(quizcard, result)
+    beta = quizcard.calc_beta
+    quizcard.real_wait_day
+    wait_day = quizcard.calc_waitday(result)
+    # beta = quizcard.revise_beta(result)
+    # waitdays更新　wait_sequence++. wait_day
+    quizcard.next_sequence(wait_day)
+    # quizcard更新 appearing_at, beta
+    quizcard.update_record
   end
 
-  def next_waitday(quizcard, result)
-    # calc_waidays beta * model_wait(wait_sequence)
+  def assort_today_cards(quizcard, result)
 
-    quizcard.calc_waitday(result)
-    quizcard.revise_beta(result)
-
-    # waitdays更新　wait_sequence++. wait_day
-    quizcard.next_sequence
-    # quizcard更新　answer_time, appearing_at, beta
-    quizcard.update_record
   end
 end
