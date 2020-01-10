@@ -51,6 +51,7 @@ class Quizcard < ApplicationRecord
   def prize_beta(beta)
     # 連続正解期間に応じた成長値
     wait_seqs = Waitday.where(quizcard_id: self.id)
+    # ソートをしたい
     # wait_seqs.map { |e| [e.wait_sequence, e.wait_day] }
     if (s = wait_seqs.size) >= 2
       (s - 1).times do |n|
