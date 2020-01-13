@@ -50,7 +50,7 @@ end
 @quizcard.waitdays.create(wait_sequence: 5, wait_day: 1)
 
 # 代表ユーザーの実サンプルカード
-get_num = 32
+get_num = 15
 get_num.times do |number|
   csv_data = CSV.read("db/xlsx_csv/#{number}.csv")
 
@@ -78,12 +78,17 @@ get_num.times do |number|
                         origin: origin,
                         appearing_at: Time.zone.today)
     wait_sequence = number + 6
-    quizcard.waitdays.create(wait_sequence: wait_sequence)
+    (wait_sequence + 1).times do |n|
+      quizcard.waitdays.create(wait_sequence: wait_sequence - 1 * n)
+    end
   end
 end
 
 # 実サンプルカードのシーケンスの待機日計算
 wseq = Waitday.group(:wait_sequence).where(quizcard_id: User.first.quizcards.select("id")).count
+wseq.size.times do |n|
+  wseq[n] -= wseq[n + 1] if n < wseq.size - 1
+end
 (get_num + 6).times do |number|
   wait_day = wseq[number]
   wait_day = 1 if wait_day.nil?

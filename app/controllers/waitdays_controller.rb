@@ -1,6 +1,9 @@
 class WaitdaysController < ApplicationController
   def chart
     wseq = Waitday.group(:wait_sequence).where(quizcard_id: User.first.quizcards.select("id")).count
+    wseq.size.times do |n|
+      wseq[n] -= wseq[n + 1] if n < wseq.size - 1
+    end
 
     wait_cards = []
     wseq.size.times do |num|
