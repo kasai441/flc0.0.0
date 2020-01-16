@@ -39,7 +39,7 @@ class QuizcardsController < ApplicationController
     end
 
     if @user.quizcards.any?
-      @quizcards_today = @user.quizcards.where('appearing_at > ?', 1.day.ago)
+      @quizcards_today = @user.quizcards.where('appearing_at > ?', Date.today).where('appearing_at <= ?', Date.today + 1)
       if @quizcards_today
         @quizcard = @quizcards_today.first
         @begin_answer = Time.zone.now

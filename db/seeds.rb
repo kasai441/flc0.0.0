@@ -50,7 +50,7 @@ end
 @quizcard.waitdays.create(wait_sequence: 5, wait_day: 1)
 
 # 代表ユーザーの実サンプルカード
-get_num = 15
+get_num = 10
 get_num.times do |number|
   csv_data = CSV.read("db/xlsx_csv/#{number}.csv")
 
@@ -91,7 +91,7 @@ wseq.size.times do |n|
 end
 (get_num + 6).times do |number|
   wait_day = wseq[number]
-  wait_day = 1 if wait_day.nil?
+  wait_day = 1 if wait_day.nil? or wait_day < 1
   Waitday.where(wait_sequence: number).where(quizcard_id: User.first.quizcards.select("id")).update_all(wait_day: wait_day)
 end
 

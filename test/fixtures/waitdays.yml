@@ -18,7 +18,7 @@ waitday3:
 <% 10.times do |n| %>
 waitday_<%= n %>:
   wait_sequence: <%= n %>
-  wait_day: <%= n * 10 %>
+  wait_day: <%= n * 5 %>
   quizcard: q_four
 <% end %>
 

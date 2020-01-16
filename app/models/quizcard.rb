@@ -25,8 +25,8 @@ class Quizcard < ApplicationRecord
   end
 
   def get_linear_function(seq)
-    # 移動平均を２つとる　wait_dayが「傾き」以上　と　最後
-    cut_seq = seq.map { |key, val| [key, val] if val > 10 }.compact.to_h
+    # 移動平均を２つとる　wait_dayが「傾き」以上〜半分　と　半分〜最後
+    cut_seq = seq.map { |key, val| [key, val] if val > get_gradients }.compact.to_h
     if cut_seq.size >= 2
       first = cut_seq.to_a[0..(cut_seq.size / 2 - 1)]
       second =  cut_seq.to_a[(cut_seq.size / 2)..cut_seq.size]
@@ -40,68 +40,81 @@ class Quizcard < ApplicationRecord
   end
 
   def calc_beta
+    beta = 1.0
     model_sequences = get_model_sequences
     wait_seq = get_wait_seq_day[0]
     wait_day = get_wait_seq_day[1].to_f
     # 単語ごとの待機期間　／　単語全体平均の待機期間
-    beta = wait_day / model_sequences[wait_seq].to_f
+    if model_sequences[wait_seq] > 0
+      beta = wait_day / model_sequences[wait_seq].to_f
+    end
     self.beta = prize_beta(beta)
   end
 
   def prize_beta(beta)
     # 連続正解期間に応じた成長値
     wait_seqs = Waitday.where(quizcard_id: self.id)
-    # ソートをしたい
-    # wait_seqs.map { |e| [e.wait_sequence, e.wait_day] }
+    # ソート
+    wait_seqs = wait_seqs.map { |e| [e.wait_sequence, e.wait_day] }.sort
     if (s = wait_seqs.size) >= 2
       (s - 1).times do |n|
-        after = wait_seqs[s - 1 - n - 1].wait_day
-        before = wait_seqs[s - 1 - n].wait_day
-        p [before, after]
+        before = wait_seqs[s - 1 - n - 1][1]
+        after = wait_seqs[s - 1 - n][1]
+        # p [before, after]
         beta += 0.1 if after > before
       end
     end
-    beta
+    beta.round(2)
   end
 
   def real_wait_day
-    overdate = (Time.zone.now.to_date - self.appearing_at.to_date).to_i
+    overdate = (Date.today - self.appearing_at.to_date).to_i
     real_waitday = get_wait_seq_day[1] + overdate
     get_wait_seq_day[2].update_real_wait_day(real_waitday)
     real_waitday
   end
 
   def calc_waitday(result)
-    if result
-      self.beta * (get_wait_seq_day[1] + self.gradients)
+    if get_wait_seq_day[0] >= get_gradients
+      if result
+        waitday = self.beta * (get_wait_seq_day[1] + get_gradients)
+      else
+        waitday = self.beta * (get_wait_seq_day[1] - get_gradients)
+      end
     else
-      self.beta * (get_wait_seq_day[1] - self.gradients)
+      if get_wait_seq_day[0] > 0
+        if result
+          waitday = self.beta * get_wait_seq_day[1] * 2
+        else
+          waitday = self.beta * get_wait_seq_day[1] / 2
+        end
+      else
+        waitday = 1
+      end
     end
-  end
 
-  # def revise_beta(wait_day)
-  #   model_wait_day = get_model_sequences[get_wait_seq_day[0] + 1]
-  #   if !model_wait_day.nil?
-  #     wait_day / model_wait_day
-  #   else
-  #     get_beta
-  #   end
-  # end
+    if waitday.to_i <= 0
+      waitday = 1
+    end
+    waitday.to_i
+  end
 
   def next_sequence(wait_day)
     self.waitdays.create(wait_sequence: get_wait_seq_day[0] + 1, wait_day: wait_day)
   end
 
   def update_appearing(wait_day)
-    appearing_at = Time.zone.now + wait_day
+    appearing_at = Date.today + wait_day
     update_attribute(:appearing_at, appearing_at)
   end
 
   private
-    # def get_beta
-    #   self.beta = 1.0 if self.beta.nil?
-    #   self.beta
-    # end
+    def get_gradients
+      if self.gradients.nil?
+        self.gradients = 10
+      end
+      self.gradients
+    end
 
     def get_wait_seq_day
       sequence = self.waitdays.maximum(:wait_sequence)
