@@ -54,6 +54,7 @@ get_num = 10
 get_num.times do |number|
   csv_data = CSV.read("db/xlsx_csv/#{number}.csv")
 
+  count = 0
   csv_data.each do |data|
     next if data[3].nil?
     fail_seq = data[0]
@@ -76,11 +77,12 @@ get_num.times do |number|
                         connotation: connotation,
                         pronunciation: pronunciation,
                         origin: origin,
-                        appearing_at: Time.zone.today)
+                        appearing_at: Time.zone.today + count)
     wait_sequence = number + 6
     (wait_sequence + 1).times do |n|
       quizcard.waitdays.create(wait_sequence: wait_sequence - 1 * n)
     end
+    count += 1
   end
 end
 
