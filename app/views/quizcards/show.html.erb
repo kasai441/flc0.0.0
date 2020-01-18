@@ -1,6 +1,7 @@
 <div class="row">
   <% if @user.quizcards.any? %>
     <h3>Flashcards (<%= @user.quizcards.count %>)</h3>
+    <%= will_paginate @quizcards %>
     <ol class="quizcards">
       <%= render @quizcards %>
     </ol>

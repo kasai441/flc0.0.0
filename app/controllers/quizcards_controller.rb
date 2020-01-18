@@ -68,4 +68,20 @@ class QuizcardsController < ApplicationController
       assort_today_cards(@quizcard, false)
     end
   end
+
+  def show
+    if logged_in?
+      # ログインの場合、current_userを取得する
+      @user = current_user
+      # 一覧のためのユーザー所属カード全取得
+      @quizcards = @user.quizcards.paginate(page: params[:page])
+      # カードを持っている場合、今日のカードを絞り込む
+      @quizcards_today = @user.quizcards.where('appearing_at > ?', 1.day.ago) if @user.quizcards.any?
+      # 今日のカードがあった場合、最初のカードを取得する
+      @quizcard = @quizcards_today.first if @quizcards_today
+      render 'show'
+    else
+
+    end
+  end
 end
