@@ -68,7 +68,7 @@ class Quizcard < ApplicationRecord
   end
 
   def real_wait_day
-    overdate = (Date.today - self.appearing_at.to_date).to_i
+    overdate = (Time.zone.today - self.appearing_at.to_date).to_i
     real_waitday = get_wait_seq_day[1] + overdate
     get_wait_seq_day[2].update_real_wait_day(real_waitday)
     real_waitday
@@ -104,7 +104,7 @@ class Quizcard < ApplicationRecord
   end
 
   def update_appearing(wait_day)
-    appearing_at = Date.today + wait_day
+    appearing_at = Time.zone.today + wait_day
     update_attribute(:appearing_at, appearing_at)
   end
 

@@ -39,7 +39,7 @@ class QuizcardsController < ApplicationController
     end
 
     if @user.quizcards.any?
-      @quizcards_today = @user.quizcards.where('appearing_at > ?', Date.today).where('appearing_at <= ?', Date.today + 1)
+      @quizcards_today = @user.quizcards.where('appearing_at > ?', Time.zone.today).where('appearing_at <= ?', Time.zone.today + 1)
       if @quizcards_today
         @quizcard = @quizcards_today.first
         @begin_answer = Time.zone.now
@@ -73,15 +73,17 @@ class QuizcardsController < ApplicationController
     if logged_in?
       # ログインの場合、current_userを取得する
       @user = current_user
-      # 一覧のためのユーザー所属カード全取得
-      @quizcards = @user.quizcards.paginate(page: params[:page])
       # カードを持っている場合、今日のカードを絞り込む
-      @quizcards_today = @user.quizcards.where('appearing_at > ?', 1.day.ago) if @user.quizcards.any?
-      # 今日のカードがあった場合、最初のカードを取得する
-      @quizcard = @quizcards_today.first if @quizcards_today
-      render 'show'
-    else
-
+      if @user.quizcards.any?
+        @quizcards_today = @user.quizcards.where('appearing_at > ?', Time.zone.today).where('appearing_at <= ?', Time.zone.today + 1).paginate(page: params[:page], per_page: 8) 
+      end
+    end
+    # cookie情報を取得
+    if (ids = cookies[:quizcards_right_ids])
+      @quizcards_right = get_cards_by_id(ids).paginate(page: params[:page], per_page: 8) 
+    end
+    if (ids = cookies[:quizcards_wrong_ids])
+      @quizcards_wrong = get_cards_by_id(ids).paginate(page: params[:page], per_page: 8) 
     end
   end
 end

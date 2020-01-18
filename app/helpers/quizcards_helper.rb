@@ -18,6 +18,41 @@ module QuizcardsHelper
   end
 
   def assort_today_cards(quizcard, result)
+    # attribute = result ? "right" : "wrong"
+    # if ids = cookies[send(":quizcards_#{attribute}_ids")]
+    #   instance_variable_set("@quizcards_#{attribute}", JSON.parse(ids))
+    # else
+    #   instance_variable_set("@quizcards_#{attribute}", [])
+    # end
 
+    # instance_variable_get("@quizcards_#{attribute}") << quizcard.id
+    # cookies[send(":quizcards_#{attribute}_ids")] = JSON.generate(instance_variable_get("@quizcards_#{attribute}"))
+
+    if result
+      if (ids = cookies[:quizcards_right_ids])
+        @quizcards_right = JSON.parse(ids)
+      else
+        @quizcards_right = []
+      end
+  
+      @quizcards_right << quizcard.id
+      cookies[:quizcards_right_ids] = { value: JSON.generate(@quizcards_right), expires: Time.zone.today + 1}
+    else
+      if (ids = cookies[:quizcards_wrong_ids])
+        @quizcards_wrong = JSON.parse(ids)
+      else
+        @quizcards_wrong = []
+      end
+  
+      @quizcards_wrong << quizcard.id
+      cookies[:quizcards_wrong_ids] =  { value: JSON.generate(@quizcards_wrong), expires: Time.zone.today + 1}
+  
+    end  
+    # cookieの期限を今日中にする
+  end
+  
+  def get_cards_by_id(ids)
+    ids = JSON.parse(ids)
+    Quizcard.where(id: ids)
   end
 end

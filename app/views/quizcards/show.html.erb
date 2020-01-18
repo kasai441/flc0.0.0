@@ -1,10 +1,26 @@
 <div class="row">
   <% if @user.quizcards.any? %>
-    <h3>Flashcards (<%= @user.quizcards.count %>)</h3>
-    <%= will_paginate @quizcards %>
+    <h1>本日の課題（残り） (<%= @quizcards_today.count %>)</h3>
+    <%= will_paginate @quizcards_today %>
     <ol class="quizcards">
-      <%= render @quizcards %>
+      <%= render @quizcards_today %>
     </ol>
-    <%= will_paginate @quizcards %>
+    <%= will_paginate @quizcards_today %>
+  <% end %>
+  <% if cookies[:quizcards_right_ids] %>
+    <h1>本日の正解 (<%= @quizcards_right.count %>)</h3>
+    <%= will_paginate @quizcards_right %>
+    <ol class="quizcards">
+      <%= render @quizcards_right %>
+    </ol>
+    <%= will_paginate @quizcards_right %>
+  <% end %>
+  <%if cookies[:quizcards_wrong_ids] %>
+    <h1>本日の不正解 (<%= @quizcards_wrong.count %>)</h3>
+    <%= will_paginate @quizcards_wrong %>
+    <ol class="quizcards">
+      <%= render @quizcards_wrong %>
+    </ol>
+    <%= will_paginate @quizcards_wrong %>
   <% end %>
 </div>
