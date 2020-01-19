@@ -56,6 +56,6 @@ class UsersEditTest < ActionDispatch::IntegrationTest
     delete logout_path
     log_in_as(@user)
     follow_redirect!
-    assert_template 'home_page/show'
+    assert_template 'home_page/index'
   end
 end

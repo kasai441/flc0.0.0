@@ -1,14 +1,12 @@
 <footer class="footer">
-  <small>
-    The <a href="#">FLASHCARDS</a>
-    by <a href="https://twitter.com/imoyat">kasai441</a>
-  </small>
   <nav>
     <ul>
       <% if logged_in? %>
+      <li><%= link_to "ヘルプ", help_path %></li>
       <li><%= link_to "ユーザー情報",   current_user %></li>
       <li><%= link_to "ログアウト",   logout_path, method: :delete %></li>
       <% else %>
+      <li><%= link_to "ヘルプ", help_path %></li>
       <li><%= link_to "ログイン",   login_path %></li>
       <% end %>
       <li><%= link_to "ホーム",   root_path %></li>

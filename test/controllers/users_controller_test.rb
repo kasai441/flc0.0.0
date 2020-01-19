@@ -13,7 +13,7 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     get user_path(@user)
     assert_redirected_to root_url
     follow_redirect!
-    assert_template 'home_page/show'
+    assert_template 'home_page/index'
   end
 
   test "should redirect show when not activated" do
@@ -21,7 +21,7 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     get @non_active
     # assert_redirected_to root_url
     # follow_rediret!
-    assert_template 'home_page/temp_show'
+    assert_template 'home_page/index'
   end
 
   test "should get new" do

@@ -1,7 +1,12 @@
+<% provide(:title, "ホーム") %>
 <span class="border">
   <h1>今日の練習</h1>
   <h2>残り：
-  <%= link_to "#{@quizcards_today.count if @quizcards_today} 題", 'quizcards/show' %>
+  <% if logged_in? %>
+    <%= link_to "#{@quizcards_today.count if @quizcards_today} 題", list_path %>
+  <% else %>
+    <%= "#{@quizcards_today.count if @quizcards_today} 題" %>
+  <% end %>
   </h2>
   <p class="center">
     <%= render 'box' if @quizcards_today && @quizcards_today.any?%>
@@ -19,9 +24,9 @@
   <h2>●●秒</h2>
 </span>
 <span class="border">
-  <h1>登録目安</h1>
+  <h1>作成目安</h1>
   <h2>●日に1度　事前登録</h2>
 </span>
 <p class="center">
-  <%= link_to "ユーザー登録", signup_path, class: "btn btn-lg btn-primary" %>
+  <%= link_to "ユーザー登録", signup_path, class: "btn btn-lg btn-primary" if !logged_in?%>
 </p>

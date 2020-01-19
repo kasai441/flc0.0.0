@@ -3,7 +3,12 @@
 
 /* mixins, variables, etc. */
 
-$gray-medium-light: #eaeaea;
+$blue-font: #004070;
+$bar: #005080;
+$register: #fef033;
+$blue-gray: #445577;
+$blue-gray-line: #d5e5f5;
+$blue-gray-light: #e0eaf6;
 
 @mixin box_sizing {
   -moz-box-sizing:    border-box;
@@ -13,7 +18,7 @@ $gray-medium-light: #eaeaea;
 
 /* universal */
 body {
-  padding-top: 60px;
+  // padding-top: 60px;
 }
 
 .center {
@@ -25,8 +30,13 @@ body {
 
 .border {
   display: block;
-  margin: 6px;
-  border-color: lightgray;
+  margin: 10px;
+  padding-top: 12px;
+  padding-bottom: 16px;
+  padding-left: 60px;
+  padding-right: 60px;
+  border-color: $blue-gray-line;
+  background-color: #ffffff;
   border-style: solid;
   border-width: 1px;
   border-radius: 5px;
@@ -34,65 +44,88 @@ body {
 
 
 .profile {
-  display: block;
-
+  display: inline-block;
   margin: auto
 }
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1;
+  margin: 8px;
+  line-height: 1.4;
+  color: $blue-font;
+  letter-spacing: -1px;
 }
 
 h1 {
-  font-size: 1.5em;
-  letter-spacing: 0px;
-  margin-bottom: 30px;
+  font-size: 1.3em;
   text-align: center;
   border-width: 5px;
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 1.1em;
   letter-spacing: 0px;
-  margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #777;
+  color: $blue-gray;
   border-width: 5px;
 }
 
 h3 {
-  font-size: 1.2em;
-  line-height: 1.4;
+  font-size: 1.1em;
+  line-height: 0.2;
   letter-spacing: 0px;
   margin-left: 10px;
   margin-left: 10px;
-  margin-bottom: 20px;
   text-align: left;
   font-weight: normal;
-  color: #777;
+  color: $blue-gray;
 }
 
 h4 {
   font-size: 1.0em;
   letter-spacing: -1px;
   margin-left: 40px;
-  margin-bottom: 30px;
   text-align: left;
   font-weight: normal;
-  color: #777;
+  color: $blue-gray;
 }
 
+/* header */
+.navbar {
+  background-color: $bar;
+  .nav {
+    li {
+      &:hover {
+        // background-color: $gray-darker;
+        color: black;
+        // opacity: 10%;
+      }
+    }
+  }
+}
+
+#logo {
+  color: white;
+  font-size: 27px;
+  letter-spacing: -4px;
+  font-family: sans-serif;
+  // font-weight: bold;
+}
+
+#register {
+  background-color: $register;
+  letter-spacing: 2px;
+}
 /* footer */
 
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid $gray-medium-light;
-  color: $gray-light;
+  border-top: 1px solid $blue-gray-line;
+  color: $blue-gray;
   a {
-    color: $gray;
+    color: $blue-gray;
     &:hover {
       color: $gray-darker;
     }
@@ -207,7 +240,7 @@ input {
   li {
     overflow: auto;
     padding: 10px 0;
-    border-bottom: 1px solid $gray-lighter;
+    border-bottom: 1px solid $blue-gray-line;
   }
 }
 
@@ -229,7 +262,7 @@ input {
     width: 40%;
   }
   .appering_at {
-    color: $gray-light;
+    color: $blue-gray;
     display: block;
     margin-left: 60px;
   }
@@ -254,7 +287,7 @@ span.picture {
 
 /* practice */
 .grayback {
-  background-color: $gray-medium-light;
+  background-color: $blue-gray-light;
 }
 
 #next_btn {

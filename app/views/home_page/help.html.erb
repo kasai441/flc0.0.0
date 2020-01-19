@@ -1,0 +1,25 @@
+<span class="border">
+  <h1>FLASH　CARDS</h1>
+  <p class="center">
+    単語帳を使って言葉を覚えるのに使用します。
+    ログインせずにサンプルの問題を試すことができます。
+    ログインすると自分の好きな単語を登録できます。
+    （現在は試運転のため、データが消えることがあります。）
+  </p>
+
+</span>
+<span class="border">
+<h1>1日の学習時間</h1>
+<p class="center">
+  学習時間を測定して、目標時間と実際に学習した時間を比べられます。
+</p>
+</span>
+<span class="border">
+  <h1>作成目安</h1>
+  <p class="center">
+    目標の学習時間と測定した時間から、どのくらいの頻度で単語を作成すればいいのか分かります。
+  </p>
+</span>
+<p class="center">
+  <%= link_to "ユーザー登録", signup_path, class: "btn btn-lg btn-primary" if !logged_in?%>
+</p>

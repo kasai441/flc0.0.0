@@ -7,14 +7,6 @@ class QuizcardsJudgeTest < ActionDispatch::IntegrationTest
     @waitday1 = @quizcard1.waitdays.first
   end
 
-  test "temp judge without login" do
-    get root_path
-    get temp_practice_path
-    post temp_judge_path, params: { quizcard: { card_id: @quizcard1.id,
-                                    name: @quizcard1.name } }
-    assert_template 'quizcards/temp_judge'
-  end
-
   test "judge with login" do
     get root_path
     log_in_as @user1
@@ -23,22 +15,6 @@ class QuizcardsJudgeTest < ActionDispatch::IntegrationTest
     post judge_path, params: { quizcard: { card_id: @quizcard1.id,
                                     name: @quizcard1.name } }
     assert_template 'quizcards/judge'
-  end
-
-  test "temp right answer" do
-    get root_path
-    get temp_practice_path
-    post temp_judge_path, params: { quizcard: { card_id: @quizcard1.id,
-                                    name: @quizcard1.name } }
-    assert_select 'div.alert', "正解"
-  end
-
-  test "temp wrong answer" do
-    get root_path
-    get temp_practice_path
-    post temp_judge_path, params: { quizcard: { card_id: @quizcard1.id,
-                                    name: " " } }
-    assert_select 'div.alert', "不正解"
   end
 
   test "right answer" do
@@ -55,14 +31,6 @@ class QuizcardsJudgeTest < ActionDispatch::IntegrationTest
     post judge_path, params: { quizcard: { card_id: @quizcard1.id,
                                     name: " " } }
     assert_select 'div.alert', "不正解"
-  end
-
-  test "display temp answer time" do
-    get root_path
-    get temp_practice_path
-    post temp_judge_path, params: { quizcard: { card_id: @quizcard1.id,
-                                    name: @quizcard1.name } }
-    assert_match /解答時間： #{@answer_time} 秒/, response.body
   end
 
   test "display answer time" do
