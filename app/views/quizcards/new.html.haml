@@ -1,0 +1,17 @@
+#{provide :title, '新しく追加'}
+#{provide :button_text, '確定'}
+%h1 単語のデータを入力してください
+%div.row
+  %div.col-md-8.col-md-offset-2
+    = form_for @quizcard, url: register_path, method: :post do |f|
+      = f.label :name, "単語"
+      = f.text_field :name, value: "", autofocus: true, placeholder: "colour", class: 'form-control'
+      = f.label :description, "意味・説明"
+      = f.text_field :description, value: "", autofocus: true, placeholder: "the appearance that things have that results from the way in which they reflect light. Red, orange and green are __s.", class: 'form-control'
+      = f.label :connotation, "補足"
+      = f.text_field :connotation, value: "", autofocus: true, placeholder: "(especially US English color)", class: 'form-control'
+      = f.label :pronunciation, "発音"
+      = f.text_field :pronunciation, value: "", autofocus: true, placeholder: "/ˈkʌlə(r)/", class: 'form-control'
+      = f.label :origin, "起源"
+      = f.text_field :origin, value: "", autofocus: true, placeholder: "Middle English: from Old French colour (noun), colourer (verb), from Latin color (noun), colorare (verb).", class: 'form-control'
+      = f.submit "#{yield(:button_text)}", id: 'submit_btn', class: 'btn btn-primary'

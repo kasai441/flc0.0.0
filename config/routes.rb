@@ -15,7 +15,8 @@ Rails.application.routes.draw do
   get '/judge', to: 'quizcards#judge'
   post '/judge', to: 'quizcards#judge'
   get '/list', to: 'quizcards#show'
-  get '/register', to: 'quizcards#register'
+  get '/register', to: 'quizcards#new'
+  post '/register', to: 'quizcards#create'
   resources :users
   resources :account_activations, only: [:edit]
   resources :password_resets, only: [:new, :create, :edit, :update]

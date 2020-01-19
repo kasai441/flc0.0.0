@@ -7,4 +7,8 @@
   <span class="wordlist"><%= quizcard.connotation %></span>
   <span class="wordlist"><%= quizcard.pronunciation %></span>
   <span class="wordlist"><%= quizcard.origin %></span>
+  <% if current_user?(quizcard.user) %>
+    <%= link_to "削除", quizcard, method: :delete,
+                                       data: { confirm: "削除しますか?" } %>
+  <% end %>
 </li>
