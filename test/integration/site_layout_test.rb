@@ -9,7 +9,9 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
     get root_path
     assert_template 'home_page/index'
     assert_select "a[href=?]", root_path, count:2
+    assert_select 'a[href=?]', allcard_path, count: 0
     assert_select "a[href=?]", register_path, count:0
+    # assert_select 'a[href=?]', todaycard_path
     assert_select "a[href=?]", signup_path
     assert_select "a[href=?]", help_path
     assert_select "a[href=?]", login_path
@@ -22,7 +24,9 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
     get root_path
     assert_template 'home_page/index'
     assert_select "a[href=?]", root_path, count: 2
-    assert_select "a[href=?]", register_path, count: 1
+    assert_select 'a[href=?]', allcard_path
+    assert_select "a[href=?]", register_path
+    assert_select 'a[href=?]', todaycard_path
     assert_select "a[href=?]", help_path
     assert_select "a[href=?]", signup_path, count: 0
     assert_select "a[href=?]", help_path

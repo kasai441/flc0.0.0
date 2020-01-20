@@ -26,7 +26,8 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
     assert_select 'a[href=?]', login_path, count: 0
     assert_select 'a[href=?]', logout_path
     assert_select 'a[href=?]', user_path(@user)
-    assert_select 'a[href=?]', list_path
+    assert_select 'a[href=?]', todaycard_path
+    assert_select 'a[href=?]', allcard_path
     assert_match /register/, response.body
     delete logout_path
     assert_not is_logged_in?
@@ -37,7 +38,8 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
     assert_select 'a[href=?]', login_path
     assert_select 'a[href=?]', logout_path, count: 0
     assert_select 'a[href=?]', user_path(@user), count: 0
-    assert_select 'a[href=?]', list_path, count: 0
+    assert_select 'a[href=?]', todaycard_path, count: 0
+    assert_select 'a[href=?]', allcard_path, count: 0
     assert_select 'a[href=?]', register_path, count: 0
   end
 
