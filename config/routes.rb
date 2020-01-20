@@ -14,7 +14,8 @@ Rails.application.routes.draw do
   get '/practice', to: 'quizcards#practice'
   get '/judge', to: 'quizcards#judge'
   post '/judge', to: 'quizcards#judge'
-  get '/list', to: 'quizcards#show'
+  get '/todaycard', to: 'quizcards#show'
+  get '/allcard', to: 'quizcards#all'
   get '/register', to: 'quizcards#new'
   post '/register', to: 'quizcards#create'
   resources :users

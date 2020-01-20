@@ -1,0 +1,12 @@
+<div class="row">
+  <% if @user.quizcards.any? %>
+    <span class="border">
+      <h1>すべての単語（<%= @quizcards.count %>）</h1>
+      <%= will_paginate @quizcards %>
+      <ol class="quizcards">
+        <%= render @quizcards %>
+      </ol>
+      <%= will_paginate @quizcards %>
+    </span>
+  <% end %>
+</div>

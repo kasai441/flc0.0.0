@@ -4,8 +4,11 @@
       <ul class="nav navbar-nav">
         <li><%= link_to "FLASH CARDS", root_path, id: "logo" %></li>
       </ul>
-      <ul class="nav navbar-nav navbar-right navbar-inverse">
-        <li id="register"><%= link_to "新しく追加", register_path if logged_in?%></li>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "新しく追加", register_path, id: "register" if logged_in?%></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "すべての単語", allcard_path, id: "allcard" if logged_in?%></li>
       </ul>
     </nav>
   </div>

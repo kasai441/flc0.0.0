@@ -1,12 +1,15 @@
 <li id="quizcard-<%= quizcard.id %>">
   <span class="wordlist description"><%= quizcard.description %></span>
   <span class="wordlist appearing_at">
-    <%= quizcard.appearing_at.to_date %>
+    <%= quizcard.appearing_at.to_date if !quizcard.appearing_at.nil?%>
   </span>
   <span class="wordlist name"><%= quizcard.name %></span>
   <span class="wordlist"><%= quizcard.connotation %></span>
   <span class="wordlist"><%= quizcard.pronunciation %></span>
   <span class="wordlist"><%= quizcard.origin %></span>
+  <% if current_user?(quizcard.user) %>
+    <%= link_to "編集", edit_quizcard_path(quizcard) %>
+  <% end %>
   <% if current_user?(quizcard.user) %>
     <%= link_to "削除", quizcard, method: :delete,
                                        data: { confirm: "削除しますか?" } %>

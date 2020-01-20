@@ -1,5 +1,5 @@
 class QuizcardsController < ApplicationController
-  before_action :logged_in_user, only: [:create, :destroy]
+  before_action :logged_in_user, only: [:create, :edit, :destroy]
   before_action :correct_user, only: :destroy
 
   def practice
@@ -84,6 +84,17 @@ class QuizcardsController < ApplicationController
     end
   end
 
+  def all
+    if logged_in?
+      # ログインの場合、current_userを取得する
+      @user = current_user
+      # カードを持っている場合、今日のカードを絞り込む
+      if @user.quizcards.any?
+        @quizcards = @user.quizcards.paginate(page: params[:page], per_page: 15)
+      end
+    end
+  end
+
   def new
     @quizcard = Quizcard.new
   end
@@ -98,6 +109,22 @@ class QuizcardsController < ApplicationController
       redirect_to root_url
     else
       render 'new'
+    end
+  end
+
+  def edit
+    @quizcard = Quizcard.find(params[:id])
+    # logged_in_user
+    render 'edit'
+  end
+
+  def update
+    @quizcard = Quizcard.find(params[:id])
+    if @quizcard.update_attributes(quizcard_params)
+      flash[:success] = "単語が更新されました"
+      redirect_to request.referrer || root_url
+    else
+      render 'edit'
     end
   end
 

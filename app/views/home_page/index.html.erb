@@ -3,7 +3,7 @@
   <h1>今日の練習</h1>
   <h2>残り：
   <% if logged_in? %>
-    <%= link_to "#{@quizcards_today.count if @quizcards_today} 題", list_path %>
+    <%= link_to "#{@quizcards_today.count if @quizcards_today} 題", todaycard_path %>
   <% else %>
     <%= "#{@quizcards_today.count if @quizcards_today} 題" %>
   <% end %>

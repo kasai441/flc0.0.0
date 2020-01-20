@@ -1,0 +1,17 @@
+#{provide :title, '編集'}
+#{provide :button_text, '確定'}
+%h1 単語のデータを編集してください
+%div.row
+  %div.col-md-8.col-md-offset-2
+    = form_for @quizcard do |f|
+      = f.label :name, "単語"
+      = f.text_field :name, class: 'form-control'
+      = f.label :description, "意味・説明"
+      = f.text_field :description, class: 'form-control'
+      = f.label :connotation, "補足"
+      = f.text_field :connotation, class: 'form-control'
+      = f.label :pronunciation, "発音"
+      = f.text_field :pronunciation, class: 'form-control'
+      = f.label :origin, "起源"
+      = f.text_field :origin, class: 'form-control'
+      = f.submit "#{yield(:button_text)}", class: 'btn btn-primary'
