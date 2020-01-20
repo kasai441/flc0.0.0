@@ -26,7 +26,7 @@ Rails.application.configure do
   # Compress JavaScripts and CSS.
   # config.assets.js_compressor = :uglifier
   config.assets.js_compressor = Uglifier.new(harmony: true)
-  
+
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
@@ -68,7 +68,7 @@ Rails.application.configure do
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
-  host = 'still-brushlands-62268.herokuapp.com'
+  host = 'safe-river-31136.herokuapp.com'
   config.action_mailer.default_url_options = { host: host }
   ActionMailer::Base.smtp_settings = {
     :address        => 'smtp.sendgrid.net',
