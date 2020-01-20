@@ -3,10 +3,10 @@
   <span class="wordlist appearing_at">
     <%= quizcard.appearing_at.to_date if !quizcard.appearing_at.nil?%>
   </span>
-  <span class="wordlist name"><%= quizcard.name %></span>
-  <span class="wordlist"><%= quizcard.connotation %></span>
-  <span class="wordlist"><%= quizcard.pronunciation %></span>
-  <span class="wordlist"><%= quizcard.origin %></span>
+  <span class="wordlist name"><%= session[:hint].nil? ? quizcard.name : hint(quizcard.name) %></span>
+  <span class="wordlist"><%= quizcard.connotation if session[:hint].nil? %></span>
+  <span class="wordlist"><%= quizcard.pronunciation if session[:hint].nil? %></span>
+  <span class="wordlist"><%= quizcard.origin if session[:hint].nil? %></span>
   <% if current_user?(quizcard.user) %>
     <%= link_to "編集", edit_quizcard_path(quizcard) %>
   <% end %>

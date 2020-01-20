@@ -21,4 +21,7 @@
     %div.row
       %div.col-md-12
         %h2 解答時間： #{@answer_time} 秒
+    %div.row
+      %div.col-md-12
+        %h2 次回： #{@quizcard.appearing_at.to_date if !@quizcard.appearing_at.nil?}
     = link_to "#{yield(:button_text)}", practice_path, id: 'next_btn', class: 'btn btn-default'

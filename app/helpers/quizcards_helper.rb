@@ -34,7 +34,7 @@ module QuizcardsHelper
       else
         @quizcards_right = []
       end
-  
+
       @quizcards_right << quizcard.id
       cookies[:quizcards_right_ids] = { value: JSON.generate(@quizcards_right), expires: Time.zone.today + 1}
     else
@@ -43,16 +43,22 @@ module QuizcardsHelper
       else
         @quizcards_wrong = []
       end
-  
+
       @quizcards_wrong << quizcard.id
       cookies[:quizcards_wrong_ids] =  { value: JSON.generate(@quizcards_wrong), expires: Time.zone.today + 1}
-  
-    end  
+
+    end
     # cookieの期限を今日中にする
   end
-  
+
   def get_cards_by_id(ids)
     ids = JSON.parse(ids)
     Quizcard.where(id: ids)
+  end
+
+  def hint(str)
+    hide = "_#{str.size}_"
+    str[1..-1] = hide
+    str
   end
 end

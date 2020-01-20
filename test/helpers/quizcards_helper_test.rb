@@ -47,7 +47,7 @@ class QuizcardsHelperTest < ActionView::TestCase
   test 'calc waitday when right answer' do
     model_sequences(@quizcard)
     @quizcard.calc_beta
-    assert_equal 220, @quizcard.calc_waitday(true)
+    assert_equal 1, @quizcard.calc_waitday(true)
     model_sequences(@quizcard2)
     @quizcard2.calc_beta
     assert_equal 93, @quizcard2.calc_waitday(true)

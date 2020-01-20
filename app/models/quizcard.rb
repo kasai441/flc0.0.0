@@ -85,8 +85,10 @@ class Quizcard < ApplicationRecord
       if get_wait_seq_day[0] > 0
         if result
           waitday = self.beta * get_wait_seq_day[1] * 2
+          waitday = get_wait_seq_day[0] if waitday > get_gradients
         else
           waitday = self.beta * get_wait_seq_day[1] / 2
+          waitday = 1 if waitday <= 0
         end
       else
         waitday = 1

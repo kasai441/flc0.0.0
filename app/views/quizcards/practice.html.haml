@@ -8,5 +8,5 @@
       = f.hidden_field :card_id, :value => @quizcard.id
       = f.hidden_field :begin_answer, :value => @begin_answer
       = f.label :name, "答え"
-      = f.text_field :name, value: "", autofocus: true, placeholder: "答え", class: 'form-control'
+      = f.text_field :name, value: "", autofocus: true, placeholder: hint(@quizcard.name), class: 'form-control'
       = f.submit "#{yield(:button_text)}", id: 'btn btn-primary'
