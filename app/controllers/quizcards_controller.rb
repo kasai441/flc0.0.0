@@ -45,6 +45,7 @@ class QuizcardsController < ApplicationController
         next_waitday(@quizcard, false)
         assort_today_cards(@quizcard, false)
       end
+      set_total_time(@quizcard.user_id, @answer_time)
     else
       redirect_to root_url and return if params[:quizcard].nil?
       @quizcard = Quizcard.find(params[:quizcard][:card_id])

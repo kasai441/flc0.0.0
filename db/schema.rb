@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20191230083927) do
+ActiveRecord::Schema.define(version: 20200120051222) do
 
   create_table "quizcards", force: :cascade do |t|
     t.string "fail_seq"
@@ -41,6 +41,10 @@ ActiveRecord::Schema.define(version: 20191230083927) do
     t.datetime "activated_at"
     t.string "reset_digest"
     t.datetime "reset_sent_at"
+    t.integer "total_time"
+    t.integer "practice_days"
+    t.datetime "last_practiced_at"
+    t.integer "total_practices"
   end
 
   create_table "waitdays", force: :cascade do |t|

@@ -41,6 +41,19 @@ class User < ApplicationRecord
     reset_sent_at < 2.hours.ago
   end
 
+  def set_total_time(answer_time)
+    get_total_time
+    get_practice_days
+    get_total_practices
+    if !get_last_practiced_at.between? User.today_range.first, User.today_range.last
+      self.practice_days += 1
+    end
+    total_time = self.total_time + answer_time
+    total_practices = self.total_practices + 1
+    update_columns(total_time: total_time, practice_days: self.practice_days, last_practiced_at: Time.zone.today, total_practices: total_practices)
+    total_time
+  end
+
   def self.digest(string)
     cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
                                                   BCrypt::Engine.cost
@@ -49,6 +62,10 @@ class User < ApplicationRecord
 
   def self.new_token
     SecureRandom.urlsafe_base64
+  end
+
+  def self.today_range
+    Time.zone.today.beginning_of_day..Time.zone.today.end_of_day
   end
 
   private
@@ -60,5 +77,33 @@ class User < ApplicationRecord
     def create_activation_digest
       self.activation_token = User.new_token
       self.activation_digest = User.digest(activation_token)
+    end
+
+    def get_total_time
+      if self.total_time.nil?
+        self.total_time = 0
+      end
+      self.total_time
+    end
+
+    def get_practice_days
+      if self.practice_days.nil?
+        self.practice_days = 0
+      end
+      self.practice_days
+    end
+
+    def get_last_practiced_at
+      if self.last_practiced_at.nil?
+        self.last_practiced_at = Time.zone.yesterday
+      end
+      self.last_practiced_at
+    end
+
+    def get_total_practices
+      if self.total_practices.nil?
+        self.total_practices = 0
+      end
+      self.total_practices
     end
 end

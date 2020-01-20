@@ -6,12 +6,27 @@ class HomePageController < ApplicationController
       # 一覧のためのユーザー所属カード全取得
       @quizcards = @user.quizcards.paginate(page: params[:page])
       # カードを持っている場合、今日のカードを絞り込む
-      @quizcards_today = @user.quizcards.where('appearing_at > ?', Time.zone.today).where('appearing_at <= ?', Time.zone.today + 1) if @user.quizcards.any?
+      @quizcards_today = @user.quizcards.where(appearing_at: today_range) if @user.quizcards.any?
       # 今日のカードがあった場合、最初のカードを取得する
       @quizcard = @quizcards_today.first if @quizcards_today
+      @answer_time = @user.quizcards.average(:answer_time).to_i
+      if !(total_time = @user.total_time).nil?
+        @total_time = (total_time / 60).to_i
+        if @user.practice_days > 0
+          @daily_practices = (@user.total_practices / @user.practice_days).to_i
+          waitday = Waitday.where(quizcard_id: @user.quizcards.select("id")).average(:wait_day)
+          quantity = @user.quizcards.count
+          if waitday > 0 and @total_time > 0
+            @adding_guide = ((@answer_time * quantity / waitday) / @total_time).to_i
+            if @adding_guide < 1
+              @adding_guide = 1
+            end
+          end
+        end
+      end
     else
       # ログインしていない場合、一時利用ユーザーを取得する
-      @user = User.find_by(email: "example@railstutorial.org")
+      @user = User.find_by(email: "ex@mple.com")
       # 一覧のためのユーザー所属カード全取得
       @quizcards = @user.quizcards.paginate(page: params[:page])
 

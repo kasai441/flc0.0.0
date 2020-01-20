@@ -2,12 +2,15 @@ require 'csv'
 
 # 代表ユーザー
 @user = User.create!(name:  "Example User",
-             email: "example@railstutorial.org",
+             email: "ex@mple.com",
              password:              "foobar",
              password_confirmation: "foobar",
              # admin:     true,
              activated: true,
-             activated_at: Time.zone.now)
+             activated_at: Time.zone.now,
+             total_time: 0,
+             practice_days: 0,
+             total_practices: 0)
 
 # サンプルユーザー
 99.times do |n|

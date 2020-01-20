@@ -9,8 +9,6 @@ Rails.application.routes.draw do
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
-  get '/welcome/index', to: 'welcome#index'
-  delete '/bye', to: 'welcome#destroy'
   get '/practice', to: 'quizcards#practice'
   get '/judge', to: 'quizcards#judge'
   post '/judge', to: 'quizcards#judge'

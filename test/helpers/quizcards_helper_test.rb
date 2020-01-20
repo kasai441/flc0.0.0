@@ -77,4 +77,19 @@ class QuizcardsHelperTest < ActionView::TestCase
       wait_day = @quizcard.calc_waitday(true)
       assert @quizcard.update_appearing(wait_day)
   end
+
+  test 'set total time for the first time' do
+    assert_equal 3, set_total_time(User.first.id, 3)
+  end
+
+  test 'set total time for twice' do
+    set_total_time(User.first.id, 3)
+    assert_equal 6, set_total_time(User.first.id, 3)
+  end
+
+  test 'total_practices' do
+    @user.set_total_time(0)
+    assert_equal 1, @user.total_practices
+  end
+
 end

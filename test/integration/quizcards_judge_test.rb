@@ -13,7 +13,8 @@ class QuizcardsJudgeTest < ActionDispatch::IntegrationTest
     get root_path
     get practice_path
     post judge_path, params: { quizcard: { card_id: @quizcard1.id,
-                                    name: @quizcard1.name } }
+                                    name: @quizcard1.name,
+                                    begin_answer: Time.zone.now } }
     assert_template 'quizcards/judge'
   end
 

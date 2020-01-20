@@ -9,4 +9,4 @@
       = f.hidden_field :begin_answer, :value => @begin_answer
       = f.label :name, "答え"
       = f.text_field :name, value: "", autofocus: true, placeholder: hint(@quizcard.name), class: 'form-control'
-      = f.submit "#{yield(:button_text)}", id: 'btn btn-primary'
+      = f.submit "#{yield(:button_text)}", class: 'btn btn-primary'

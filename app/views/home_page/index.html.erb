@@ -13,20 +13,20 @@
   </p>
 
 </span>
+<% if !@answer_time.nil? %>
 <span class="border">
-<h1>1日の練習時間</h1>
-  <h2>
-  <%= link_to "実績●●分／　目標●●分", '#' %>
-  </h2>
+<h1>1日あたり</h1>
+  <h2><%= @total_time %> 分で <%= @daily_practices %> 語練習しています</h2>
 </span>
 <span class="border">
   <h1>答えの速さ</h1>
-  <h2>●●秒</h2>
+  <h2><%= @answer_time %> 秒</h2>
 </span>
 <span class="border">
   <h1>新しく追加する目安</h1>
-  <h2>●日に1度</h2>
+  <h2><%= @adding_guide %> 日に 1 度</h2>
 </span>
+<% end %>
 <p class="center">
   <%= link_to "ユーザー登録", signup_path, class: "btn btn-lg btn-primary" if !logged_in?%>
 </p>
