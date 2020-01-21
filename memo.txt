@@ -1,0 +1,127 @@
+L-1 見た目 L-2 ボタン L-3 構成 L-4 機能　L-5　実用性
+
+ユーザーを作成
+  モデルジェネレート
+  バリデーション  モデルテスト
+  パスワードトークン　has_secure_password password_digest
+
+サインアップ
+  ユーザーコントローラー new　create
+  ルーティング　　resource
+  フォーム　form_for(users_path)
+
+ログイン
+　セッションコントローラー new create
+  フォーム　form_for(sessions_path)
+  ログインメソッド　[:session][user_id] = user.id
+
+ログイン保持
+  記憶トークン remember_digest
+  チェックボックス
+
+ユーザー編集 管理ユーザー　削除
+  ユーザーコントローラー edit update index destroy
+  フォーム　form_for(user_path(@user))
+
+メール認証
+  アクティベーションコントローラー　edit
+  アクティベーショントークン　activation_digest
+  ユーザーメーラー preview view test
+
+パスワード再設定
+  リセットコントローラー　new create edit update
+  リセットトークン　reset_digest
+  ユーザーメーラー preview view test
+  フォーム　form_for(password_resets_path)
+  フォーム　form_for(password_reset_path(@user))
+
+フラッシュカード作成
+quizcard
+　description registered_at name connotation origin user_id last_appeard_at wait_times
+wait_days
+  card_id wait_sequence wait_day appearing_at
+
+プラクティス　practice controller
+
+practice_controller haml
+  new
+  answer
+  result
+  destroy
+
+L-4 モデルシークエンス
+  seedで単語帳から初期データを作成
+    quizcards.sequence = ?, 1 average(:wait_day) where(id =?, 1)
+
+  ##################### model sequence reproduce ユーザーごと
+  sessions_controller
+  #＃＃＃＃＃＃＃＃＃＃＃＃＃全ユーザーのモデルシークエンスを平均してデータベース更新
+  home_page_controller
+
+  #ユーザー作成時に難易度設定に合わせて最初のモデルシークエンスを作成
+  waitday.initiate_sequences
+
+  #モデルシークエンスのx, yからa, bをもとめる
+  #次のシークエンスの待機期間をもとめる（正解時）
+  quizcard.get_model_sequences
+  quizcard.get_linear_function
+
+      # y1 - ax1 = y2 - ax2 # ax2 - ax1 = y2 - y1
+      # a = (y2 - y1) / (x2 - x1)
+      self.gradients = (y2 - y1) / (x2 - x1)
+      # ax = y - b # a = (y - b) / x
+      #(y1 - b) / x1 = (y2 - b) / x2
+      # x2y1 -x2b = x1y2 - x1b # x1b -x2b = x1y2 - x2y1
+      # b = ( x1 * y2 - x2 * y1 ) / ( x1 - x2 )
+      self.intercepts = ( x1 * y2 - x2 * y1 ) / ( x1 - x2 )
+
+
+  #実際の待機期間をもとめセットする
+  # record_waitdays 現在時刻　ー　last_appeard_at
+  waitday.calc_real_wait_day
+
+  # 次の待機期間を計算する
+  waitday.increase_waitdays
+  waitday.decrease_waitdays
+
+  # 待機期間をbetaで割引or割増
+  quizcard.apply_beta
+
+  #Judge後　
+  #待機期間とモデルシークエンスとの乖離率にする
+  quizcard.revise_beta
+
+  # waitdays更新　wait_sequence++. wait_day, appering_at
+  waitday.begin_new_sequence
+
+  # quizcard更新　wait_seconds, appearing_at, beta
+  quizcard.update_record
+
+  ※単語ごとのシークエンスはどうする？→閲覧できれば便利、使用はしない
+  ※wait_sequenceは数値の方が良い（並び替えと計算のため）
+L-2 一覧（レッスン待ち順）
+
+L-3 単語登録　quizcard controller create
+
+L-4 judge 解答時間 appearing_at計算
+
+？judge再起動でエラー fix
+
+L-1 バージョンを変えて　ホームページをリファクタリング　
+  ログイン前後で見た目は変えなくて良い
+  tempアクションを廃止
+
+? モデルシーケンスを呼び出すメソッドは間違った前提でできているので修正
+  間違った前提：一つの単語につき一つのシーケンスがある
+  正しい前提：一つの単語につき複数のシーケンスがある
+
+？prize_bataの中でシーケンス順にソートをしたい ok
+? ユーザーごとのモデルシーケンスを持つテーブルを作るとレコードを節約できる
+？ x切片を下回るシーケンスの計算をする 成功時も失敗時も ok
+？　waitdayが１以下にならないようにする ok
+? wait_dayと本日の日付を足してappearing_atになっていない（eg probity id:7）
+
+
+
+？Herokuでは開発とDBの呼び出しで不備がある可能性がある
+?当日より過去のものはすべてPracticeになるように修正

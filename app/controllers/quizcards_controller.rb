@@ -6,7 +6,7 @@ class QuizcardsController < ApplicationController
     if logged_in?
       @user = current_user
       if @user.quizcards.any?
-        @quizcards_today = @user.quizcards.where('appearing_at > ?', Time.zone.today).where('appearing_at <= ?', Time.zone.today + 1)
+        @quizcards_today = @user.quizcards.where('appearing_at < ?', Time.zone.tomorrow)
         if !@quizcards_today.empty?
           @quizcard = @quizcards_today.first
           @begin_answer = Time.zone.now
