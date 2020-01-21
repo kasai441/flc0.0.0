@@ -1,0 +1,426 @@
+,"Instruction __s, such as the classic RISC ___, which are used in central processing units (CPUs) to allow overlapping execution of multiple instructions with the same circuitry. The circuitry is usually divided up into stages and each stage processes one instruction at a time. Examples of stages are instruction decode, arithmetic/logic and register fetch.",3/8/2018,pipeline,,,
+,"___, in contrast to non-___, is computer memory that requires power to maintain the stored information; it retains its contents while powered on but when the power is interrupted, the stored data is quickly lost.
+",3/9/2018,Volatile memory,,,
+6 13 14,"NOUN
+
+1An oath or swear word.
+‘he was greeted by a stream of ___s’
+2Grammar 
+A word or phrase used to fill out a sentence or a line of verse without adding to the sense.",1/29/2018,expletive,,,
+0 10 13 14,"c_8_ NOUN
+
+mass noun
+Absurd or nonsensical talk or ideas.
+‘such sentiments are just pious ___’",11/21/2017,claptrap,,,
+8 10,"VERB
+
+[NO OBJECT]
+often as adjective __ing
+1(especially of a baby) cry feebly or querulously; whimper.
+‘dozens of ___ing babies’
+1.1 (of a cat or gull) _*_.
+‘the ___ing cry of a hawk’",1/13/2018,mewl,* mew,,
+,"In computing, ___ is a design made to compensate for the relatively slow speed of dynamic random-access memory (DRAM) or core memory, by spreading memory addresses evenly across memory banks. That way, contiguous memory reads and writes are using each memory bank in turn, resulting in higher memory throughputs due to reduced waiting for memory banks to become ready for desired operations.",3/10/2018,Interleaved memory,,,
+0 0 10 11,"_8_ VERB
+
+[WITH OBJECT]
+1Attack (someone) physically or verbally.
+‘Bernard was ___ing Jed with his fists’
+2Argue or discuss (a subject) in excessive detail.
+‘there is no need to ___ the point’",12/4/2017,belabour,,,
+,"ADJECTIVE
+Relating to or using a system of numerical notation that has 8 rather than 10 as a base.
+NOUN
+mass noun
+The ___ system; ___ notation.
+‘the calculation should be done in binary or ___’",3/11/2018,octal,,,
+9 9 13,"VERB
+[WITH OBJECT]
+1Suggest or assume the existence, fact, or truth of (something) as a basis for reasoning, discussion, or belief.
+‘his theory ___d a rotatory movement for hurricanes’
+with clause ‘she ___d that the environmentalists might have a case’
+NOUN
+formal 
+1A thing suggested or assumed as true as the basis for reasoning, discussion, or belief.
+‘perhaps the ___ of Babylonian influence on Greek astronomy is incorrect’",10/26/2017,postulate,,,
+0 11 10,"s__ adjective
+(Of a place) isolated and hidden away:
+a wild ___ spot",8/15/2017,sequestered,, /sɪˈkwɛstəd/,
+,"ADJECTIVE
+
+Computing 
+Relating to or using a system of numerical notation that has 16 rather than 10 as its base.
+‘a string of ___ characters’",3/12/2018,hexadecimal,,,
+0 1 10 10 12 14,"s__ adjective
+Superficially plausible, but actually wrong:
+a ___ argument
+• Misleading in appearance, especially misleadingly attractive:
+the music trade gives Golden Oldies a ___ appearance of novelty",8/27/2017,specious,,,
+,"Anatomy 
+1The inner and typically larger of the two bones between the knee and the ankle (or the equivalent joints in other terrestrial vertebrates), parallel with the fibula.
+1.2Entomology The fourth segment of the leg of an insect, between the femur and the tarsus.",3/13/2018,tibia,,,
+2 12,A ___ is a computer that stores program instructions in electronic memory. Often the definition is extended with the requirement that the treatment of programs and data in memory be interchangeable or uniform.,3/6/2018,Stored-program computer,,,
+,"ADJECTIVE
+
+technical, archaic 
+Boat-shaped.
+
+NOUN
+
+1A boat-shaped bone in the ankle or wrist, especially that in the ankle, between the talus and the cuneiform bones.
+2mass noun A chronic disorder of the ___ bone in horses, causing lameness in the front feet.",3/15/2018,navicular,,,
+,"In computing and ___ recording technologies, an ___ is a flat, usually circular disc which encodes binary data (bits) in the form of pits (binary value of 0 or off, due to lack of reflection when read) and lands (binary value of 1 or on, due to a reflection when read) on a special material (often aluminium) on one of its flat surfaces. The encoding material sits atop a thicker substrate (usually polycarbonate) which makes up the bulk of the disc and forms a dust defocusing layer.",3/16/2018,Optical disk,,,
+11,"NOUN
+
+mass noun
+1The branch of knowledge that deals with the structure, historical development, and relationships of a language or languages.
+1.1North American Literary or classical scholarship.",12/1/2017,philology,,,
+11,"___ is a type of random access semiconductor memory that stores each bit of data in a separate tiny capacitor within an integrated circuit. The capacitor can either be charged or discharged; these two states are taken to represent the two values of a bit, conventionally called 0 and 1. The electric charge on the capacitors slowly leaks off, so without intervention the data on the chip would soon be lost. To prevent this, ___ requires an external memory refresh circuit which periodically rewrites the data in the capacitors, restoring them to their original charge. ",3/17/2018,Dynamic random-access memory (DRAM),,,
+10 7 6 10 12,"_4_ informal
+noun
+a quarrel about an unimportant matter:
+when we had our little ___s, he had only to smile to get back on the right side of me
+verb [no object]
+quarrel about an unimportant matter:
+people expected him and his wife to ___ continually",10/14/2017,spat3,,,
+0 1 10 11,"t___ ADJECTIVE
+
+1Showy but cheap and of poor quality.
+‘___ jewellery’
+1.1 Sordid or unpleasant.
+‘the ___ business of politics’",12/13/2017,tawdry,,,
+,"In system programming, an ___ is a signal to the processor emitted by hardware or software indicating an event that needs immediate attention. An ___ alerts the processor to a high-priority condition requiring the __ion of the current code the processor is executing. The processor responds by suspending its current activities, saving its state, and executing a function called an ___ handler (or an ___ service routine, ISR) to deal with the event. This __ion is temporary, and, after the ___ handler finishes, the processor resumes normal activities. There are two types of __s: hardware __s and software __s.",3/18/2018,interrupt,,,
+0 7 11 10 12 14,"i_9_ ADJECTIVE
+
+Having or showing a tendency to be easily angered.
+‘an ___ and difficult man’",11/30/2017,irascible,,,
+8 11 14,"VERB
+
+1no object Turn over something, especially the pages of a book, quickly and casually.
+‘he ___d through the pages’
+with object ‘she opened a book and ___d the pages’
+1.1___ through Search quickly through (something)
+‘she ___d through her leather handbag’",2/10/2018,riffle,,,
+9 12 13,"NOUN
+
+A group of models or motionless figures representing a scene from a story or from history; a __ vivant.
+‘in the first act the action is presented in a series of __s’",1/9/2018,tableau,"plural tableaux, plural tableaus",/ˈtabləʊ/,
+,"o__ NOUN
+
+1A lyric poem, typically one in the form of an address to a particular subject, written in varied or irregular metre.
+1.1 A classical poem of a kind originally meant to be sung.",3/21/2018,ode,,,
+13,"m__ ADJECTIVE
+
+1Sentimental in an exaggerated or false way.
+‘a ___ ode to parenthood’
+1.1dialect, archaic Having a faint sickly flavour.
+‘the ___ smell of warm beer’",3/20/2018,mawkish,,,
+0 0 0 11 11 13,"r___ VERB
+
+no object To act or proceed in a boisterous manner; to rollick. Occasionally with object.",12/8/2017,ripsnort,,,
+12 13,"t___ ADJECTIVE
+
+(of a remark or idea) lacking originality or freshness; dull on account of overuse.
+‘this point may now seem obvious and ___’",3/19/2018,trite,,,
+,"1Anatomy 
+The outer and usually smaller of the two bones between the knee and the ankle (or the equivalent joints in other terrestrial vertebrates), parallel with the tibia.
+2Archaeology 
+A brooch or clasp.",3/22/2018,fibula,,,
+,"1Anatomy 
+The bone of the thigh or upper hindlimb, articulating at the hip and the knee.大腿骨
+2Zoology 
+The third segment of the leg in insects and some other arthropods, typically the longest and thickest segment.",3/23/2018,femur,,,
+,"NOUN
+Anatomy 
+1A group of small bones between the main part of the hindlimb and the meta___ in terrestrial vertebrates. The seven bones of the human ___ form the ankle and upper part of the foot. They are the talus, calcaneus, navicular, and cuboid, and the three cuneiform bones.足根(骨)
+1.1Zoology The shank of the leg of a bird or reptile.ふ蹠
+1.2Zoology The foot or fifth joint of the leg of an insect or other arthropod, typically consisting of several small segments and ending in a claw.
+2A thin sheet of fibrous connective tissue which supports the edge of each eyelid.",3/24/2018,tarsus,,,
+13 12 11 10 11 13,"d__t noun
+A stupid person.",2/3/2017,dolt,,,
+9,"ADJECTIVE
+
+Feeling or characterized by great anger.
+‘a barrage of ___ letters’",1/23/2018,irate,,,
+,"NOUN
+
+1An underlying substance or layer.
+1.1 The surface or material on or from which an organism lives, grows, or obtains its nourishment.
+‘brachiopods attached to the ___ by a stalk’
+1.2 The substance on which an enzyme acts.
+1.3 A material which provides the surface on which something is deposited or inscribed, for example the silicon wafer used to manufacture integrated circuits.
+‘optical disk ___s’",,substrate,,,
+12,"ADJECTIVE
+
+1Denoting or relating to the wedge-shaped characters used in the ancient writing systems of Mesopotamia, Persia, and Ugarit, surviving mainly on clay tablets.
+‘a ___ inscription’
+2Anatomy 
+Denoting three bones of the tarsus (ankle) between the navicular bone and the metatarsals.
+3Biology 
+Wedge-shaped.
+‘the eggs are ___’",3/25/2018,cuneiform,,,
+,b__ 腕足動物,3/29/2018,brachiopod,,,
+,"NOUN
+
+A device used to store an electric charge, consisting of one or more pairs of conductors separated by an insulator.",3/31/2018,capacitor,,,
+,"___ is a type of semiconductor memory that uses bistable latching circuitry (flip-flop) to store each bit. ___ exhibits data remanence, but it is still volatile in the conventional sense that data is eventually lost when the memory is not powered.
+
+The term static differentiates ___ from DRAM (dynamic random-access memory) which must be periodically refreshed. ___ is faster and more expensive than DRAM; it is typically used for CPU cache while DRAM is used for a computer's main memory.",4/1/2018,Static random-access memory,,,
+12 14,"In computing, ___ is a specialized form of multi-programming for the purpose of copying data between different devices. In contemporary systems it is usually used for mediating between a computer application and a slow peripheral, such as a printer. ___ allows programs to ""hand off"" work to be done by the peripheral and then proceed to other tasks, or do not begin until input has been transcribed. ",3/27/2018,spooling,,,
+11,"NOUN
+1The main stem of a herbaceous plant.
+‘he chewed a ___ of grass’
+1.1 The slender attachment or support of a leaf, flower, or fruit.
+‘the acorns grow on ___s’
+1.2 A ___like support for a sessile animal, or for an organ in an animal.
+1.3 A slender support or stem of an object.
+‘drinking glasses with long __s’
+1.4 (in a vehicle) a lever on the steering column controlling the indicators, lights, etc.
+‘the control ___ on the car's fascia’",3/30/2018,stalk1,,,
+,___ is a non-volatile memory card format developed by the SD Card Association (SDA) for use in portable devices.,4/2/2018,Secure Digital (SD),,,
+,"f__ NOUN
+
+1A cultivated hazel tree that bears edible oval nuts.
+Genus Corylus, family Betulaceae: several species, in particular the Kentish cob (Corylus maxima)ハシバミ
+1.1 The nut of the ___ tree.
+Also called cob
+2A brush with bristles forming a flattened oval head, used in oil painting.",4/3/2018,filbert,,,
+,"NOUN
+
+A tall stand with a sloping top to hold a book or notes, from which someone, typically a preacher or lecturer, can read while standing up.",4/4/2018,lectern,,,
+,"NOUN
+1A detachable covering for the front part of a mobile phone.
+2A board or other flat piece of material covering the ends of rafters or other fittings.
+2.1British A signboard on the upper part of a shopfront showing the name of the shop.
+2.2 (in classical architecture) a long flat surface between mouldings on an architrave.
+3British The dashboard of a motor vehicle.
+3.1 A board or panel of controls on any piece of equipment.
+4Anatomy 
+A thin sheath of fibrous tissue enclosing a muscle or other organ.",4/10/2018,fascia,(British facia),/ˈfeɪʃə//ˈfeɪʃɪə/,
+11 12 13 14,"_s_ ADJECTIVE
+
+(of a difficulty or obstacle) impossible to overcome.
+‘___ financial problems’",12/20/2017,insuperable,,/ɪnˈsuːp(ə)rəb(ə)l/,
+,"In electronics, a ___ or latch is a circuit that has two stable states and can be used to store state information. A ___ is a bistable multivibrator. The circuit can be made to change state by signals applied to one or more control inputs and will have one or two outputs. It is the basic storage element in sequential logic. __s and latches are fundamental building blocks of digital electronics systems used in computers, communications, and many other types of systems.",4/11/2018,flip-flop,,,
+13,"NOUN
+
+The fruit of the oak tree, a smooth oval nut in a rough cup-shaped base.団栗",4/7/2018,acorn,,,
+12,"s__ ADJECTIVE
+
+Biology 
+1(of an organism, e.g. a barnacle) fixed in one place; immobile.
+‘parrotfish inadvertently graze upon ___ invertebrates when cropping algae’
+‘overall body shape is consistent with a ___ habit’
+1.1Botany Zoology (of a plant or animal structure) attached directly by its base without a stalk or peduncle.
+‘sporangia may be stalked or ___’",4/9/2018,sessile,,,
+,"The ___ is an industry-driven interest group that was founded in 1993 by around 50 companies. ___ provides specifications for a complete set of protocols for wireless infrared communications, and the name ""___"" also refers to that set of protocols. The main reason for using ___ had been wireless data transfer over the “last one meter” using point-and-shoot principles. Thus, it has been implemented in portable devices such as mobile telephones, laptops, cameras, printers, and medical devices. ",4/17/2018,Infrared Data Association (IrDA),,,
+,"NOUN
+
+Botany 
+1The stalk bearing a flower or fruit, or the main stalk of an inflorescence.花梗(かこう),肉茎
+Compare with pedicel 
+1.1Zoology A stalklike part by which an organ is attached to an animal's body, or by which a barnacle or other sedentary animal is attached to a substrate.",4/19/2018,peduncle,,,
+,"Botany 
+(in ferns and lower plants) a receptacle in which asexual spores are formed.胞子嚢",4/20/2018,sporangium,plural sporangia,,
+10 13,"b__ VERB
+
+[WITH OBJECT]
+Fry (food) lightly and then stew it slowly in a closed container.
+‘I __d the beef and vegetables the day before’",4/14/2018,braise,,,
+10 13,胞子虫,1/15/2018,sporozoan,,,
+0 12,"NOUN
+
+1A marine crustacean with an external shell, which attaches itself permanently to a surface and feeds by filtering particles from the water using its modified feathery legs.
+Class Cirripedia. See acorn ___, goose ___
+蔓脚類
+1.1 Used in similes to describe a tenacious person or thing.
+‘buses careered along with men hanging from their doors like __s’",4/18/2018,barnacle,,,
+,"NOUN
+
+1Any of a number of brightly coloured marine fish with a ___-like beak, which they use to scrape food from coral and other hard surfaces.
+a widespread fish of warm seas which may secrete a mucous cocoon to deter predators (family Scaridae: Scarus and other genera).ブダイ
+an edible fish of the southern Indian ocean (Oplegnathus conwayi, family Oplegnathidae).
+2NZ Australian A brightly coloured marine fish, especially one of the wrasse family.
+Several species in the family Labridae",4/22/2018,parrotfish,,,
+,"ADJECTIVE
+
+Not resulting from or achieved through deliberate planning.
+‘an ___ administrative error occurred that resulted in an overpayment’
+‘he was pardoned for ___ manslaughter’",3/24/2018,inadvertent,,,
+,"NOUN
+
+1A small cake, typically containing dried fruit.
+‘a currant ___’
+1.1 A bread roll.
+1.2 (in Scotland and Jamaica) a rich fruit cake or currant bread.
+2A hairstyle in which the hair is drawn back into a tight coil at the back of the head.
+3__s North American informal A person's buttocks.",4/25/2018,bun,,,
+12,"i__ ADJECTIVE
+
+1Occurring at the same time.
+‘An ___ data pipe provides a bidirectional path for data between an application and a bus structure.’
+1.1 Occupying equal time.",4/21/2018,isochronous,,,
+,"m__ NOUN
+
+A shaped strip of wood or other material fitted as a decorative architectural feature, especially in a cornice.
+‘a decorative plaster ___ placed at the centre of a ceiling’
+mass noun ‘you can fit a strip of hardwood cove ___ into the corner’",4/26/2018,moulding,,,
+10,"NOUN
+
+1historical A supporter of King Charles I in the English Civil War.
+1.1 A dashing and attentive man, especially one acting as a lady's escort.
+1.2archaic A horseman, especially a cavalryman.
+2A small spaniel of a breed with a long snout.",1/25/2018,cavalier,,,
+,"a__ NOUN
+
+1(in classical architecture) a main beam resting across the tops of columns, specifically the lower third entablature.
+2The moulded frame round a doorway or window.
+2.1 A moulding round the exterior of an arch.",4/27/2018,architrave,,,
+10 12,"VERB
+
+1with object Make (a machine or device) operate.
+‘the pendulum __s an electrical switch’
+2Make (someone) act in a particular way; motivate.
+‘the defendants were __d by malice’",4/23/2018,actuate,,,
+14,"p__ In computing, ___ is the act of temporarily interrupting a task being carried out by a computer system, without requiring its cooperation, and with the intention of resuming the task at a later time. Such changes of the executed task are known as context switches. It is normally carried out by a privileged task or part of the system known as a _adj_ scheduler, which has the power to _v_, or interrupt, and later resume, other tasks in the system.",4/28/2018,Preemption,"adj preemptive
+v preempt",,
+6 5 13 14,"ADJECTIVE
+
+1Having a red or flushed complexion.
+‘a stout man with a ___ face’
+2Excessively intricate or elaborate.
+‘a ___, baroque building’
+2.1 (of language) using unusual words or complicated rhetorical devices.
+‘his ___ and exciting prose’
+3Medicine 
+(of a disease or its manifestations) occurring in a fully developed form.
+‘___ symptoms of psychiatric disorder’",2/27/2018,florid,,,
+10,"a__ ADJECTIVE
+
+Unpleasantly bitter or pungent.
+‘___ smoke’
+‘an ___ smell’",2/1/2018,acrid,,/ˈakrɪd/,
+,"In computer operating systems, ___ is a memory management scheme by which a computer stores and retrieves data from secondary storage for use in main memory. In this scheme, the operating system retrieves data from secondary storage in same-size blocks called _n_s. ___ is an important part of virtual memory implementations in modern operating systems, using secondary storage to let programs exceed the size of available physical memory.",4/30/2018,Paging,,,
+,"In the 1960s, ___ was an early virtual memory technique. An entire program would be _v_d out (or rolled out) from RAM to disk, and another one would be _v_d in (or rolled in). A _v_d-out program would be current but its execution would be suspended while its RAM was in use by another program.",5/1/2018,Swapping,,,
+10 11 12,"a__ NOUN
+
+mass noun
+The criminal act of deliberately setting fire to property.
+‘police are treating the fire as ___’
+as modifier ‘an ___ attack’",2/9/2018,arson,,,
+,"___ is an acronym for ___, a method for organizing and manipulating a data buffer, where the oldest (first) entry, or 'head' of the queue, is processed first. It is analogous to processing a queue with first-come, first-served (FCFS) behaviour: where the people leave the queue in the order in which they arrive.",5/2/2018,"FIFO first in, first out",,,
+10 9 14,"NOUN
+
+1A round or cylindrical container used for storing such things as food, chemicals, or rolls of film.
+1.1 A cylinder of pressurized gas, typically one that explodes when thrown or fired from a gun.
+‘riot police fired tear-gas ___s into the crowd’
+1.2historical mass noun Small bullets packed in cases that fit the bore of a gun.",2/22/2018,canister,,,
+,"NOUN
+
+Botany 
+1A small stalk bearing an individual flower in an inflorescence.
+Compare with peduncle
+‘Every inflorescence of a marked branch was individually identified with a numbered tag tied to its ___ and its number of flowers recorded.’",5/6/2018,pedicel,,,
+10,"NOUN
+
+Botany 
+1The complete flower head of a plant including stems, stalks, bracts, and flowers.
+1.1 The arrangement of the flowers on a plant.
+1.2mass noun The process of flowering.",5/5/2018,inflorescence,,,
+,"_5_ NOUN
+
+Biology 
+1A minute, typically one-celled, reproductive unit capable of giving rise to a new individual without sexual fusion, characteristic of lower plants, fungi, and protozoans.
+1.1Botany (in a plant exhibiting alternation of generations) a haploid reproductive cell which gives rise to a gametophyte.
+1.2Microbiology (in bacteria) a rounded resistant form adopted by a bacterial cell in adverse conditions.",5/7/2018,spore,,,
+,"ADJECTIVE
+
+1(of electromagnetic radiation) having a wavelength just greater than that of the red end of the visible light spectrum but less than that of microwaves. ___ radiation has a wavelength from about 800 nm to 1 mm, and is emitted particularly by heated objects.
+1.1 (of equipment or techniques) using or concerned with ___ radiation.
+‘___ cameras’",5/8/2018,infrared,,,
+0 7 9,"t__ NOUN
+mass noun
+A state of physical or mental inactivity; lethargy.
+‘they veered between apathetic ___ and hysterical fanaticism’",1/12/2018,torpor,,,
+,"NOUN
+
+1A figure of speech involving the comparison of one thing with another thing of a different kind, used to make a description more emphatic or vivid (e.g. as brave as a lion).
+1.1mass noun The use of __s as a method of comparison.
+‘his audacious deployment of ___ and metaphor’",5/9/2018,simile,,,
+,"NOUN
+
+Architecture 
+The upper part of a classical building supported by columns or a colonnade, comprising the architrave, frieze, and cornice.",5/11/2018,entablature,,,
+,"c__ In mathematics, __s, or _＊_ for short, are a generalization of the natural numbers used to measure the _n_ (size) of sets. The _n_ of a finite set is a natural number: the number of elements in the set. The transfinite __s describe the sizes of infinite sets.基数",5/12/2018,Cardinal number,"＊cardinals
+n cardinality",,
+,"The ___ (also mantissa or coefficient) is part of a number in scientific notation or a floating-point number, consisting of its _adj_ digits. Depending on the interpretation of the exponent, the ___ may represent an integer or a fraction. The word mantissa seems to have been introduced by Arthur Burks in 1946 writing for the Institute for Advanced Study at Princeton, although this use of the word is discouraged by the IEEE floating-point standard committee as well as some professionals such as the creator of the standard, William Kahan.仮数",5/13/2018,Significand,adj significant,,
+8,"c__ Anatomy 
+The large bone forming the heel. It articulates with the cuboid bone of the foot and the talus bone of the ankle, and the Achilles tendon is attached to it.",3/14/2018,calcaneus,(also calcaneum),,
+,"A ___ is a mathematical table used in logic—specifically in connection with Boolean algebra, boolean functions, and propositional calculus—which sets out the functional values of logical expressions on each of their functional arguments, that is, for each combination of values taken by their logical variables (Enderton, 2001). In particular, __s can be used to show whether a propositional expression is true for all legitimate input values, that is, logically valid.真理値表",5/14/2018,Truth table,,,
+,"A ___ (also called primary diagram, set diagram or logic diagram) is a diagram that shows all possible logical relations between a finite collection of different sets. These diagrams depict elements as points in the plane, and sets as regions inside closed curves. A ___ consists of multiple overlapping closed curves, usually circles, each representing a set.",5/15/2018,Venn diagram,,,
+,"In logic, mathematics and linguistics, And (∧) is the truth-functional operator of ___; the and of a set of operands is true if and only if all of its operands are true. The logical connective that represents this operator is typically written as ∧ or ⋅ .",5/16/2018,Logical conjunction,,,
+,"In logic and mathematics, or is the truth-functional operator of (inclusive) ___, also known as alternation; the or of a set of operands is true if and only if one or more of its operands is true. The logical connective that represents this operator is typically written as ∨ or +.",5/17/2018,Logical disjunction,,,
+8 9 10 14,"c__ NOUN
+
+1A small sheltered bay.
+1.1dialect A sheltered recess among hills or in the side of a mountain.
+2Architecture 
+A concave arch or arched moulding, especially one formed at the junction of a wall with a ceiling.",5/10/2018,cove1,,,
+9 11 14,"NOUN
+
+1A person who sells or deals in particular goods.
+‘a ___ of large luxury vehicles’
+1.1 A person or group who spreads or promotes an idea, view, etc.
+‘a ___ of traditional Christian values’",12/6/2017,purveyor,,,
+0,"___ is a multibyte character encoding system used primarily for Japanese, Korean, and simplified Chinese.
+
+The structure of ___ is based on the ISO-2022 standard, which specifies a way to represent character sets containing a maximum of 94 characters, or 8836 (942) characters, or 830584 (943) characters, as sequences of 7-bit codes. ",5/19/2018,Extended Unix Code,,,
+,"NOUN
+
+Botany 
+A modified leaf or scale, typically small, with a flower or flower cluster in its axil. __s are sometimes larger and more brightly coloured than the true flower, as in poinsettia.苞（ほう）",5/21/2018,bract,,,
+,"ADJECTIVE
+
+Genetics 
+1(of a cell or nucleus) having a single set of unpaired chromosomes.
+Compare with diploid
+1.1 (of an organism or part) composed of ___ cells.
+‘in mosses, the conspicuous leafy structures are ___’",5/22/2018,haploid,,,
+14,"g__ NOUN
+
+Botany 
+(in the life cycle of plants with alternating generations) the _＊_-producing and usually haploid phase, producing the zygote from which the sporophyte arises. It is the dominant form in bryophytes. 生殖母体",5/23/2018,gametophyte,＊ gamete,,
+12,"___ is a method used to digitally represent sampled analog signals. It is the standard form of digital audio in computers, compact discs, digital telephony and other digital audio applications. In a ___ stream, the amplitude of the analog signal is sampled regularly at uniform intervals, and each sample is quantized to the nearest value within a range of digital steps.",5/20/2018,"Pulse-code modulation
+PCM",,,
+,"___ in computer science is a method where the solution to a problem depends on solutions to smaller instances of the same problem (as opposed to iteration). The approach can be applied to many types of problems, and ___ is one of the central ideas of computer science.",5/28/2018,Recursion (computer science),,,
+0 0 0 1 4 8 9 9,"a__ NOUN
+
+1A military officer who acts as an administrative assistant to a senior officer.
+‘he eventually became ___ to the commander of the tactical air force’
+1.1 A person's assistant or deputy.
+‘Hoare was his ___ in all the talks with the government’
+2A large black-and-white stork with a massive bill and a bare head and neck, found in India and SE Asia.",11/4/2017,adjutant,,,
+,"___ is a type of software testing that ensures that previously developed and tested software still performs the same way after it is changed or interfaced with other software. Changes may include software enhancements, patches, configuration changes, etc. During ___, new software bugs may be uncovered. Sometimes a software change-impact analysis is performed to determine which areas could be affected by the proposed changes. These areas may include functional and non-functional areas of the system.",5/30/2018,Regression testing,,,
+9 8 9 9 12 13,"VERB
+
+[WITH OBJECT]
+1usually as adjective __d Remove the moisture from (something), typically in order to preserve it.
+‘__d coconut’
+2as adjective __d Lacking interest, passion, or energy.
+‘a __d history of ideas’",11/12/2017,desiccate,,,
+9 14,"NOUN
+
+1The rhythm of a piece of poetry, determined by the number and length of feet in a line.
+‘the Horatian ode has an intricate governing ___’
+mass noun ‘unexpected changes of stress and ___’
+1.1 The basic rhythmic pattern of beats in a piece of music.
+‘a dance song in fast quadratic ___’
+‘Prokofiev's complex ___s’",3/28/2018,metre,(US meter),,
+,"In computer programming, an ___ is a statement that a predicate (Boolean-valued function, i.e. a true–false expression) is always true at that point in code execution. It can help a programmer read the code, help a compiler compile it, or help the program detect its own defects.",5/31/2018,assertion,,,
+,"z__ NOUN
+
+Biology 
+A diploid cell resulting from the fusion of two haploid gametes; a fertilized ovum. 受精卵",6/1/2018,zygote,,,
+8 9 11 10 9 8 13,"s__9_ adjective
+Tempting and attractive; enticing:
+a ___ voice",5/15/2017,seductive,,,

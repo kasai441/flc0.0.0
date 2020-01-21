@@ -1,110 +1,3 @@
-,"Instruction __s, such as the classic RISC ___, which are used in central processing units (CPUs) to allow overlapping execution of multiple instructions with the same circuitry. The circuitry is usually divided up into stages and each stage processes one instruction at a time. Examples of stages are instruction decode, arithmetic/logic and register fetch.",3/8/2018,pipeline,,,
-,"___, in contrast to non-___, is computer memory that requires power to maintain the stored information; it retains its contents while powered on but when the power is interrupted, the stored data is quickly lost.
-",3/9/2018,Volatile memory,,,
-6 13 14,"NOUN
-
-1An oath or swear word.
-‘he was greeted by a stream of ___s’
-2Grammar 
-A word or phrase used to fill out a sentence or a line of verse without adding to the sense.",1/29/2018,expletive,,,
-0 10 13 14,"c_8_ NOUN
-
-mass noun
-Absurd or nonsensical talk or ideas.
-‘such sentiments are just pious ___’",11/21/2017,claptrap,,,
-8 10,"VERB
-
-[NO OBJECT]
-often as adjective __ing
-1(especially of a baby) cry feebly or querulously; whimper.
-‘dozens of ___ing babies’
-1.1 (of a cat or gull) _*_.
-‘the ___ing cry of a hawk’",1/13/2018,mewl,* mew,,
-,"In computing, ___ is a design made to compensate for the relatively slow speed of dynamic random-access memory (DRAM) or core memory, by spreading memory addresses evenly across memory banks. That way, contiguous memory reads and writes are using each memory bank in turn, resulting in higher memory throughputs due to reduced waiting for memory banks to become ready for desired operations.",3/10/2018,Interleaved memory,,,
-0 0 10 11,"_8_ VERB
-
-[WITH OBJECT]
-1Attack (someone) physically or verbally.
-‘Bernard was ___ing Jed with his fists’
-2Argue or discuss (a subject) in excessive detail.
-‘there is no need to ___ the point’",12/4/2017,belabour,,,
-,"ADJECTIVE
-Relating to or using a system of numerical notation that has 8 rather than 10 as a base.
-NOUN
-mass noun
-The ___ system; ___ notation.
-‘the calculation should be done in binary or ___’",3/11/2018,octal,,,
-9 9 13,"VERB
-[WITH OBJECT]
-1Suggest or assume the existence, fact, or truth of (something) as a basis for reasoning, discussion, or belief.
-‘his theory ___d a rotatory movement for hurricanes’
-with clause ‘she ___d that the environmentalists might have a case’
-NOUN
-formal 
-1A thing suggested or assumed as true as the basis for reasoning, discussion, or belief.
-‘perhaps the ___ of Babylonian influence on Greek astronomy is incorrect’",10/26/2017,postulate,,,
-0 11 10,"s__ adjective
-(Of a place) isolated and hidden away:
-a wild ___ spot",8/15/2017,sequestered,, /sɪˈkwɛstəd/,
-,"ADJECTIVE
-
-Computing 
-Relating to or using a system of numerical notation that has 16 rather than 10 as its base.
-‘a string of ___ characters’",3/12/2018,hexadecimal,,,
-0 1 10 10 12 14,"s__ adjective
-Superficially plausible, but actually wrong:
-a ___ argument
-• Misleading in appearance, especially misleadingly attractive:
-the music trade gives Golden Oldies a ___ appearance of novelty",8/27/2017,specious,,,
-,"Anatomy 
-1The inner and typically larger of the two bones between the knee and the ankle (or the equivalent joints in other terrestrial vertebrates), parallel with the fibula.
-1.2Entomology The fourth segment of the leg of an insect, between the femur and the tarsus.",3/13/2018,tibia,,,
-2 12,A ___ is a computer that stores program instructions in electronic memory. Often the definition is extended with the requirement that the treatment of programs and data in memory be interchangeable or uniform.,3/6/2018,Stored-program computer,,,
-,"ADJECTIVE
-
-technical, archaic 
-Boat-shaped.
-
-NOUN
-
-1A boat-shaped bone in the ankle or wrist, especially that in the ankle, between the talus and the cuneiform bones.
-2mass noun A chronic disorder of the ___ bone in horses, causing lameness in the front feet.",3/15/2018,navicular,,,
-,"In computing and ___ recording technologies, an ___ is a flat, usually circular disc which encodes binary data (bits) in the form of pits (binary value of 0 or off, due to lack of reflection when read) and lands (binary value of 1 or on, due to a reflection when read) on a special material (often aluminium) on one of its flat surfaces. The encoding material sits atop a thicker substrate (usually polycarbonate) which makes up the bulk of the disc and forms a dust defocusing layer.",3/16/2018,Optical disk,,,
-11,"NOUN
-
-mass noun
-1The branch of knowledge that deals with the structure, historical development, and relationships of a language or languages.
-1.1North American Literary or classical scholarship.",12/1/2017,philology,,,
-11,"___ is a type of random access semiconductor memory that stores each bit of data in a separate tiny capacitor within an integrated circuit. The capacitor can either be charged or discharged; these two states are taken to represent the two values of a bit, conventionally called 0 and 1. The electric charge on the capacitors slowly leaks off, so without intervention the data on the chip would soon be lost. To prevent this, ___ requires an external memory refresh circuit which periodically rewrites the data in the capacitors, restoring them to their original charge. ",3/17/2018,Dynamic random-access memory (DRAM),,,
-10 7 6 10 12,"_4_ informal
-noun
-a quarrel about an unimportant matter:
-when we had our little ___s, he had only to smile to get back on the right side of me
-verb [no object]
-quarrel about an unimportant matter:
-people expected him and his wife to ___ continually",10/14/2017,spat3,,,
-0 1 10 11,"t___ ADJECTIVE
-
-1Showy but cheap and of poor quality.
-‘___ jewellery’
-1.1 Sordid or unpleasant.
-‘the ___ business of politics’",12/13/2017,tawdry,,,
-,"In system programming, an ___ is a signal to the processor emitted by hardware or software indicating an event that needs immediate attention. An ___ alerts the processor to a high-priority condition requiring the __ion of the current code the processor is executing. The processor responds by suspending its current activities, saving its state, and executing a function called an ___ handler (or an ___ service routine, ISR) to deal with the event. This __ion is temporary, and, after the ___ handler finishes, the processor resumes normal activities. There are two types of __s: hardware __s and software __s.",3/18/2018,interrupt,,,
-0 7 11 10 12 14,"i_9_ ADJECTIVE
-
-Having or showing a tendency to be easily angered.
-‘an ___ and difficult man’",11/30/2017,irascible,,,
-8 11 14,"VERB
-
-1no object Turn over something, especially the pages of a book, quickly and casually.
-‘he ___d through the pages’
-with object ‘she opened a book and ___d the pages’
-1.1___ through Search quickly through (something)
-‘she ___d through her leather handbag’",2/10/2018,riffle,,,
-9 12 13,"NOUN
-
-A group of models or motionless figures representing a scene from a story or from history; a __ vivant.
-‘in the first act the action is presented in a series of __s’",1/9/2018,tableau,"plural tableaux, plural tableaus",/ˈtabləʊ/,
 ,"o__ NOUN
 
 1A lyric poem, typically one in the form of an address to a particular subject, written in varied or irregular metre.
@@ -176,8 +69,7 @@ The term static differentiates ___ from DRAM (dynamic random-access memory) whic
 1.3 A slender support or stem of an object.
 ‘drinking glasses with long __s’
 1.4 (in a vehicle) a lever on the steering column controlling the indicators, lights, etc.
-‘the control ___ on the car's fascia’",3/30/2018,stalk1,,,
-,___ is a non-volatile memory card format developed by the SD Card Association (SDA) for use in portable devices.,4/2/2018,Secure Digital (SD),,,
+‘the control ___ on the car's fascia’",3/30/2018,stalk,,,
 ,"f__ NOUN
 
 1A cultivated hazel tree that bears edible oval nuts.
@@ -213,7 +105,6 @@ Biology
 ‘overall body shape is consistent with a ___ habit’
 1.1Botany Zoology (of a plant or animal structure) attached directly by its base without a stalk or peduncle.
 ‘sporangia may be stalked or ___’",4/9/2018,sessile,,,
-,"The ___ is an industry-driven interest group that was founded in 1993 by around 50 companies. ___ provides specifications for a complete set of protocols for wireless infrared communications, and the name ""___"" also refers to that set of protocols. The main reason for using ___ had been wireless data transfer over the “last one meter” using point-and-shoot principles. Thus, it has been implemented in portable devices such as mobile telephones, laptops, cameras, printers, and medical devices. ",4/17/2018,Infrared Data Association (IrDA),,,
 ,"NOUN
 
 Botany 
@@ -308,7 +199,6 @@ mass noun
 The criminal act of deliberately setting fire to property.
 ‘police are treating the fire as ___’
 as modifier ‘an ___ attack’",2/9/2018,arson,,,
-,"___ is an acronym for ___, a method for organizing and manipulating a data buffer, where the oldest (first) entry, or 'head' of the queue, is processed first. It is analogous to processing a queue with first-come, first-served (FCFS) behaviour: where the people leave the queue in the order in which they arrive.",5/2/2018,"FIFO first in, first out",,,
 10 9 14,"NOUN
 
 1A round or cylindrical container used for storing such things as food, chemicals, or rolls of film.
@@ -365,7 +255,7 @@ The large bone forming the heel. It articulates with the cuboid bone of the foot
 1A small sheltered bay.
 1.1dialect A sheltered recess among hills or in the side of a mountain.
 2Architecture 
-A concave arch or arched moulding, especially one formed at the junction of a wall with a ceiling.",5/10/2018,cove1,,,
+A concave arch or arched moulding, especially one formed at the junction of a wall with a ceiling.",5/10/2018,cove,,,
 9 11 14,"NOUN
 
 1A person who sells or deals in particular goods.
@@ -390,9 +280,8 @@ Compare with diploid
 
 Botany 
 (in the life cycle of plants with alternating generations) the _＊_-producing and usually haploid phase, producing the zygote from which the sporophyte arises. It is the dominant form in bryophytes. 生殖母体",5/23/2018,gametophyte,＊ gamete,,
-12,"___ is a method used to digitally represent sampled analog signals. It is the standard form of digital audio in computers, compact discs, digital telephony and other digital audio applications. In a ___ stream, the amplitude of the analog signal is sampled regularly at uniform intervals, and each sample is quantized to the nearest value within a range of digital steps.",5/20/2018,"Pulse-code modulation
-PCM",,,
-,"___ in computer science is a method where the solution to a problem depends on solutions to smaller instances of the same problem (as opposed to iteration). The approach can be applied to many types of problems, and ___ is one of the central ideas of computer science.",5/28/2018,Recursion (computer science),,,
+12,"___ is a method used to digitally represent sampled analog signals. It is the standard form of digital audio in computers, compact discs, digital telephony and other digital audio applications. In a ___ stream, the amplitude of the analog signal is sampled regularly at uniform intervals, and each sample is quantized to the nearest value within a range of digital steps.",5/20/2018,Pulse-code modulation,PCM,,
+,"___ in computer science is a method where the solution to a problem depends on solutions to smaller instances of the same problem (as opposed to iteration). The approach can be applied to many types of problems, and ___ is one of the central ideas of computer science.",5/28/2018,Recursion, (computer science),,
 0 0 0 1 4 8 9 9,"a__ NOUN
 
 1A military officer who acts as an administrative assistant to a senior officer.
@@ -424,3 +313,89 @@ A diploid cell resulting from the fusion of two haploid gametes; a fertilized ov
 8 9 11 10 9 8 13,"s__9_ adjective
 Tempting and attractive; enticing:
 a ___ voice",5/15/2017,seductive,,,
+8 10 9 8 14,"s_10_ ADJECTIVE
+
+Extremely impressive.
+‘the most ___ views’",11/6/2017,stupendous,,,
+9 9 10 9 14,"c__ NOUN
+
+mass noun
+1The crisp fatty skin of roast pork.
+2British offensive, informal Attractive women regarded collectively as objects of sexual desire.
+‘he had a splendid bit of ___ in his arms’",10/22/2017,crackling,,,
+,"b__ NOUN
+
+Botany 
+A small flowerless green plant of the division _＊_, which comprises the mosses and liverworts.蘚類",6/3/2018,bryophytes,＊ Bryophyta,,
+0 10,"b__ ADJECTIVE
+
+1(of a baby) vigorous and healthy.
+‘Lisa gave birth to a ___ baby boy’
+2Lively and confident.
+‘by the next day she was her usual ___, energetic self’",4/13/2018,bouncing,,,
+8,"NOUN
+
+Botany 
+(in the life cycle of plants with alternating generations) the asexual and usually diploid phase, producing spores from which the gametophyte arises. It is the dominant form in vascular plants, e.g. the frond of a fern.胞子体",6/2/2018,sporophyte,,,
+,"A _8_ in engineering is a design feature or practice that in the event of a specific type of failure, inherently responds in a way that will cause no or minimal harm to other equipment, the environment or to people.",6/7/2018,fail-safe,,,
+11,"A discussion ___ or debate ___ is a person whose role is to act as a neutral participant in a debate or discussion, holds participants to time limits and tries to keep them from straying off the topic of the questions being raised in the debate. Sometimes __s may ask questions intended to allow the debate participants to fully develop their argument in order to ensure the debate moves at pace.",6/5/2018,moderator,,,
+,"NOUN
+
+Botany 
+The upper angle between a leaf stalk or branch and the stem or trunk from which it is growing.",6/21/2018,axil,,,
+,"i__ VERB
+
+[WITH OBJECT]
+1Scatter among or between other things; place here and there.
+‘deep pools __d by shallow shingle banks’
+1.1 Diversify (a thing or things) with other things at intervals.
+‘the debate was __d with angry exchanges’",6/23/2018,intersperse,,,
+11,"NOUN
+
+A straight line that continually approaches a given curve but does not meet it at any finite distance.",6/22/2018,asymptote,,,
+4 13 14,"NOUN
+
+A woman's or girl's formal greeting made by bending the knees with one foot in front of the other.
+‘she bobbed a ___ to him’",6/11/2018,curtsy,(also curtsey),,
+,"___ is a computer network administration software utility used to test the reachability of a host on an Internet Protocol (IP) network. It measures the round-trip time for messages sent from the originating host to a destination computer that are echoed back to the source. The name comes from active sonar terminology that sends a pulse of sound and listens for the echo to detect objects under water, although it is sometimes interpreted as a backronym to packet Internet groper.",6/28/2018,Ping,,,
+,"ADJECTIVE
+
+1Curved like the uncial ＊; crescent-shaped.
+2S-shaped.",7/10/2018,sigmoid,＊ sigma,,
+12,"NOUN
+
+1A secret or disguised way of writing; a code.
+‘he wrote cryptic notes in a ___’
+mass noun ‘the information may be given in ___’
+2dated A zero; a figure 0.
+3A monogram.
+‘a pair of rock crystal goblets engraved with the ___ of Peter the Great’",7/21/2018,cipher,(also cypher),,
+12,"NOUN
+
+An acronym deliberately formed from a phrase whose initial letters spell out a particular word or words, either to create a memorable name or as a fanciful explanation of a word's origin.
+‘Biodiversity Serving Our Nation, or BISON (a ___ if ever there was one)’",7/22/2018,backronym,"backronym
+(also bacronym)",,
+,"ADJECTIVE
+
+1Of or written in a majuscule script with rounded unjoined letters which is found in European manuscripts of the 4th–8th centuries and from which modern capital letters are derived.
+2rare Relating to an inch or an ounce.",7/18/2018,uncial,,,
+7,"NOUN
+
+mass noun
+The art or process of deciphering coded messages without being told the key.",7/20/2018,cryptanalysis,,,
+,"NOUN
+
+mass noun
+1Large lettering, either capital or uncial, in which all the letters are the same height.
+as modifier ‘Insular ___ script’
+1.1count noun A large letter.",7/23/2018,majuscule,,,
+,"In logic, especially mathematical logic, a ___ lists and describes the non-logical symbols of a formal language. In universal algebra, a ___ lists the operations that characterize an algebraic structure. In model theory, __s are used for both purposes.
+
+__s play the same role in mathematics as type __s in computer programming. They are rarely made explicit in more philosophical treatments of logic.",7/26/2018,signature,,,
+6 9 11 12,"___ is a subset of the Rijndael block cipher developed by two Belgian cryptographers, Vincent Rijmen and Joan Daemen, who submitted a proposal to NIST during the ___ selection process. Rijndael is a family of ciphers with different key and block sizes.
+For ___, NIST selected three members of the Rijndael family, each with a block size of 128 bits, but three different key lengths: 128, 192 and 256 bits.",7/28/2018,Advanced Encryption Standard,AES,,
+,"NOUN
+
+A test for intelligence in a computer, requiring that a human being should be unable to distinguish the machine from another human being by using the replies to questions put to both.",8/5/2018,Turing test,,,
+1 8 11,"The ___ is a symmetric-key algorithm for the encryption of electronic data. Although insecure, it was highly influential in the advancement of modern cryptography.",7/27/2018,Data Encryption Standard," (DES /ˌdiːˌiːˈɛs, dɛz/)",,
+,"___ is an automated method of biometric identification that uses mathematical pattern-recognition techniques on video images of one or both of the _＊_s of an individual's eyes, whose complex patterns are unique, stable, and can be seen from some distance.虹彩認証",8/6/2018,Iris recognition,＊ iris,,

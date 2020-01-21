@@ -1,96 +1,92 @@
-0 5 6,"NOUN
+2,"VERB
 
-the ___ The second period of the Palaeozoic era, between the Cambrian and Silurian periods, or the system of rocks deposited during it.
-‘these are mobile predators that have a fossil record reaching back to the ___’
-The ___ lasted from about 510 million to 439 million years ago. It saw the diversification of many invertebrate groups and the appearance of the first vertebrates (jawless fish)",10/27/2019,Ordovician,,,
-0,"NOUN
+[WITH OBJECT]
+1Geometry 
+(of a line, arc, or figure) form (an angle) at a particular point when straight lines from its extremities are joined at that point.
+‘the angle __d by a string of length r at the centre of the sphere’  
+1.1(of an angle or chord) have bounding lines or points that meet or coincide with those of (a line or arc).",11/18/2019,subtend,,,
+,"NOUN
 
-the ___ The third period of the Palaeozoic era, between the Ordovician and Devonian periods, or the system of rocks deposited during it.
-‘the earliest arachnids turn up in the ___’
-The ___ lasted from about 439 to 409 million years ago. The first true fish and land plants appeared, and the end of the period is marked by the climax of the Caledonian orogeny",10/28/2019,Silurian,,,
+mass noun
+1Chemistry 
+A colourless crystalline compound with basic properties.
+A heteroaromatic compound; chemical formula: C₄H₄N₂  
+1.1count noun A substituted derivative of ___, especially the bases thymine and cytosine present in DNA.",11/17/2019,pyrimidine,,/pɪˈrɪmɪdiːn/ ,
 ,"ADJECTIVE
 
-1Relating to _(n)_.  
-2Geology 
-Relating to or denoting the fourth period of the Palaeozoic era, between the Silurian and Carboniferous periods.
-The ___ period lasted from about 409 to 363 million years ago. During this period fish became abundant, the first amphibians evolved, and the first forests appeared",10/29/2019,Devonian,,,
+Relating to or denoting the era between the Palaeozoic and Cenozoic eras, comprising the Triassic, Jurassic, and Cretaceous periods. 中生代
+‘fossils of ___ birds have been described at an unprecedented rate’",11/19/2019,Mesozoic,,,
+,"NOUN
+
+mass noun
+Biochemistry 
+An amino acid which is a constituent of most proteins, especially collagen.
+A heterocyclic compound; chemical formula: C₅H₉NO₂",11/20/2019,proline,,,
+4,"i__ NOUN
+
+mass noun
+Biochemistry 
+A simple carbohydrate which occurs in animal and plant tissue and is a vitamin of the B group.
+Alternative name: hexahydroxycyclohexane; chemical formula: C₆H₁₂O₆",11/22/2019,inositol,,/ʌɪˈnəʊsɪtɒl/,
+0,"In molecular biology, the ___ domain (FAS1 domain) is an extracellular domain of about 140 amino acid residues. It has been suggested that the FAS1 domain represents an ancient cell adhesion domain common to plants and animals;[1] related FAS1 domains are also found in bacteria.[2]",11/21/2019,fasciclin,,,
+,"NOUN
+
+1British A garment consisting of trousers with a bib held up by straps over the shoulders, made of calico, denim, or a similar material and worn as casual or working clothes.",11/23/2019,dungarees,,/ˌdʌŋɡəˈriː/,
+,"___, also known as 5′-uridylic acid (conjugate base uridylate), is a nucleotide that is used as a monomer in RNA. It is an ester of phosphoric acid with the nucleoside uridine. ___ consists of the phosphate group, the pentose sugar ribose, and the nucleobase uracil; hence, it is a ribonucleotide monophosphate.",11/24/2019,Uridine monophosphate,(UMP),,
+,"NOUN
+
+Biochemistry 
+usually with modifier
+An enzyme that catalyses the transfer of a phosphate group from ATP to a specified molecule.",11/25/2019,kinase,,,
+,"NOUN
+
+Zoology 
+A cartilaginous skeletal rod supporting the body in all embryonic and some adult chordate animals.",11/26/2019,notochord,,,
+,"c__ ADJECTIVE
+
+Relating to or denoting the most recent era, following the Mesozoic era and comprising the Tertiary and Quaternary periods. 新生代
+The ___ has lasted from about 65 million years ago to the present day. It has seen the rapid evolution and rise to dominance of mammals, birds, and flowering plants
+",11/27/2019,Cenozoic,also Cainozoic,/ˌsiːnəˈzəʊɪk/,
 ,"ADJECTIVE
 
-1Geology 
-Relating to or denoting the fifth period of the Palaeozoic era, between the Devonian and Permian periods.  
-1.1the __as noun The ___ period or the system of rocks deposited during it.
-The ___ lasted from about 363 to 290 million years ago. During this time the first reptiles and seed-bearing plants appeared, and there were extensive coral reefs and coal-forming swamp forests 石炭紀",10/30/2019,Carboniferous,,,
-,"NOUN
-
-the ___ The last period of the Palaeozoic era, between the Carboniferous and Triassic periods, or the system of rocks deposited during it.
-‘trilobites disappeared in the mass extinction at the end of the ___’
-The ___ lasted from about 290 million to 245 million years ago. The climate was hot and dry in many parts of the world during this period, which saw the extinction of many marine animals, including trilobites, and the proliferation of reptiles",10/31/2019,Permian,,,
-0 0,"NOUN
-
-mass noun
-A thick yellowish or greenish opaque liquid produced in infected tissue, consisting of dead white blood cells and bacteria with tissue debris and serum. 膿",11/1/2019,pus,,,
-,"NOUN
-
-Biochemistry 
-A compound (e.g. adenosine or cytidine) consisting of a purine or pyrimidine base linked to a sugar.  
-‘The chemical and biological effects of UV radiation on purine and pyrimidine __s and nucleotides have been the subject of many studies.’",11/2/2019,nucleoside,,,
-,"NOUN
-
-mass noun
-A digestive enzyme which breaks down proteins in the small intestine, secreted by the pancreas as __inogen.  
-‘Many people take extra doses of naturally produced enzymes, such as lactase, pepsin and ___, in supplement form.’",11/3/2019,trypsin,,,
+Relating to or denoting the last period of the Mesozoic era, between the Jurassic and Tertiary periods. 白亜紀
+‘the lizard was believed to have lived during the ___ period’",11/28/2019,Cretaceous,,/krɪˈteɪʃəs/ ,
 0,"NOUN
 
-mass noun
-The chemical element of atomic number 35, a dark red fuming toxic liquid with a choking, irritating smell. It is a member of the halogen group and occurs chiefly in the form of salts in seawater and brines.臭素",11/4/2019,"bromine
-(also Br)",,,
-,"NOUN
+1historical A calf-high or knee-high boot of cloth or leather.  
+1.1A thick-soled laced boot worn by an ancient Athenian tragic actor to gain height.  
+1.2the ___ The style or spirit of tragic drama.",11/29/2019,buskin,,,
+5,"ADJECTIVE
 
-Physics 
-The SI unit of luminous intensity. One ___ is the luminous intensity, in a given direction, of a source that emits monochromatic radiation of frequency 540 × 10¹² Hz and that has a radiant intensity in that direction of 1/683 watt per steradian.",11/6/2019,"candela
-(also cd)",,,
-0 1 6 6,"p__ NOUN
-
-mass noun
-Biochemistry 
-An amino acid widely distributed in plant proteins. It is an essential nutrient in the diet of vertebrates.
-Chemical formula: C₆H₅CH₂CH(NH₂)COOH  
-‘Trypsin favors basic residues like lysine and arginine; chymotrypsin favors aromatic residues like ___, tyrosine, and tryptophan.’",10/12/2019,phenylalanine,,/ˌfiːnʌɪlˈaləniːn/,
-0,"NOUN
-
-mass noun
-Biochemistry 
-The controlled enzymatic modification of an organic molecule, especially a protein, by addition of a sugar molecule.
-In living organisms, ___ typically enhances (or enables) the function of a protein",11/7/2019,glycosylation,,/ˌɡlʌɪkə(ʊ)sɪˈleɪʃ(ə)n/,
-,膵臓,11/8/2019,pancreas,,,
-6,"NOUN
-
-The SI unit of solid angle, equal to the angle at the centre of a sphere subtended by a part of the surface equal in area to the square of the radius.",11/5/2019,"steradian
-(also sr)",,,
-,"NOUN
-
-mass noun
-1Water strongly impregnated with salt.
-‘other vegetables would be pickled in ___’  
-1.1Seawater.
-‘dolphins and whales can't help taking in the odd gulp of ___ as they swallow a fish’",11/9/2019,brine,,,
-,"NOUN
-
+1Third in order or level.
+‘the ___ stage of the disease’  
+1.1British Relating to or denoting education at a level beyond that provided by schools, especially that provided by a college or university.  
+2
+(also ___)
 Geology 
-A belt of the earth's crust involved in the formation of mountains.  
-‘These collision zones are known as __ic belts, and the mountains are referred to as __s.’",11/10/2019,orogen,,,
+Relating to or denoting the first period of the Cenozoic era, between the Cretaceous and Quaternary periods, and comprising the Palaeogene and Neogene sub-periods. 第三紀",11/30/2019,Tertiary,,/ˈtəːʃ(ə)ri/,
 ,"ADJECTIVE
 
-1(chiefly in names or geographical terms) relating to Scotland or the Scottish Highlands.
-‘the ___ Railway’  
-2Geology 
-Relating to or denoting a mountain-forming period (orogeny) in north-western Europe and Greenland during the Lower Palaeozoic era, especially the late Silurian.",11/11/2019,Caledonian,,,
-6 6,"___ are members of the hydroxyproline (Hyp)-rich cell wall glycoprotein superfamily and are extensively glycosylated. __s contains a protein backbone of varied length (5-30 kDa) with N-terminal secretory peptide followed by ___, fasciclin (FAS) domains, and a C-terminal glycosylphosphatidylinositol (GPI) lipid anchor site.",10/22/2019,Arabinogalactan-proteins (AGP),,,
-,"ADJECTIVE
-
-Relating to or denoting the earliest period of the Mesozoic era, between the Permian and Jurassic periods. 三畳紀
-‘fossil remains of a small ___ reptile have been found’",11/12/2019,Triassic,,,
+1Fourth in order or rank; belonging to the fourth order.  
+2
+(also ___)
+Geology 
+Relating to or denoting the most recent period in the Cenozoic era, following the Tertiary period and comprising the Pleistocene and Holocene epochs. 第四紀  
+3Chemistry 
+Denoting an ammonium compound containing a cation of the form NR₄⁺, where R represents organic groups or atoms other than hydrogen.",12/1/2019,Quaternary,,,
 ,"NOUN
 
-Chemistry 
-Any of a class of organic compounds that are fatty acids or their derivatives and are insoluble in water but soluble in organic solvents. They include many natural oils, waxes, and steroids. 脂質",11/13/2019,lipid,,,
+mass noun
+1British A type of cotton cloth, typically plain white or unbleached. 更紗(さらさ)
+as modifier ‘a ___ dress’  
+1.1North American Printed cotton fabric.
+‘his trousers were of striped ___’
+count noun ‘muslins and __s became the fashionable fabrics’",12/2/2019,calico,,,
+,"ADJECTIVE
+
+Relating to or denoting the first epoch of the Quaternary period, between the Pliocene and Holocene epochs.更新世
+‘at the end of the ___ era sea levels increased’",12/3/2019,Pleistocene,,,
+,"NOUN
+
+A woman or girl with dark brown hair.
+‘she's a gorgeous, green-eyed ___’",12/4/2019,brunette,,,
