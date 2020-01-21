@@ -73,7 +73,7 @@ class QuizcardsController < ApplicationController
       @user = current_user
       # カードを持っている場合、今日のカードを絞り込む
       if @user.quizcards.any?
-        @quizcards_today = @user.quizcards.where('appearing_at > ?', Time.zone.today).where('appearing_at <= ?', Time.zone.today + 1).paginate(page: params[:page], per_page: 8)
+        @quizcards_today = @user.quizcards.where('appearing_at < ?', Time.zone.tomorrow).paginate(page: params[:page], per_page: 8)
       end
     end
     # cookie情報を取得
