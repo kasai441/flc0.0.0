@@ -1,6 +1,8 @@
-%h1 Waitdays#chart
-%p Find me in app/views/waitdays/chart.html.haml
-%h1 #{@wait}
-=high_chart("my_chart00", @chart00)
-=high_chart("my_chart0", @chart0)
-=high_chart("my_chart", @chart)
+%h1 待機日数グラフ
+%p X軸：練習回　Y軸：待機日数
+%div.green　
+%div.chart ：前半
+%div.blue　
+%div.chart ：後半
+=high_chart("chart_basic", @chart_basic)
+//=high_chart("my_chart0", @chart0)

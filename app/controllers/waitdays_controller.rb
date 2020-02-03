@@ -33,17 +33,43 @@ class WaitdaysController < ApplicationController
       @wait << wait_rate[s+1]
     end
 
+    basic_s = [[],[]]
+    raw_basic_s = basic_sequences
+    raw_basic_s.each do |e|
+      basic_s[0] << e[0]
+      basic_s[1] << e[1]
+    end
+
+    # w_linear = get_xy(to_nest(wait_cards))
+    basic_linear = get_xy(raw_basic_s)
+    # w_intercept = get_intercept(to_nest(wait_cards))
+    basic_intercept = get_intercept(raw_basic_s)
+    # w_linear_line = get_linear_line(to_nest(wait_cards))
+    basic_linear_line = get_linear_line(raw_basic_s)
+
     @chart00 = LazyHighCharts::HighChart.new("graph") do |c|
       c.title(text: "wait total")
       c.xAxis(categories: seq)
       c.series(name: "total", data: wait_total)
     end
 
-    @chart0 = LazyHighCharts::HighChart.new("graph") do |c|
-      c.title(text: "wait cards")
-      c.xAxis(categories: seq)
-      c.series(name: "cards", data: wait_cards)
-    end
+    # @chart0 = LazyHighCharts::HighChart.new("graph") do |c|
+    #   c.title(text: "実データ（概算）")
+    #   # c.chart(type: 'area', zoomType: 'x')
+    #   c.xAxis(categories: seq, plotBands: [{
+    #         from: get_x(w_intercept)[0],
+    #         to: get_x(w_intercept)[1],
+    #         color: 'rgba(68, 210, 150, .2)'
+    #         },{
+    #           from: get_x(w_intercept)[1],
+    #           to: get_x(w_intercept)[2],
+    #           color: 'rgba(68, 170, 213, .2)'
+    #         }])
+    #   c.series(name: "単語数", data: wait_cards)
+    #   c.series(name: "関数", data: w_linear_line, marker: { enabled: false }, lineWidth: 2, lineColor: '#999')
+    #   c.series(name: "前半平均座標(x1, y1)及び後半平均座標(x2, y2)", data: w_linear, marker: { radius: 6, fillColor: '#88aadd' })
+    #   # c.series(name: "計算の範囲", data: w_intercept)
+    # end
 
     @chart = LazyHighCharts::HighChart.new("graph") do |c|
       c.title(text: "wait rate")
@@ -51,6 +77,22 @@ class WaitdaysController < ApplicationController
       c.series(name: "waitrate", data: @wait)
     end
 
+    @chart_basic = LazyHighCharts::HighChart.new("graph") do |c|
+      c.title(text: "基本関数")
+      c.xAxis(categories: basic_s[0], plotBands: [{
+            from: get_x(basic_intercept)[0],
+            to: get_x(basic_intercept)[1],
+            color: 'rgba(68, 210, 150, .2)'
+            },{
+              from: get_x(basic_intercept)[1],
+              to: get_x(basic_intercept)[2],
+              color: 'rgba(68, 170, 213, .2)'
+            }])
+      c.series(name: "単語数", data: basic_s[1])
+      c.series(name: "関数", data: basic_linear_line, marker: { enabled: false }, lineWidth: 2, lineColor: '#999')
+      c.series(name: "前半平均座標(x1, y1)及び後半平均座標(x2, y2)", data: basic_linear, marker: { radius: 6, fillColor: '#88aadd' })
+      # c.series(name: "計算の範囲", data: basic_intercept)
+    end
     # y = a * x + b
     # 213 = a * 31 + b
     # b = 213 - a * 31
@@ -76,4 +118,5 @@ class WaitdaysController < ApplicationController
     # end
     # count
   end
+
 end
