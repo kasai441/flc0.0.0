@@ -1,85 +1,3 @@
-,"In electrical and electronic engineering a ___ is a wiring scheme in which multiple devices are wired together in sequence or in a ring. Other than a full, single loop, systems which contain internal loops cannot be called __s.",9/18/2018,daisy chain,,,
-,"NOUN
-
-mass noun
-1The process of printing from a flat surface treated so as to repel the ink except where it is required for printing.
-1.1Electronics A method analogous to ___, used in making printed circuits.",9/20/2018,lithography,/lɪˈθɒɡrəfi/,,
-7,"The ___ is a vacuum tube that contains one or more electron guns and a phosphorescent screen, and is used to display images. It modulates, accelerates, and deflects electron beam(s) onto the screen to create the images. The images may represent electrical waveforms (oscilloscope), pictures (television, computer monitor), radar targets, or other phenomena.",9/17/2018,cathode ray tube (CRT),,,
-,"In artificial intelligence, an ___ is a computer system that emulates the decision-making ability of a human expert. __s are designed to solve complex problems by reasoning through bodies of knowledge, represented mainly as if–then rules rather than through conventional procedural code. The first __s were created in the 1970s and then proliferated in the 1980s. __s were among the first truly successful forms of artificial intelligence (AI) software.",9/21/2018,expert system,,,
-12,"A ___ is a set of markup declarations that define a document type for an SGML-family markup language (SGML, XML, HTML).",9/24/2018,document type definition (DTD),,,
-12,"i__ In computing, an ___ is the part of a CPU's control unit that holds the instruction currently being executed or decoded. In simple processors each instruction to be executed is loaded into the ___ which holds it while it is decoded, prepared and ultimately executed, which can take several steps.",9/26/2018,instruction register (IR),,,
-0,"r__ In computer science, ___ systems are used as a way to store and manipulate knowledge to interpret information in a useful way. They are often used in artificial intelligence applications and research.
-
-Normally, the term '___ system' is applied to systems involving human-crafted or curated rule sets. ___ systems constructed using automatic rule inference, such as ___ machine learning, are normally excluded from this system type.",9/22/2018,rule-based,,,
-,"The ___, commonly called the instruction pointer (IP) in Intel x86 and Itanium microprocessors, and sometimes called the instruction address register (IAR), the instruction counter, or just part of the instruction sequencer, is a processor register that indicates where a computer is in its program sequence.",9/25/2018,program counter (PC),,,
-,"In computer science and mathematical optimization, a ___ is a higher-level procedure or heuristic designed to find, generate, or select a heuristic (partial search algorithm) that may provide a sufficiently good solution to an optimization problem, especially with incomplete or imperfect information or limited computation capacity. __s sample a set of solutions which is too large to be completely sampled. __s may make few assumptions about the optimization problem being solved, and so they may be usable for a variety of problems.",9/29/2018,metaheuristic,,,
-10 11,"h__ ADJECTIVE
-
-1Enabling a person to discover or learn something for themselves.
-‘a ‘hands-on’ or interactive ___ approach to learning’
-1.1Computing Proceeding to a solution by trial and error or by rules that are only loosely defined.",9/24/2018,heuristic,,,
-,"NOUN
-
-1The negatively charged electrode by which electrons enter an electrical device.
-The opposite of anode
-1.1 The positively charged electrode of an electrical device, such as a primary cell, that supplies current.
-陰極",10/2/2018,cathode,,,
-,"i__ VERB
-
-___ oneself
-Bring oneself into favour with someone by flattering or trying to please them.
-‘a sycophantic attempt to ___ herself with the local aristocracy’",10/21/2018,ingratiate,,,
-7 8 9 12,"r__ A ___ is a collection of computer software, typically malicious, designed to enable access to a computer or areas of its software that is not otherwise allowed (for example, to an unauthorized user) and often masks its existence or the existence of other software.",10/15/2018,rootkit,,,
-11,"ADJECTIVE
-
-Relating to the pleasant aspects of the countryside and country life.
-‘the church is lovely for its ___ setting’",10/23/2018,bucolic,,,
-,"NOUN
-
-1A public entertainment consisting of a procession of people in elaborate, colourful costumes, or an outdoor performance of a historical scene.
-‘they brought the history books to life at the town's ___’
-figurative ‘the ___ of public life’",10/22/2018,pageant,,,
-,"k__ NOUN
-
-A small hill or mound.
-‘a grassy ___’",10/24/2018,knoll1,,,
-,"EXCLAMATION
-
-Scottish, Irish 
-Hush (used to demand silence)
-‘___, child. Away and do what you're told’",10/28/2018,whisht,"(also whist, wheesht)",,
-2 3 10 11,___ is an email validation protocol designed to detect and block email spoofing by providing a mechanism to allow receiving mail exchangers to verify that incoming mail from a domain comes from an IP Address authorized by that domain's administrators. The list of authorized sending hosts and IP addresses for a domain is published in the Domain Name System (DNS) records for that domain in the form of a specially formatted TXT record.,10/16/2018,Sender Policy Framework (SPF),,,
-,"s__ ADJECTIVE
-
-Splendid and expensive-looking.
-‘the banquet was a ___, luxurious meal’",10/28/2018,sumptuous,,,
-,"NOUN
-
-An instrument for measuring time accurately in spite of motion or variations in temperature, humidity, and air pressure.",11/1/2018,chronometer,,,
-,"p__ ADJECTIVE
-
-1(especially of a man) rather fat.
-‘a ___ little man with a bowler hat’
-2archaic Of a stately or dignified appearance and manner.
-‘he was a man of ___ presence’",11/2/2018,portly,,,
-11,"t__ NOUN
-
-usually __s
-A long lock of a woman's hair.
-‘her golden __s tumbled about her face’",11/4/2018,tress,,,
-0 10 12,"NOUN
-
-1A picture or photograph mounted between a piece of glass and a sheet of card (or two pieces of glass) stuck together at the edges with adhesive tape.",10/29/2018,passepartout,,/ˌpaspɑːˈtuː//ˌpɑːspɑːˈtuː/,
-0 12,"VERB
-
-[WITH OBJECT]
-Hold out or put forward (something) to someone for acceptance.
-‘she __d a glass of wine’
-‘he __d his resignation’",11/10/2018,proffer,,,
-,"ADJECTIVE
-
-predicative Having or characterized by desire.
-‘the Pope was ___ of peace in Europe’",11/4/2018,desirous,,,
 0,"VERB
 
 1with object Openly resist or refuse to obey.
@@ -137,8 +55,8 @@ informal
 ‘you can't blame the wee ___’
 non-standard spelling of fellow, used in representing speech in various dialects
 2A person's boyfriend or lover.
-‘she took a fancy to her best friend's ___’",11/15/2018,"fella
-(also fellah)",,,
+‘she took a fancy to her best friend's ___’",11/15/2018,fella,"
+(also fellah)",,
 0,"VERB
 
 with object and adverbial of place Establish or settle (someone) in a comfortable, safe place.
@@ -156,18 +74,18 @@ with object and adverbial of place Establish or settle (someone) in a comfortabl
 
 1A special uniform worn by a servant, an official, or a member of a City Company.
 ‘yeomen of the guard wearing a royal red and gold ___’
-mass noun ‘pageboys in scarlet and green ___’",11/18/2018,livery1,,,
+mass noun ‘pageboys in scarlet and green ___’",11/18/2018,livery,,,
 ,"NOUN
 
 1A chain attached to a watch for carrying in a waistcoat or waistband pocket.
 1.1 A small ornament attached to a watch chain.
 1.2 A small pocket for carrying a watch.
-1.3 A tab on a key ring.",11/21/2018,fob1,,,
+1.3 A tab on a key ring.",11/21/2018,fob,,,
 0 8 12,"s__ VERB
 
 [WITH OBJECT]
 Demand or specify (a requirement), typically as part of an agreement.
-‘he __d certain conditions before their marriage’",11/19/2018,stipulate1,,,
+‘he __d certain conditions before their marriage’",11/19/2018,stipulate,,,
 0 10 12,"v__ ADJECTIVE
 
 1(of a person) talking fluently, readily, or incessantly.
@@ -191,8 +109,8 @@ Before (in time)
 as preposition ‘we hope you will return ___ long’",11/23/2018,ere,,/ɛː/,
 12,"f__ NOUN
 
-A Muslim (or, loosely, a Hindu) religious ascetic who lives solely on alms.",11/29/2018,"fakir
-(also faquir)",,,
+A Muslim (or, loosely, a Hindu) religious ascetic who lives solely on alms.",11/29/2018,fakir,"
+(also faquir)",,
 7 12,"t__ ADVERB
 
 literary, archaic 
@@ -245,23 +163,23 @@ The vascular tissue in plants which conducts water and dissolved nutrients upwar
 historical 
 1An Indian king or prince.
 1.1 A title extended to minor dignitaries and nobles in India during the British Raj.
-1.2 A title extended by the British to a Malay or Javanese ruler or chief.",12/7/2018,"raja
-(also rajah)",,,
+1.2 A title extended by the British to a Malay or Javanese ruler or chief.",12/7/2018,raja,"
+(also rajah)",,
 ,"ADJECTIVE
 
 literary term for cumbersome
 ‘Without decimals, Europe would have remained trapped in the ___ Roman system of numeration.’",12/8/2018,cumbrous,,,
 0 12,"NOUN
 
-(in India and the East) a covered litter for one passenger, consisting of a large box carried on two horizontal poles by four or six bearers.",12/10/2018,"palanquin
-(also palankeen)",,,
+(in India and the East) a covered litter for one passenger, consisting of a large box carried on two horizontal poles by four or six bearers.",12/10/2018,palanquin,"
+(also palankeen)",,
 11,"ADJECTIVE
 
 Botany 
 1Underground; subterranean.
 Compare with epigeal
-1.1 (of seed germination) with the seed leaves remaining below the ground.",12/10/2018,"hypogeal
-(also hypogean)",,,
+1.1 (of seed germination) with the seed leaves remaining below the ground.",12/10/2018,hypogeal,"
+(also hypogean)",,
 10,"e__ VERB
 
 [WITH OBJECT]
@@ -277,8 +195,8 @@ Catch sight of.
 
 1A tall headdress worn by bishops and senior abbots as a symbol of office, tapering to a point at front and back with a deep cleft between.
 2A joint made between two pieces of wood or other material at an angle of 90°, such that the line of junction bisects this angle.
-as modifier ‘a ___ saw’",12/14/2018,"mitre
-(US miter)",,,
+as modifier ‘a ___ saw’",12/14/2018,mitre,"
+(US miter)",,
 ,"t__ VERB
 
 [WITH OBJECT]
@@ -305,3 +223,189 @@ The vascular tissue in plants which conducts sugars and other metabolic products
 11,"v__ NOUN
 
 A long bridge-like structure, typically a series of arches, carrying a road or railway across a valley or other low ground.",12/20/2018,viaduct,,,
+12,"ADJECTIVE
+
+1Using money and other resources carefully and not wastefully.
+‘he had been brought up to be ___ and careful’
+2archaic, dialect (of livestock or plants) strong and healthy.
+‘the sheep are vigorous and ___’",12/15/2018,thrifty,,,
+8 11 12,"a__ ADVERB
+
+In a way that shows that one is not treating something as serious; casually.
+‘he was ___ dismissive of the question’",12/16/2018,airily,,,
+0 8,"b__ NOUN
+
+1A stupid person.
+2A large tropical seabird of the gannet family, with brown, black, or white plumage and brightly coloured feet.
+Genus Sula, family Sulidae: several species カツオドリ",12/17/2018,booby,,,
+,"ADJECTIVE
+
+1(of countryside) green with grass or other rich vegetation.
+‘___ valleys’
+1.1 Of the bright green colour of lush grass.
+‘a deep, ___ green’
+‘a serving of hideously ___ mushy peas’",12/22/2018,verdant,,,
+0 0 2,"c__ ADJECTIVE
+
+Sad and disappointed.
+‘he came back empty-handed and ___’",12/19/2018,crestfallen,,,
+12,"NOUN
+
+A magical word or phrase uttered with the intention of bringing about evil; a curse.
+‘he muttered ___ to himself as he trod the stone passages’",12/23/2018,malediction,,/ˌmalɪˈdɪkʃ(ə)n/,
+7,"NOUN
+
+mass noun
+1A dark fine-grained volcanic rock that sometimes displays a columnar structure, typically composed largely of plagioclase with pyroxene and olivine.
+玄武岩
+1.1 A kind of black stoneware developed by Josiah Wedgwood.",12/21/2018,basalt,,,
+,"NOUN
+
+A member of a religious or political sect.
+‘It was, for Tories, unthinkable to have a national church with __s outside.’",12/25/2018,sectary,,,
+,"VERB
+
+[WITH OBJECT]
+Enclose or cover in a case or close-fitting surround.
+‘each was __d in a plastic shrink-wrap’",12/26/2018,encase,"
+(also incase)",,
+oc,"ADJECTIVE predicative 1Away from the usual or expected course; amiss.  ‘I got the impression that something was ___’ ‘many youthful romances go ___’    1.1Out of the normal or correct position; askew. ‘he was hatless, his silver hair ___’",4/6/2014,awry,,,
+oc,VERB with object and adverbial 1Lift or carry (something heavy)  ‘he lifted crates and ___d boxes’    1.1Lift or hold (something) in order to test its weight. ‘Anne ___d the gun in her hand’,4/15/2014,heft,,,
+oc,a__ NOUN mass noun 1Greek Mythology Roman Mythology The food of the gods.    1.1Something very pleasing to taste or smell. ‘the tea was ___ after the slop I'd been suffering’ ,5/1/2014,ambrosia,,,
+oc,"n A rope with a noose at one end, used especially in North America for catching cattle. ",10/15/2013,lasso,,,
+oc,NOUN The organ in the lower body of a woman or female mammal where offspring are conceived and in which they gestate before birth; the uterus.  ,5/9/2014,womb,,,
+oc,NOUN 1A long wall or embankment built to prevent flooding from the sea.     1.1often in place names A low wall or earthwork serving as a boundary or defence. ‘Offa's ___’    1.2A causeway.,6/17/2014,dyke,,,
+oc,VERB [WITH OBJECT] 1often as adjective ___d Shorten (something) by cutting off the top or the end.  ‘a ___d cone shape’ ‘discussion was ___d by the arrival of tea’,6/19/2014,truncate,,,
+oc,VERB [NO OBJECT] informal 1 ___ onBegin to understand.  ‘he ___d on to what I was trying to say’    2 ___ toNorth American Have a liking for.  ‘his rivals didn't ___ to all the attention he was getting’,6/23/2014,cotton,,,
+oc,"VERB [NO OBJECT] Laugh lightly and repeatedly in a silly way, from amusement, nervousness, or embarrassment.  ‘they ___d at some private joke’",6/27/2014,giggle,,,
+oc,"n Anatomy The part of the brain at the back of the skull in vertebrates, which coordinates and regulates muscular activity.   ",7/30/2014,cerebellum,,,
+oc,"q__ n 1Physics A discrete quantity of energy proportional in magnitude to the frequency of the radiation it represents.    1.1An analogous discrete amount of any other physical quantity, such as momentum or electric charge.",8/2/2014,quantum,,,
+oc,"NOUN 1Anatomy Zoology The surface epithelium of the skin, overlying the dermis.     1.1Botany The outer layer of tissue in a plant, except where it is replaced by periderm.",8/6/2014,epidermis,,,
+oc,"NOUN 1A long, narrow opening or line of breakage made by cracking or splitting, especially in rock or earth.  ‘the bacteria survive around vents or ___s in the deep ocean floor’   ",8/13/2014,fissure,,,
+oc,"n 1Anatomy The outer layer of the cerebrum (the cerebral ___), composed of folded grey matter and playing an important role in consciousness.   ",8/18/2014,cortex,,,
+oc,VERB [WITH OBJECT] 1Revive (someone) from unconsciousness or apparent death.  ‘an ambulance crew tried to ___ him’    1.1Make (something) active or vigorous again. ‘measures to ___ the ailing economy’,10/5/2012,resuscitate,,,
+oc,VERB [WITH OBJECT] 1Put (a fine or loose substance) through a sieve so as to remove lumps or large particles.  ‘___ the flour into a large bowl’   ,8/24/2014,sift,,,
+oc,"NOUN mass noun 1The skin.    1.1Anatomy The thick layer of living tissue below the epidermis which forms the true skin, containing blood capillaries, nerve endings, sweat glands, hair follicles, and other structures.   ",8/4/2014,dermis,,,
+oc oc2,"NOUN Zoology A mollusc of the large class ___a, such as a snail, slug, or whelk.   ",9/28/2014,gastropod,,,
+oc,"NOUN 1A nipple of the mammary gland of a female mammal, from which the milk is sucked by the young.    1.1British A thing resembling a ___ or nipple, especially a perforated plastic bulb by which an infant or young animal can suck milk from a bottle.",8/30/2014,teat,,,
+oc,n 1The large bony frame near the base of the spine to which the hindlimbs or legs are attached in humans and many other vertebrates.    1.1The part of the abdomen including or enclosed by the ___.  ,9/27/2014,pelvis,,,
+oc,v [NO OBJECT] 1(of a pigeon or dove) make a soft murmuring sound.  ‘ringdoves ___d among the branches’   1.1(of a person) speak in a soft gentle voice. ,10/8/2014,coo,,,
+oc,NOUN 1A group of stars forming a recognizable pattern that is traditionally named after its apparent form or identified with a mythological figure.     1.1A group of associated or similar people or things. ‘no two patients ever show exactly the same ___ of symptoms’,10/9/2014,constellation,,,
+oc,v [WITH OBJECT] literary 1(especially of a man) bring (a child) into existence by the process of reproduction.  ‘they hoped that the King might ___ an heir by his new queen’    ,10/29/2014,beget,,,
+oc,"n A simple, non-flowering, and typically aquatic plant of a large group that includes the seaweeds and many single-celled forms. ___s contain chlorophyll but lack true stems, roots, leaves, and vascular tissue.  Divisions Chlorophyta (green ___s), Heterokontophyta (brown ___s), and Rhodophyta (red ___s); some (or all) are frequently placed in the kingdom Protista",10/23/2014,alga,pl algae,,
+oc,n  1A circle of light shown around or above the head of a saint or holy person to represent their holiness.     1.1The glory associated with an esteemed person. ‘he has lost his ___ for many ordinary Russians’  ,10/28/2014,halo,,,
+oc,"VERB no object, with adverbial of direction 1Travel constantly without a fixed destination; wander.  ‘he spent most of the 1990s ___ing about the Caribbean’    1.1with object Wander over or through (a place) ‘children ___ing the streets’",11/1/2014,rove,,,
+oc,"VERB [WITH OBJECT] 1Put upside down or in the opposite position, order, or arrangement.  ‘___ the mousse on to a serving plate’   ",11/9/2014,invert,,,
+oc,PLURAL NOUN treated as singular or plural The branch of medicine or social science dealing with the health and care of old people.  ,2/16/2014,geriatrics,,,
+oc,"n 1A pig___.  ‘It was a complete ___; papers littered the ground, dirty dishes were in the sink, and the windows were covered with a grimy film.’ ‘I'm gonna catch a disease with my clothes torn, my body sweating and now, having to crawl through an absolute ___ of filth!’ ",12/10/2014,sty,,,
+oc,"NOUN 1A claw, especially one belonging to a bird of prey.  ‘the mouse wouldn't have stood much chance against the peregrine's ___s’ ‘the black ___s of mechanized war’   ",12/13/2014,talon,,,
+oc,"w__ NOUN A predatory marine mollusc with a heavy pointed spiral shell, some kinds of which are edible.  Family Buccinidae, class Gastropoda: Buccinum and other genera   ",10/2/2014,whelk,,,
+oc,NOUN 1Law A judicial inquiry to ascertain the facts relating to an incident.     1.1British An inquiry by a coroner's court into the cause of a death.,1/3/2015,inquest,,,
+oc,"NOUN 1A long-handled brush of bristles or twigs, used for sweeping.     1.1An implement for sweeping the ice in the game of curling.  ",1/5/2015,broom,,,
+oc,NOUN 1(in some European countries) a nobleman ranking above a count and below a duke.   ,1/1/2014,marquis,,,
+oc,"VERB [NO OBJECT] informal 1Noisily release air from the stomach through the mouth; belch.     1.1with object Make (a baby) belch after feeding, typically by patting its back.",10/15/2014,burp,,,
+oc,ADJECTIVE 1(of liquid or food that should be hot) only moderately warm; tepid.  ‘they drank bitter ___ coffee’    2Showing little enthusiasm.  ‘the film received a ___ reception from critics’,2/16/2015,lukewarm,,,
+oc,u__ VERB [WITH OBJECT] 1Take (a position of power or importance) illegally or by force.  ‘Richard ___d the throne’    1.1Take the place of (someone in a position of power) illegally; supplant.,2/15/2015,usurp,,,
+oc oc2,NOUN 1A person without a settled home or regular work who wanders from place to place and lives by begging.    ,12/14/2014,vagrant,,,
+oc,"NOUN 1British A mark (✓) used to indicate that an item in a list or text is correct or has been chosen, checked, or dealt with.     2A regular short, sharp sound, especially that made by a clock or watch.",3/2/2015,tick,,,
+oc,"NOUN The mammary gland of female cattle, sheep, goats, horses, and related animals, having two or more teats and hanging between the hind legs of the animal.   ",3/2/2015,udder,,,
+oc,ADJECTIVE 1(especially of a liquid) only slightly warm; lukewarm.  ‘she soaked a flannel in the ___ water’    2Showing little enthusiasm.  ‘the applause was ___’,3/3/2015,tepid,,,
+oc,___ 1 ___ something outwith object Untangle or Un___ something.  ‘Davy had finished __ing out his herring net’    2no object Un___; fray.  as adjective __d ‘a shirt with a ___d collar’ ,1/12/2015,ravel,,,
+oc,"NOUN mass noun 1A substance, typically yeast, that is used in dough to make it rise.  ‘Once active, even a small amount of ___ will be able to convert a very large quantity of new flour and water into fresh ___ overnight.’ ",10/24/2014,leaven,,,
+oc,VERB [NO OBJECT] Wash one's mouth and throat with a liquid that is kept in motion by breathing through it with a gurgling sound.  ‘he ___d with alcohol for toothache’,3/26/2015,gargle,,,
+,"NOUN
+
+mass noun
+An olive-green, grey-green, or brown mineral occurring widely in basalt, peridotite, and other basic igneous rocks. It is a silicate containing varying proportions of magnesium, iron, and other elements. カンラン石",12/31/2018,olivine,,,
+10,"l_6_ ADJECTIVE
+
+1(of a liquid) completely clear and transparent.
+‘the ___ waters of the Caribbean’
+1.1 (of a person's eyes) unclouded; clear.
+‘the ___ grey eyes gazed trustfully at her’",12/24/2018,limpid,,,
+10,"s__ ADJECTIVE
+
+1Slow-moving or inactive.
+‘a ___ stream’
+1.1 Lacking energy or alertness.
+‘Alex woke late feeling tired and ___’",12/27/2018,sluggish,,,
+,"z__ NOUN
+
+another term for Brahmin (sense 3)",1/1/2019,zebu,,,
+3,"NOUN
+
+1A sweet, dark brown oval fruit containing a hard stone, usually eaten dried.
+ナツメヤシ
+2A tall palm tree which bears clusters of __s, native to western Asia and North Africa.
+Phoenix dactylifera, family Palmae",12/28/2018,date,,,
+,"p__ VERB
+
+[NO OBJECT]
+humorous, formal 
+1Walk or travel through or round a place or area, especially for pleasure and in a leisurely way.
+‘the locals ___ up and down the thoroughfare’
+with object ‘she __d the square’",1/2/2019,perambulate,,,
+,"ADJECTIVE
+
+Powerfully and mysteriously attractive or fascinating; seductive.
+‘the town offers ___ shops and restaurants’",1/4/2019,alluring,,,
+0,"h__ NOUN
+
+(in South Asia) a seat for riding on the back of an elephant or camel, typically with a canopy and accommodating two or more people.",1/5/2019,howdah,,/ˈhaʊdə/,
+7 10 11,"p_8_ NOUN
+
+Any of a large class of rock-forming silicate minerals, generally containing calcium, magnesium, and iron and typically occurring as prismatic crystals. 輝石",12/29/2018,pyroxene,,,
+11 12,"f__ NOUN
+
+1A secure place well protected by natural features.
+‘a remote Himalayan mountain ___’
+2mass noun The ability of a material or dye to maintain its colour without fading or washing away.
+‘the dyes differ in their ___ to light’",1/9/2019,fastness,,,
+,"NOUN
+
+1mass noun Temporary unconsciousness or confusion and other symptoms caused by a blow on the head.
+‘he was carried off the pitch with ___’
+count noun ‘nothing more serious than a mild ___’",1/7/2019,concussion,,,
+,"VERB
+
+1with object Stand astride over; straddle.
+‘he __d me, defending my prone body’
+figurative ‘creatures that ___ the dividing line between amphibians and reptiles’
+1.1 Sit astride on.
+‘he __d his horse with the easy grace of a born horseman’
+2Dominate.
+‘he __s Alberta politics today’",1/11/2019,bestride,pt bestrode,,
+0 0,"NOUN
+
+1A muscular, thick-walled part of a bird's stomach for grinding food, typically with grit.
+1.1 A muscular stomach of some fish, insects, molluscs, and other invertebrates.
+1.2informal A person's stomach or throat.
+‘the fans wanted to see him rip the __s out of bad guys’",1/13/2019,gizzard,,,
+0 0 12,"l__ ADJECTIVE
+
+Looking or sounding sad and dismal.
+‘his face looked even more ___ than usual’",1/13/2019,lugubrious,,,
+0 9 12,"s__ NOUN
+
+mass noun
+Geology 
+A coarse-grained grey igneous rock composed mainly of alkali feldspar and ferromagnesian minerals such as hornblende.閃長岩",1/8/2019,syenite,,,
+0 0 8 9 11 12,"p__ NOUN
+
+1A fence made from pointed wooden or metal posts.
+1.1 A post used in a ___.",1/3/2019,paling,,,
+0 8 11,"r__ ADJECTIVE
+
+1Extremely hungry.
+‘I'd been out all day and was ___’
+1.1 (of hunger or need) very great; voracious.
+‘a ___ appetite’",1/10/2019,ravenous,,,
+0 3 5 8 9,"p__ NOUN
+
+mass noun
+A form of feldspar consisting of aluminosilicates of sodium and/or calcium, common in igneous rocks and typically white. 斜長石",12/29/2018,plagioclase, (also plagioclase feldspar),/ˈpleɪdʒɪə(ʊ)kleɪz//ˈplaɡɪəʊkleɪz/,
+,"NOUN
+
+1A sacred song or hymn, in particular any of those contained in the biblical Book of __s and used in Christian and Jewish worship.
+‘a delightful setting of ___ 150’
+1.1(__s"" or ""Βook of __s) A book of the Bible comprising a collection of religious verses, sung or recited in both Jewish and Christian worship.",1/14/2019,psalm,,,

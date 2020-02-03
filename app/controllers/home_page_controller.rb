@@ -12,8 +12,9 @@ class HomePageController < ApplicationController
       @answer_time = @user.quizcards.average(:answer_time).to_i
       if !(total_time = @user.total_time).nil?
         @total_time = (total_time / 60).to_i
-        if @user.practice_days > 0
-          @daily_practices = (@user.total_practices / @user.practice_days).to_i
+        if (practice_days = @user.practice_days) > 0
+          @daily_time = @total_time / practice_days
+          @daily_practices = (@user.total_practices / practice_days).to_i
           waitday = Waitday.where(quizcard_id: @user.quizcards.select("id")).average(:wait_day)
           quantity = @user.quizcards.count
           if waitday > 0 and @total_time > 0

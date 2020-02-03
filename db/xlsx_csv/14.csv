@@ -1,147 +1,162 @@
-8 10 9 8,"s_10_ ADJECTIVE
-
-Extremely impressive.
-‘the most ___ views’",11/6/2017,stupendous,,,
-9 9 10 9,"c__ NOUN
-
-mass noun
-1The crisp fatty skin of roast pork.
-2British offensive, informal Attractive women regarded collectively as objects of sexual desire.
-‘he had a splendid bit of ___ in his arms’",10/22/2017,crackling,,,
-,"b__ NOUN
-
-Botany 
-A small flowerless green plant of the division _＊_, which comprises the mosses and liverworts.蘚類",6/3/2018,bryophytes,＊ Bryophyta,,
-,"A ___ curve or ___ function, named after Benjamin ___, is a sigmoid function. It is a type of mathematical model for a time series, where growth is slowest at the start and end of a time period. The right-hand or future value asymptote of the function is approached much more gradually by the curve than the left-hand or lower valued asymptote, in contrast to the simple logistic function in which both asymptotes are approached by the curve symmetrically. It is a special case of the generalised logistic function.",6/4/2018,Gompertz,,,
-0 10,"b__ ADJECTIVE
-
-1(of a baby) vigorous and healthy.
-‘Lisa gave birth to a ___ baby boy’
-2Lively and confident.
-‘by the next day she was her usual ___, energetic self’",4/13/2018,bouncing,,,
-8,"NOUN
-
-Botany 
-(in the life cycle of plants with alternating generations) the asexual and usually diploid phase, producing spores from which the gametophyte arises. It is the dominant form in vascular plants, e.g. the frond of a fern.胞子体",6/2/2018,sporophyte,,,
-,"A _8_ in engineering is a design feature or practice that in the event of a specific type of failure, inherently responds in a way that will cause no or minimal harm to other equipment, the environment or to people.",6/7/2018,fail-safe,,,
-,"___ is the property that enables a system to continue operating properly in the event of the failure (or one or more faults within) some of its components. If its operating quality decreases at all, the decrease is proportional to the severity of the failure, as compared to a naively designed system in which even a small failure can cause total breakdown. ___ is particularly sought after in high-availability or life-critical systems. The ability of maintaining functionality when portions of a system break down is referred to as graceful degradation.",6/8/2018,Fault tolerance,,,
-11,"A discussion ___ or debate ___ is a person whose role is to act as a neutral participant in a debate or discussion, holds participants to time limits and tries to keep them from straying off the topic of the questions being raised in the debate. Sometimes __s may ask questions intended to allow the debate participants to fully develop their argument in order to ensure the debate moves at pace.",6/5/2018,moderator,,,
-,"___ is an Internet standard for electronic mail (email) transmission. First defined by RFC 821 in 1982, it was last updated in 2008 with Extended ___ additions by RFC 5321, which is the protocol in widespread use today.
-
-Although electronic mail servers and other mail transfer agents use ___ to send and receive mail messages, user-level client mail applications typically use ___ only for sending messages to a mail server for relaying. For retrieving messages, client applications usually use either IMAP or POP3.",6/16/2018,Simple Mail Transfer Protocol (SMTP),,,
-,"___ is a data storage virtualization technology that combines multiple physical disk drive components into one or more logical units for the purposes of data redundancy, performance improvement, or both.",6/9/2018,"RAID (Redundant Array of Independent Disks, originally Redundant Array of Inexpensive Disks) ",,,
-,"In general terms, ___ is the maximum rate of production or the maximum rate at which something can be processed.
-When used in the context of communication networks, such as Ethernet or packet radio, ___ or network ___ is the rate of successful message delivery over a communication channel. The data these messages belong to may be delivered over a physical or logical link, or it can pass through a certain network node. ___ is usually measured in bits per second (bit/s or bps), and sometimes in data packets per second (p/s or pps) or data packets per time slot.",6/10/2018,throughput,,,
-0,___ is a conceptual model that characterizes and standardizes the communication functions of a telecommunication or computing system without regard to its underlying internal structure and technology. Its goal is the interoperability of diverse communication systems with standard protocols. The model partitions a communication system into abstraction layers. The original version of the model defined seven layers.,6/12/2018,The Open Systems Interconnection model (OSI model),,,
-,"The ___ is a standard network protocol used for the transfer of computer files between a client and server on a computer network.
-___ is built on a client-server model architecture and uses separate control and data connections between the client and the server. ___ users may authenticate themselves with a clear-text sign-in protocol, normally in the form of a username and password, but can connect anonymously if the server is configured to allow it. For secure transmission that protects the username and password, and encrypts the content, ___ is often secured with SSL/TLS (__S) or replaced with SSH ___ (S__).",6/14/2018,File Transfer Protocol (FTP),,,
-10 13,t___ is a protocol used on the Internet or local area network to provide a bidirectional interactive text-oriented communication facility using a virtual terminal connection. User data is interspersed in-band with ___ control information in an 8-bit byte oriented data connection over the Transmission Control Protocol (TCP).,6/15/2018,Telnet,,,
-,"The ___ is one of the main protocols of the Internet protocol suite. It originated in the initial network implementation in which it complemented the Internet Protocol (IP). Therefore, the entire suite is commonly referred to as ___/IP. ___ provides reliable, ordered, and error-checked delivery of a stream of octets (bytes) between applications running on hosts communicating via an IP network. Major internet applications such as the World Wide Web, email, remote administration, and file transfer rely on ___. ",6/19/2018,Transmission Control Protocol (TCP) ,,,
-8 11,The ___ is the conceptual model and set of communications protocols used on the Internet and similar computer networks. It is commonly known as TCP/IP because the foundational protocols in the suite are the Transmission Control Protocol (TCP) and the Internet Protocol (IP). It is occasionally known as the Department of Defense (DoD) model because the development of the networking method was funded by the United States Department of Defense through DARPA.,6/13/2018,Internet protocol suite,,,
-11,"___ is a networking protocol for clock synchronization between computer systems over packet-switched, variable-latency data networks. In operation since before 1985, ___ is one of the oldest Internet protocols in current use. ___ was designed by David L. Mills of the University of Delaware.",6/17/2018,Network Time Protocol (NTP),,,
-11 13,"s___ is an Internet Standard protocol for collecting and organizing information about managed devices on IP networks and for modifying that information to change device behavior. Devices that typically support ___ include cable modems, routers, switches, servers, workstations, printers, and more.",6/18/2018,Simple Network Management Protocol (SNMP),,,
-,"Applications that do not require reliable data stream service may use the ___, which provides a connectionless datagram service that emphasizes reduced latency over reliability.",6/20/2018,User Datagram Protocol (UDP),,,
-,"NOUN
-
-Botany 
-The upper angle between a leaf stalk or branch and the stem or trunk from which it is growing.",6/21/2018,axil,,,
-,"i__ VERB
-
-[WITH OBJECT]
-1Scatter among or between other things; place here and there.
-‘deep pools __d by shallow shingle banks’
-1.1 Diversify (a thing or things) with other things at intervals.
-‘the debate was __d with angry exchanges’",6/23/2018,intersperse,,,
-11,"NOUN
-
-A straight line that continually approaches a given curve but does not meet it at any finite distance.",6/22/2018,asymptote,,,
-4 13,"NOUN
-
-A woman's or girl's formal greeting made by bending the knees with one foot in front of the other.
-‘she bobbed a ___ to him’",6/11/2018,curtsy,(also curtsey),,
-,"___ is a computer network administration software utility used to test the reachability of a host on an Internet Protocol (IP) network. It measures the round-trip time for messages sent from the originating host to a destination computer that are echoed back to the source. The name comes from active sonar terminology that sends a pulse of sound and listens for the echo to detect objects under water, although it is sometimes interpreted as a backronym to packet Internet groper.",6/28/2018,Ping,,,
-,"The ___ is a hierarchical decentralized naming system for computers, services, or other resources connected to the Internet or a private network. It associates various information with domain names assigned to each of the participating entities. Most prominently, it translates more readily memorized domain names to the numerical IP addresses needed for locating and identifying computer services and devices with the underlying network protocols. By providing a worldwide, distributed directory service, the ___ is an essential component of the functionality on the Internet, that has been in use since 1985.",6/29/2018,Domain Name System (DNS),,,
-0 12,"___ is an Internet standard that extends the format of email to support:
-
-Text in character sets other than ASCII
-Non-text attachments: audio, video, images, application programs etc.
-Message bodies with multiple parts
-Header information in non-ASCII character sets
-Virtually all human-written Internet email and a fairly large proportion of automated email is transmitted via SMTP in ___ format.",6/25/2018,Multipurpose Internet Mail Extensions (MIME) ,,,
-0 13,n___ is a method of remapping one IP address space into another by modifying network address information in the IP header of packets while they are in transit across a traffic routing device. The technique was originally used as a shortcut to avoid the need to readdress every host when a network was moved. It has become a popular and essential tool in conserving global address space in the face of IPv4 address exhaustion. One Internet-routable IP address of a ___ gateway can be used for an entire private network.,6/30/2018,Network address translation (NAT) ,,,
-0 13,"___ provides functionality that is similar to both circuit switching and packet switching networks: ___ uses asynchronous time-division multiplexing, and encodes data into small, fixed-sized packets (ISO-OSI frames) called cells. This differs from approaches such as the Internet Protocol or Ethernet that use variable sized packets and frames.",7/5/2018,Asynchronous transfer mode (ATM),,,
-,"___ is a technique that hides an entire IP address space, usually consisting of private IP addresses, behind a single IP address in another, usually public address space. The address that has to be hidden is changed into a single (public) IP address as ""new"" source address of the outgoing IP packet so it appears as originating not from the hidden host but from the routing device itself. Because of the popularity of this technique to conserve IPv4 address space, the term NAT has become virtually synonymous with ___.",7/1/2018,IP masquerading,,,
-0 8 12,"___ is a media access control method used most notably in early Ethernet technology for local area networking. It uses carrier-sensing to defer transmissions until no other stations are transmitting. This is used in combination with collision detection in which a transmitting station detects collisions by sensing transmissions from other stations while it is transmitting a frame. When this collision condition is detected, the station stops transmitting that frame, transmits a jam signal, and then waits for a random time interval before trying to resend the frame.",7/3/2018,Carrier-sense multiple access with collision detection (CSMA/CD),,,
-,"In computer science, ___ is a set of properties of database transactions intended to guarantee validity even in the event of errors, power failures, etc. In the context of databases, a sequence of database operations that satisfies the ___ properties, and thus can be perceived as a single logical operation on the data, is called a transaction. ",7/8/2018,"ACID (Atomicity, Consistency, Isolation, Durability)",,,
-11,"A c___ is an error-detecting code commonly used in digital networks and storage devices to detect accidental changes to raw data. Blocks of data entering these systems get a short check value attached, based on the remainder of a polynomial division of their contents. On retrieval, the calculation is repeated and, in the event the check values do not match, corrective action can be taken against data corruption. __s can be used for error correction (see bitfilters).",7/7/2018,cyclic redundancy check (CRC),,,
-0 0 13,"The ___ is a network management protocol used on UDP/IP networks whereby a ___ server dynamically assigns an IP address and other network configuration parameters to each device on a network so they can communicate with other IP networks. A ___ server enables computers to request IP addresses and networking parameters automatically from the Internet service provider (ISP), reducing the need for a network administrator or a user to manually assign IP addresses to all network devices.",7/2/2018,Dynamic Host Configuration Protocol (DHCP),,,
-,___ is a function of many relational database management systems. The _*_ attempts to determine the most efficient way to execute a given query by considering the possible query plans. ,7/9/2018,Query optimization,* query optimizer,,
-,"ADJECTIVE
-
-1Curved like the uncial ＊; crescent-shaped.
-2S-shaped.",7/10/2018,sigmoid,＊ sigma,,
-7 10,"The ___ is a communication protocol used for discovering the link layer address, such as a MAC address, associated with a given network layer address, typically an IPv4 address. This mapping is a critical function in the Internet protocol suite. ___ was defined in 1982 by RFC 826, which is Internet Standard STD 37.",7/4/2018,Address Resolution Protocol (ARP),,,
-,"In cryptanalysis and computer security, a ___ is a technique for defeating a cipher or authentication mechanism by trying to determine its decryption key or passphrase by trying hundreds or sometimes millions of likely possibilities, such as words in a _＊_",7/11/2018,dictionary attack,＊ dictionary,,
-,"In computing, a ___ is a cyber-attack in which the perpetrator seeks to make a machine or network resource unavailable to its intended users by temporarily or indefinitely disrupting services of a host connected to the Internet. _＊_ is typically accomplished by flooding the targeted machine or resource with superfluous requests in an attempt to overload systems and prevent some or all legitimate requests from being fulfilled.",7/13/2018,denial-of-service attack (DoS attack),＊ Denial of service,,
-0 0,"A ___ consists in exploiting insufficient security validation / sanitization of user-supplied input file names, such that characters representing ""traverse to parent directory"" are passed through to the file APIs.
-The goal of this attack is to use an affected application to gain unauthorized access to the file system. This attack exploits a lack of security (the software is acting exactly as it is supposed to) as opposed to exploiting a bug in the code.",7/14/2018,directory traversal (or path traversal) ,,,
-0,"___, also referred to as DNS cache poisoning, is a form of computer security hacking in which corrupt Domain Name System data is introduced into the DNS resolver's cache, causing the name server to return an incorrect result record, e.g. an IP address. This results in traffic being diverted to the attacker's computer (or any other computer).",7/12/2018,DNS spoofing,,,
-,"A ___ is one of various techniques used on web pages or email, to unobtrusively (usually invisibly) allow checking that a user has accessed some content. Common uses are email tracking and page tagging for web analytics. Alternative names are tracking bug, tag, or page tag, tracking pixel, pixel tag, 1×1 gif, and clear gif. When implemented using JavaScript, they may be called JavaScript tags.",7/15/2018,web beacon or web bug,,,
-,"___ is software that aims to gather information about a person or organization sometimes without their knowledge, that may send such information to another entity without the consumer's consent, that asserts control over a device without the consumer's knowledge, or it may send such information to another entity with the consumer's consent, through cookies .",7/16/2018,Spyware,,,
-,"In cryptography, a ___ consists of an attacker trying many passwords or passphrases with the hope of eventually guessing correctly. The attacker systematically checks all possible passwords and passphrases until the correct one is found. Alternatively, the attacker can attempt to guess the key which is typically created from the password using a key derivation function. This is known as an exhaustive key search.",7/17/2018,brute-force attack,,,
-12,"NOUN
-
-1A secret or disguised way of writing; a code.
-‘he wrote cryptic notes in a ___’
-mass noun ‘the information may be given in ___’
-2dated A zero; a figure 0.
-3A monogram.
-‘a pair of rock crystal goblets engraved with the ___ of Peter the Great’",7/21/2018,cipher1,(also cypher),,
-12,"NOUN
-
-An acronym deliberately formed from a phrase whose initial letters spell out a particular word or words, either to create a memorable name or as a fanciful explanation of a word's origin.
-‘Biodiversity Serving Our Nation, or BISON (a ___ if ever there was one)’",7/22/2018,backronym,"backronym
-(also bacronym)",,
-,"ADJECTIVE
-
-1Of or written in a majuscule script with rounded unjoined letters which is found in European manuscripts of the 4th–8th centuries and from which modern capital letters are derived.
-2rare Relating to an inch or an ounce.",7/18/2018,uncial,,,
-7,"NOUN
-
-mass noun
-The art or process of deciphering coded messages without being told the key.",7/20/2018,cryptanalysis,,,
-,"NOUN
-
-mass noun
-1Large lettering, either capital or uncial, in which all the letters are the same height.
-as modifier ‘Insular ___ script’
-1.1count noun A large letter.",7/23/2018,majuscule,,,
-,"In logic, especially mathematical logic, a ___ lists and describes the non-logical symbols of a formal language. In universal algebra, a ___ lists the operations that characterize an algebraic structure. In model theory, __s are used for both purposes.
-
-__s play the same role in mathematics as type __s in computer programming. They are rarely made explicit in more philosophical treatments of logic.",7/26/2018,signature,,,
-,"In cryptography, a ___ is an entity that issues digital certificates. A digital certificate certifies the ownership of a public key by the named subject of the certificate. This allows others (relying parties) to rely upon signatures or on assertions made about the private key that corresponds to the certified public key. A ___ acts as a trusted third party—trusted both by the subject (owner) of the certificate and by the party relying upon the certificate. The format of these certificates is specified by the X.509 standard.",7/31/2018,certificate authority or certification authority (CA),,,
-,"Transport Layer Security (TLS) – and its predecessor, ___, which is now deprecated by the Internet Engineering Task Force (IETF) – are cryptographic protocols that provide communications security over a computer network. Several versions of the protocols find widespread use in applications such as web browsing, email, instant messaging, and voice over IP (VoIP). Websites are able to use TLS to secure all communications between their servers and web browsers.",8/1/2018,Secure Sockets Layer (SSL),,,
-,A ___ is a type of challenge–response test used in computing to determine whether or not the user is human.,8/3/2018,"CAPTCHA (/kæp.tʃə/, an acronym for ""Completely Automated Public Turing test to tell Computers and Humans Apart"")",,,
-6 9 11 12,"___ is a subset of the Rijndael block cipher developed by two Belgian cryptographers, Vincent Rijmen and Joan Daemen, who submitted a proposal to NIST during the ___ selection process. Rijndael is a family of ciphers with different key and block sizes.
-For ___, NIST selected three members of the Rijndael family, each with a block size of 128 bits, but three different key lengths: 128, 192 and 256 bits.",7/28/2018,AES Advanced Encryption Standard,,,
-,"NOUN
-
-A test for intelligence in a computer, requiring that a human being should be unable to distinguish the machine from another human being by using the replies to questions put to both.",8/5/2018,Turing test,,,
-1 8 11,"The ___ is a symmetric-key algorithm for the encryption of electronic data. Although insecure, it was highly influential in the advancement of modern cryptography.",7/27/2018,"Data Encryption Standard (DES /ˌdiːˌiːˈɛs, dɛz/)",,,
-,"___ is an automated method of biometric identification that uses mathematical pattern-recognition techniques on video images of one or both of the _＊_s of an individual's eyes, whose complex patterns are unique, stable, and can be seen from some distance.虹彩認証",8/6/2018,Iris recognition,＊ iris,,
-1 10,"___ is one of the first public-key cryptosystems and is widely used for secure data transmission. In such a cryptosystem, the encryption key is public and it is different from the decryption key which is kept secret (private). In ___, this asymmetry is based on the practical difficulty of the factorization of the product of two large prime numbers, the ""factoring problem"". ",7/29/2018,RSA (Rivest–Shamir–Adleman),,,
+1 10,"___ is one of the first public-key cryptosystems and is widely used for secure data transmission. In such a cryptosystem, the encryption key is public and it is different from the decryption key which is kept secret (private). In ___, this asymmetry is based on the practical difficulty of the factorization of the product of two large prime numbers, the ""factoring problem"". ",7/29/2018,RSA, (Rivest–Shamir–Adleman),,
 ,"In computer security, a ___ (sometimes referred to as a perimeter network) is a physical or logical subnetwork that contains and exposes an organization's external-facing services to an untrusted network, usually a larger network such as the Internet. The purpose of a ___ is to add an additional layer of security to an organization's local area network (LAN): an external network node can access only what is exposed in the ___, while the rest of the organization's network is firewalled.",8/7/2018,DMZ or demilitarized zone,,,
 ,"The first reported type of network firewall is called a ___. __s act by inspecting packets transferred between computers. When a packet does not match the __'s set of filtering rules, the ___ either drops (silently discards) the packet, or rejects the packet (discards it and generate an Internet Control Message Protocol notification for the sender) else it is allowed to pass.",8/9/2018,packet filter,,,
 ,"In computer networks, a ___ is a server (a computer system or an application) that acts as an intermediary for requests from clients seeking resources from other servers. A client connects to the ___, requesting some service, such as a file, connection, web page, or other resource available from a different server and the ___ evaluates the request as a way to simplify and control its complexity.",8/10/2018,proxy server,,,
 ,"A ___, colloquially known as a pen test, is an authorized simulated attack on a computer system, performed to evaluate the security of the system. The test is performed to identify both weaknesses (also referred to as vulnerabilities), including the potential for unauthorized parties to gain access to the system's features and data, as well as strengths, enabling a full risk assessment to be completed.",8/11/2018,penetration test,,,
-,"The ___, is an algorithm for scheduling a set of project activities. It is commonly used in conjunction with the program evaluation and review technique (PERT).",8/16/2018,"critical path method (CPM), or critical path analysis (CPA)",,,
-4,"In computing, ___ is a secure network protocol suite of IPv4 that authenticates and encrypts the packets of data sent over an IPv4 network. Because of the complexity or immaturity of the IP security protocols, the initial IPv4 was developed without or barely with security protocols such that the IP version was incomplete, open or left for further research development. ___ includes protocols for establishing mutual authentication between agents at the beginning of the session and negotiation of cryptographic keys to use during the session.",8/2/2018,Internet Protocol Security (IPsec),,,
 ,"A ___ is a precomputed table for reversing cryptographic hash functions, usually for cracking password hashes. Tables are usually used in recovering a password (or credit card numbers, etc.) up to a certain length consisting of a limited set of characters.",8/20/2018,rainbow table,,,
-1 1 5 7 8 9 10 13,"___ is a networking protocol, operating on port 1812 that provides centralized Authentication, Authorization, and Accounting (AAA or Triple A) management for users who connect and use a network service. ___ was developed by Livingston Enterprises, Inc. in 1991 as an access server authentication and accounting protocol and later brought into the Internet Engineering Task Force (IETF) standards.",8/4/2018,Remote Authentication Dial-In User Service (RADIUS),,,
-2,"The _4_ is a statistical tool used in project management, which was designed to analyze and represent the tasks involved in completing a given project.
-",8/15/2018,program (or project) evaluation and review technique (PERT),,,
+1 1 5 7 8 9 10 13,"___ is a networking protocol, operating on port 1812 that provides centralized Authentication, Authorization, and Accounting (AAA or Triple A) management for users who connect and use a network service. ___ was developed by Livingston Enterprises, Inc. in 1991 as an access server authentication and accounting protocol and later brought into the Internet Engineering Task Force (IETF) standards.",8/4/2018,Remote Authentication Dial-In User Service, (RADIUS),,
 ,"l__ In statistics and business, a ___ of some distributions of numbers is the portion of the distribution having a large number of occurrences far from the ""head"" or central part of the distribution. The distribution could involve popularities, random numbers of occurrences of events with various probabilities, etc. The term is often used loosely, with no definition or arbitrary definition, but precise definitions are possible.",9/7/2018,long tail,,,
-,"___: initially, writing is done only to the cache. The write to the backing store is postponed until the modified content is about to be replaced by another cache block.",9/12/2018,Write-back (also called write-behind),,,
+,"___: initially, writing is done only to the cache. The write to the backing store is postponed until the modified content is about to be replaced by another cache block.",9/12/2018,Write-back, (also called write-behind),,
 8,___: write is done synchronously both to the cache and to the backing store.,9/11/2018,Write-through,,,
-,,,,,,
-,,,,,,
+,"In electrical and electronic engineering a ___ is a wiring scheme in which multiple devices are wired together in sequence or in a ring. Other than a full, single loop, systems which contain internal loops cannot be called __s.",9/18/2018,daisy chain,,,
+,"NOUN
+
+mass noun
+1The process of printing from a flat surface treated so as to repel the ink except where it is required for printing.
+1.1Electronics A method analogous to ___, used in making printed circuits.",9/20/2018,lithography,/lɪˈθɒɡrəfi/,,
+7,"The ___ is a vacuum tube that contains one or more electron guns and a phosphorescent screen, and is used to display images. It modulates, accelerates, and deflects electron beam(s) onto the screen to create the images. The images may represent electrical waveforms (oscilloscope), pictures (television, computer monitor), radar targets, or other phenomena.",9/17/2018,cathode ray tube, (CRT),,
+oc oc0,"VERB [NO OBJECT] 1Hum or sing in a soft, low voice, especially in a sentimental manner.  ‘she was ___ing to the child’ with object ‘the female vocalist ___d smoky blues into the microphone’",1/4/2015,croon,,,
+oc oc0,ADJECTIVE Feeling or revealing an overt sexual interest or desire.  ‘he gave her a ___ wink’   ,3/13/2015,lascivious,,,
+oc oc0,"ADJECTIVE 1Slow to reveal emotion or opinions.  ‘he is a ___, almost taciturn man’    2Kept specially for a particular person.  ‘a ___ seat’",3/17/2015,reserved,,,
+oc oc0,"NOUN 1A period of keeping awake during the time usually spent asleep, especially to keep watch or pray.  ‘my birdwatching ___s lasted for hours’ ‘as he lay in a coma the family kept ___’",12/9/2014,vigil,,,
+oc oc0,"NOUN A minute arachnid which has four pairs of legs when adult, related to the ticks. Many kinds live in the soil and a number are parasitic on plants or animals.  Order (or subclass) Acari: numerous families  ",2/9/2015,mite,,,
+oc oc0,"NOUN 1A broad horizontal band of sculpted or painted decoration, especially on a wall near the ceiling.  ‘the horsemen of the Parthenon ___’ ‘the coastline is a ___ of cliffs’",7/13/2013,frieze,,,
+oc oc0,"NOUN 1A small or relatively simple crown, especially as worn by lesser royalty and peers or peeresses.     1.1A circular decoration for the head, especially one made of flowers. ",1/13/2015,coronet,,,
+oc oc0,"NOUN 1(in ancient Rome) a commoner.    1.1A member of the lower social classes. ‘the feeling was shared by ___s, gentry, and clergy’ ",2/4/2015,plebeian,,,
+oc oc0,"NOUN 1formal, humorous A letter.  ‘activists firing off angry ___s’    1.1A poem or other literary work in the form of a letter or series of letters. ",11/26/2014,epistle,,,
+oc oc0,"NOUN mass noun 1A fine, filmy substance consisting of cobwebs spun by small spiders, seen especially in autumn.     1.1A light, thin, and insubstantial or delicate material or substance. ",7/14/2013,gossamer,,,
+oc oc0,NOUN mass noun archaic Soup or stew.,3/4/2015,pottage,,,
+oc oc0,NOUN 1A strongbox or small chest for holding valuables.  ‘a battered leather ___ sealed with a waxen crest’    1.1 The funds or financial reserves of an organization. ‘there is not enough money in the ___s to finance the reforms’ ,2/28/2015,coffer,,,
+oc,adj affecting one's feelings deeply; making one sad or full of pity: a ___ scene/phrase/moment. + __cy n[U] songs of great __cy and beauty. __ly adv.,4/24/2013,poignant,,,
+oc,"n a circle of flowers, leaves or ribbons, worn esp on the head or round the neck or hung as a decoration: a ___ of victory. +___v ~sb(with sth)(usu passive) to put a ___ on sb: [Vnpr] __d with roses [also Vn]",4/11/2013,garland,,,
+oc,n[U] small pieces of metal which are scattered from an exploding bomb: One child was injured by a piece of ___. +___ wounds.,5/3/2013,shrapnel,,,
+oc,(also ___ vein) n any of several veins in the neck that carry blood from the head to the heart. IDM go for the ___ (infml) to make an aggressive attack on the weakest point in an opponent's argument or character.,5/5/2013,jugular,,,
+oc,"adj careful or showing good judgement in what one saids or does; not too obvious: I should make a few ___ inquiries about the firm before you sign anything. __ly adv __tion n[U] 1 the quality of being ___, good judgement: This is a secret, but I know I can rely on your ___ (ie be completely certain you will not tell anyone). 2 the freedom to decide for oneself what should be done.",1/19/2012,discreet,n discretion,,
+oc,"n 1 a follower of a religious, political, artistic, etc leader or teacher. 2 any of the twelve close followers fo Christ during his life.",5/17/2013,disciple,,,
+oc,"PHRASAL VERB 1Conclude a letter, broadcast, or other message.  ‘he __d  with a few words of advice’    1.1Conclude an activity. ‘he __d  from school athletics with a double in the shot’    1.2 to record that one is leaving work for the day. ‘a colleague saw me home and __d  for me’ 1.3Bridge Indicate by a conventional bid that one is seeking to end the bidding. 2British Register to stop receiving unemployment benefit after finding work.  ‘He was unable to find a place on the scheme, despite having no job, because he had been encouraged to ___  as unemployed some years earlier.’",6/4/2013,sign off,,,
+oc,"noun 1A place where or receptacle in which things are or may be stored.  ‘a deep ___ for nuclear waste’    1.1A place where something, especially a natural resource, is found in significant quantities. ‘accessible __s of water’    1.2Computing A central location in which data is stored and managed. ‘the metadata will be aggregated in a ___’    1.3A person or thing regarded as a store of information or in which a particular quality may be found. ‘his mind was a rich ___ of the past’",1/27/2013,repository,,,
+oc,"NOUN 1A cloth spread over a coffin, hearse, or tomb.     2A dark cloud of smoke, dust, etc.  ‘a ___ of black smoke hung over the quarry’    2.1Something regarded as enveloping a situation with an air of gloom or fear. ‘torture and murder have cast a ___ of terror over the villages’    3An ecclesiastical __ium.  ‘The bishop's _(C)_ typ­ifies the wandering sheep, and the Prelate, when arrayed in this vestment, bears the image of the Saviour Christ.’",4/10/2013,pall,,,
+oc,adj 1Not able to be seen through; not transparent.  ‘bottles filled with a pale ___ liquid’    1.1(especially of language) hard or impossible to understand. ‘technical jargon that was ___ to her’,6/6/2013,opaque,,,
+oc,ADVERB When necessary or needed.  ‘the group was constituted ___ ’ ADJECTIVE Created or done for a particular purpose as necessary.  ‘the discussions were on an ___  basis’,6/19/2013,ad hoc,,,
+oc,"NOUN 1A right or privilege exclusive to a particular individual or class.  ‘in some countries, higher education is predominantly the ___ of the rich’    1.1mass noun The right of the sovereign, which in British law is theoretically subject to no restriction.    1.2A faculty or property distinguishing a person or class. ‘it's not a female ___ to feel insecure’",7/30/2012,prerogative,,,
+oc,"NOUN 1A number of birds of one kind feeding, resting, or travelling together.  ‘a ___ of gulls’    1.1A number of domestic animals, especially sheep, goats, or geese, that are kept together. ‘a ___ of sheep’    1.2A large number or crowd of people. ‘a ___ of paparazzi tailed them all over London’",11/16/2011,flock,,,
+oc,"_m_ VERB [NO OBJECT] 1Speak with sudden involuntary pauses and a tendency to repeat the initial letters of words.  ‘he turned red and started __ing’    1.1reporting verb Say something with difficulty, repeating the initial letters of words and with sudden involuntary pauses. with direct speech ‘‘I … I can't,’ Isabel __d’ with object ‘I __d out my history’",1/15/2013,stammer,,,
+oc,v [NO OBJECT] 1Turn into bone or bony tissue.  ‘these tracheal cartilages may ___’    2often as adjective __d Cease developing; stagnate.  ‘__d political institutions’,6/10/2012,ossify,,,
+oc,VERB [WITH OBJECT] 1Cover the inside surface of (a container or garment) with a layer of different material.  ‘a basket __d with polythene’    1.1Form a layer on the inside surface of (an area); cover as if with a __ing. ‘hundreds of telegrams __d the walls’,7/8/2013,line,,,
+oc,"NOUN 1A dog's lead.     1.1Falconry A thong or string attached to the jesses of a hawk, used for tying it to a perch or a creance. ‘If you time-travelled any one of Ghengis Khan's myriad falconers into a modern hawking set-up he'd be more than familiar with the __s, jesses and other falconry ‘furniture’ still used.’ 1.2A restraint. ‘her bristling temper was kept on a ___’ ‘the state needs to let business off the ___’    2Hunting rare A group of three animals such as hounds, hawks, or foxes.  ‘I saw a ___ of foxes killed without a run’",7/12/2013,leash,,,
+oc,ADJECTIVE 1Causing or likely to cause an argument; controversial.  ‘a ___ issue’    1.1Involving heated argument. ‘the socio-economic plan had been the subject of ___ debate’    1.2(of a person) given to provoking argument.    1.3Law Relating to or involving differences between contending parties.,7/16/2013,contentious,,,
+oc,ADJECTIVE 1(of a person or their judgement) not influenced by personal feelings or opinions in considering and representing facts.  ‘historians try to be ___ and impartial’ Contrasted with subjective    1.1Not dependent on the mind for existence; actual. ‘a matter of ___ fact’,7/22/2013,objective,,,
+oc,VERB [NO OBJECT] 1Make a soft sucking sound such as that made by treading heavily through mud.  ‘bedraggled guests ___d across the lawns’    1.1informal Forcefully silence or suppress. ‘property developers tried to ___ public protest’,2/7/2013,squelch,,,
+oc,"NOUN 1A small handheld tool with a flat, pointed blade, used to apply and spread mortar or plaster.  ‘a pointing ___’   2A small handheld tool with a curved scoop for lifting plants or earth.  ‘a garden ___’",2/9/2013,trowel,,,
+oc,"VERB 1(with reference to a scent, sound, etc.) pass or cause to pass gently through the air.  no object, with adverbial of direction ‘the smell of stale fat ___d out from the cafe’ with object and adverbial of direction ‘each breeze would ___ pollen round the house’    1.1no object, with adverbial of direction Move with a gliding motion. ‘models ___d down the catwalk in filmy organza skirts’",2/25/2013,waft,,,
+oc,"NOUN 1An artificial channel for conveying water, typically in the form of a bridge across a valley or other gap.     2Anatomy A small duct in the body containing fluid.",7/30/2013,aqueduct,,,
+oc,v [WITH OBJECT] Lease (a property) to a subtenant.  ‘I quit my job and ___ my apartment’,7/31/2013,sublet,,,
+oc,_8_ ADJECTIVE 1(of a place) uninhabited and giving an impression of bleak emptiness.  ‘a ___ Pennine moor’    2Feeling or showing great unhappiness or loneliness.  ‘I suddenly felt ___ and bereft’,1/9/2012,desolate,,,
+oc,"ADJECTIVE 1(of a person or their behaviour) tending to attract attention because of their exuberance, confidence, and stylishness.  ‘the band's ___ lead singer’    1.1Bright, colourful, and very noticeable. ‘a ___ bow tie’",4/29/2013,flamboyant,,,
+oc,"ADJECTIVE Having mixed feelings or contradictory ideas about something or someone.  ‘some loved her, some hated her, few were ___ about her’ ‘an ___ attitude to Europe’",5/6/2013,ambivalent,,,
+oc,"NOUN 1A circle of constant longitude passing through a given place on the earth's surface and the terrestrial poles.  ‘the European Broadcasting Area extends from the Atlantic to the ___ 40°E’   1.1Astronomy A circle passing through the celestial poles and the zenith of a given place on the earth's surface. ‘at the end of February Jupiter transits the ___, due south, at 6.15 a.m’",8/6/2013,meridian,,,
+oc,"NOUN 1A shy, reticent person.     1.1Psychology A person predominantly concerned with their own thoughts and feelings rather than with external things. Compare with ex___",8/7/2013,introvert,,,
+oc,"NOUN 1A measuring rod a yard long, typically divided into inches.     1.1A standard used for comparison. ‘league tables are not the only ___ of schools' performance’",6/8/2013,yardstick,,,
+oc,"NOUN 1British Music A note having the time value of two crotchets or half a semibreve, represented by a ring with a stem.    2A small bronze or silver ancient Roman coin.  ‘In fact it's a silver ___, measuring just 7-8mm in diameter.’",8/19/2013,minim,,,
+oc,"ADJECTIVE 1Music (of a scale, interval, etc.) involving only notes proper to the prevailing key without chromatic alteration.    1.1(of a melody or harmony) constructed from a ___ scale.",8/21/2013,diatonic,,,
+oc,v [WITH OBJECT] 1Arrange (a group of people or things) in classes or categories according to shared qualities or characteristics.  ‘mountain peaks are ___d according to their shape’    1.1Assign to a particular class or category. ‘elements are usually ___d as metals or non-metals’,8/30/2013,classify,,,
+oc,ADJECTIVE Situated or extending across something.  ‘a ___ beam supports the dashboard’,9/2/2013,transverse,,,
+oc,VERB [WITH OBJECT] 1Arrange or put together in a particular form or ___ion.  ‘two of the aircraft will be ___d as VIP transports’   1.1Computing Arrange or order (a computer system or an element of it) so as to fit it for a designated task. ‘the memory can be ___d as a virtual drive’,9/7/2013,configure,,,
+oc,"NOUN 1A piece of cloth or plastic fastened round a child's neck to keep its clothes clean while eating.    1.1A loose-fitting sleeveless garment worn on the upper body for identification, especially by competitors and officials at sporting events. ‘the sponsor's name printed on our ___s’   1.2The part above the waist of the front of an apron or pair of dungarees.",8/9/2013,bib,,,
+oc,ADJECTIVE 1(especially of a group or area) having a great deal of money; wealthy.  ‘the ___ societies of the western world’    2archaic (of water) flowing freely or in great quantity.  ‘He replied that the water was ___ and that they had not reviewed this in detail.’,7/27/2013,affluent,,,
+oc,ADJECTIVE 1Next to or adjoining something else.  ‘___ rooms’ ‘the area ___ to the station’    2Geometry (of a pair of angles) formed on the same side of a straight line when intersected by another line.  ‘Their centers thus lie on the trisectors of the angles ___ to that line.’,9/27/2013,adjacent,,,
+oc,"NOUN 1A tank for storing water, especially one supplying taps or as part of a flushing toilet.     1.1An underground reservoir for rainwater.",8/1/2013,cistern,,,
+oc,"NOUN informal 1North American A man; a guy (often as a form of address)  ‘hey ___, what's up?’ ‘if some ___ smacked me, I'd smack him back’   1.1North American A stylish and confident person. ‘cool ___s’",10/3/2013,dude,,,
+oc,VERB [NO OBJECT] usually as adjective ___ing 1Be about to happen.  ‘my ___ing departure’    1.1archaic (of something bad) be looming. ‘the melancholy fate which ___d over his nephew’,5/28/2013,impend,,,
+oc,"NOUN 1  (also ___ house) British A large country house with lands. ‘a Tudor ___ house in the English countryside’ ‘Kelmscott ___’    1.1historical (in England and Wales) a unit of land, originally a feudal lordship, consisting of a lord's demesne and lands rented to tenants. ‘the right to mine ores within the ___ of Little Langdale’",10/14/2013,manor,,,
+oc,v [NO OBJECT] Compete eagerly with someone in order to do or achieve something.  ‘the athletes were ___ing for a place in the British team’,6/2/2012,vie,,,
+oc,NOUN A rectangular object or flat figure with unequal adjacent sides.  ‘an ___ of grass’   ADJECTIVE Having the shape of an ___.  ‘___ tables’,10/18/2013,oblong,,,
+oc,"NOUN The angular distance of a place east or west of the Greenwich meridian, or west of the standard meridian of a celestial object, usually expressed in degrees and minutes.  ‘at a ___ of 2° W’ mass noun ‘lines of ___’",8/3/2013,longitude,,,
+oc,"NOUN 1A rhombus or diamond shape.  as modifier ‘___ patterns’    1.1A small medicinal tablet, originally in the shape of a ___, taken for sore throats and dissolved in the mouth. ‘throat ___s’",11/4/2013,lozenge,,,
+oc,ADJECTIVE 1Relating to the words or vocabulary of a language.  ‘___ analysis’   1.1Relating to or of the nature of a ___on or dictionary. ‘a ___ entry’,3/21/2013,lexical,,,
+oc,NOUN 1An uncastrated male sheep.    1.1the ___ The zodiacal sign or constellation Aries. 2A battering ___.,11/24/2012,ram,,,
+oc,"NOUN literarythe ___ The countries of the West, especially Europe and America.",11/16/2013,Occident,,,
+oc,n A person who is guided and supported by an older and more experienced or influential person.  ‘Ruskin submitted his ___'s name for election’,9/14/2012,protege,,,
+oc,"VERB [WITH OBJECT] Approach and address (someone) boldly or aggressively.  ‘reporters ___d him in the street’ ‘he was ___d by a thief, demanding his money or his life’",11/30/2012,accost,,,
+oc,"NOUN British Music A note having the time value of two minims or four crotchets, represented by a ring with no stem. It is the longest note now in common use.",8/31/2013,semibreve,,,
+oc,"NOUN 1A part of a river not reached by the current, where the water is stagnant.  ‘the eels inhabit ___s’   1.1An isolated or peaceful place. ‘nothing spoils the tranquillity of this quiet ___’",12/23/2013,backwater,,,
+oc,NOUN 1derogatory A large group of people.  ‘a ___ of beery rugby fans’    1.1An army or tribe of nomadic warriors. ‘Tartar ___s’,12/27/2013,horde,,,
+oc,"NOUN 1An outgoing, socially confident person.     1.1Psychology A person predominantly concerned with external things or objective considerations. Compare with in___",8/13/2013,extrovert,,,
+oc,"n A layer at the back of the eyeball that contains cells sensitive to light, which trigger nerve impulses that pass via the optic nerve to the brain, where a visual image is formed.",6/21/2013,retina,,,
+oc,"NOUN 1An organized group of singers, especially one that takes part in church services or performs in public.  ‘a church ___’ ‘the ___ of the University of Ulster’    1.1One of two or more subdivisions of such a group performing together.",1/10/2014,choir,,,
+oc,v [WITH OBJECT] 1Arrange (laws or rules) into a systematic code.  ‘the statutes have ___d certain branches of common law’ as adjective ___d ‘in the United Kingdom there is no ___d constitution’,9/8/2013,codify,,,
+oc,"n 1The top or highest part of something, especially one forming a point.  ‘the ___ of the roof’ ‘the central bank is at the ___ of the financial system’",7/7/2013,apex,,,
+oc,"NOUN 1British A dealer in small items used in sewing, such as buttons, zips, and thread.    2North American A dealer in men's clothing.",1/20/2014,haberdasher,,,
+oc,"VERB [NO OBJECT] Give out sweat through the pores of the skin as a result of heat, physical exertion, or stress.  ‘Will was ___ing heavily’",2/7/2014,perspire,,,
+oc,"n 1A statue that is much bigger than life size.  ‘two statues known as the ___s of Memnon’   1.1A person or thing of enormous size, importance, or ability. ‘the Russian Empire was the ___ of European politics’",6/7/2013,colossus,,,
+oc,c__ NOUN 1A small piece of partly burnt coal or wood that has stopped giving off flames but still has combustible matter in it.  ‘a cold hearth full of ___s’    1.1Ashes.,2/10/2014,cinder,,,
+oc,"VERB [NO OBJECT] 1Keep out of sight, typically with a sinister or cowardly motive.  ‘don't ___ outside the door like a spy!’   1.1with adverbial of direction Move stealthily or furtively. ‘he spent most of his time ___ing about the corridors’",3/8/2014,skulk,,,
+oc,"ADJECTIVE 1Dull, heavy, or slow.  ‘his eyelids were ___ with sleep’    2Of the colour of _(n)_; dull grey.  ‘a ___ sky’",3/19/2014,leaden,,,
+oc oc2,"VERB [NO OBJECT] often ___ to"" or ""be/become ___d to 1Become accustomed to a new climate or new conditions; adjust.  ‘it's unknown whether people will ___ to increasingly warm weather’    ",4/30/2014,acclimatize,,,
+oc oc2,ADJECTIVE Complaining in a rather petulant or whining manner.  ‘she became ___ and demanding’,6/4/2014,querulous,,,
+oc,NOUN 1A drop of a thick liquid or viscous substance.  ‘___s of paint’    1.1A spot of colour. ‘the town is much more than a brown ___ on the map’,3/31/2014,blob,,,
+10 11,"h__ ADJECTIVE
+
+1Enabling a person to discover or learn something for themselves.
+‘a ‘hands-on’ or interactive ___ approach to learning’
+1.1Computing Proceeding to a solution by trial and error or by rules that are only loosely defined.",9/24/2018,heuristic,,,
+,"NOUN
+
+1The negatively charged electrode by which electrons enter an electrical device.
+The opposite of anode
+1.1 The positively charged electrode of an electrical device, such as a primary cell, that supplies current.
+陰極",10/2/2018,cathode,,,
+,"i__ VERB
+
+___ oneself
+Bring oneself into favour with someone by flattering or trying to please them.
+‘a sycophantic attempt to ___ herself with the local aristocracy’",10/21/2018,ingratiate,,,
+11,"b__ ADJECTIVE
+
+Relating to the pleasant aspects of the countryside and country life.
+‘the church is lovely for its ___ setting’",10/23/2018,bucolic,,,
+,"NOUN
+
+1A public entertainment consisting of a procession of people in elaborate, colourful costumes, or an outdoor performance of a historical scene.
+‘they brought the history books to life at the town's ___’
+figurative ‘the ___ of public life’",10/22/2018,pageant,,,
+,"k__ NOUN
+
+A small hill or mound.
+‘a grassy ___’",10/24/2018,knoll,,,
+,"EXCLAMATION
+
+Scottish, Irish 
+Hush (used to demand silence)
+‘___, child. Away and do what you're told’",10/28/2018,whisht,"(also whist, wheesht)",,
+,"s__ ADJECTIVE
+
+Splendid and expensive-looking.
+‘the banquet was a ___, luxurious meal’",10/28/2018,sumptuous,,,
+,"NOUN
+
+An instrument for measuring time accurately in spite of motion or variations in temperature, humidity, and air pressure.",11/1/2018,chronometer,,,
+,"p__ ADJECTIVE
+
+1(especially of a man) rather fat.
+‘a ___ little man with a bowler hat’
+2archaic Of a stately or dignified appearance and manner.
+‘he was a man of ___ presence’",11/2/2018,portly,,,
+11,"t__ NOUN
+
+usually __s
+A long lock of a woman's hair.
+‘her golden __s tumbled about her face’",11/4/2018,tress,,,
+0 10 12,"NOUN
+
+1A picture or photograph mounted between a piece of glass and a sheet of card (or two pieces of glass) stuck together at the edges with adhesive tape.",10/29/2018,passepartout,,/ˌpaspɑːˈtuː//ˌpɑːspɑːˈtuː/,
+0 12,"VERB
+
+[WITH OBJECT]
+Hold out or put forward (something) to someone for acceptance.
+‘she __d a glass of wine’
+‘he __d his resignation’",11/10/2018,proffer,,,
+,"ADJECTIVE
+
+predicative Having or characterized by desire.
+‘the Pope was ___ of peace in Europe’",11/4/2018,desirous,,,
