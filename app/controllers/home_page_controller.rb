@@ -6,7 +6,7 @@ class HomePageController < ApplicationController
       # 一覧のためのユーザー所属カード全取得
       @quizcards = @user.quizcards.paginate(page: params[:page])
       # カードを持っている場合、今日のカードを絞り込む
-      @quizcards_today = @user.quizcards.where(appearing_at: today_range) if @user.quizcards.any?
+      @quizcards_today = @user.quizcards.where('appearing_at < ?', Time.zone.tomorrow) if @user.quizcards.any?
       # 今日のカードがあった場合、最初のカードを取得する
       @quizcard = @quizcards_today.first if @quizcards_today
       @answer_time = @user.quizcards.average(:answer_time).to_i
