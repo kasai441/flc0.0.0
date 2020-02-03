@@ -1,10 +1,19 @@
 <span class="border">
   <h1>FLASH CARDS</h1>
   <p class="center">
-    単語帳のように、答えを隠して意味だけを見て、単語を当てていきます。
+    単語帳のように、答えを隠して意味だけを見て、単語を当てていきます。<br>
     ログインせずにサンプルの問題を試すことができます。
-    ログインすると自分の好きな単語を新しく追加できます。
+    ログインすると自分の好きな単語を新しく追加できます。<br>
     （現在は試運転のため、データが消えることがあります。）
+  </p>
+</span>
+<span class="border">
+  <h1>難易度システム</h1>
+  <p class="center">
+    単語帳は「難しすぎず、簡単すぎない」ように
+    難易度の自動修正システムをもっています。<br>
+    正解をすればするほど次回出題の日が遅くなり、
+    逆に不正解が多くなると出題間隔が短くなります。
   </p>
 </span>
 <span class="border">
@@ -18,7 +27,7 @@
 <span class="border">
 <h1>1日の練習時間</h1>
 <p class="center">
-  練習時間を測定して、目標時間と実際に練習した時間を比べられます。
+  1日にどれくらい練習したのか記録されます。
 </p>
 </span>
 <span class="border">
@@ -27,6 +36,9 @@
     目標の練習時間と測定した時間から、どのくらいの頻度で新しい単語を追加すればいいのか分かります。
   </p>
 </span>
+<p class="center">
+  <%= link_to "Read Me", "https://github.com/kasai441/flc0.0.0/blob/master/README.md" %>
+</p>
 <p class="center">
   <%= link_to "ユーザー登録", signup_path, class: "btn btn-lg btn-primary" if !logged_in?%>
 </p>

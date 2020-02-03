@@ -89,7 +89,6 @@ class QuizcardsController < ApplicationController
     if logged_in?
       # ログインの場合、current_userを取得する
       @user = current_user
-      # カードを持っている場合、今日のカードを絞り込む
       if @user.quizcards.any?
         @quizcards = @user.quizcards.paginate(page: params[:page], per_page: 15)
       end
