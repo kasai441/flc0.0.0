@@ -178,7 +178,8 @@ author: kasai441
       get_model_sequences
         ユーザーの持つ全単語の全待機日数を平均して取得
       get_linear_function
-        基本関数は一次関数を想定（図：https://safe-river-31136.herokuapp.com/waitdays/chart）
+        基本関数は一次関数を想定
+        図：https://safe-river-31136.herokuapp.com/waitdays/chart
         x切片を算出し第1象限の値のみ取得
         前半平均座標(x1, y1)及び後半平均座標(x2, y2)を算出
         2座標から傾きを算出
