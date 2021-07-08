@@ -27,7 +27,7 @@ class HomePageController < ApplicationController
       end
     else
       # ログインしていない場合、一時利用ユーザーを取得する
-      @user = User.find_by(email: "ex@mple.com")
+      @user = User.find_by(email: "user@example.com")
       # 一覧のためのユーザー所属カード全取得
       @quizcards = @user.quizcards.paginate(page: params[:page])
 
