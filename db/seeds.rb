@@ -2,7 +2,7 @@ require 'csv'
 
 # 代表ユーザー
 @user = User.create!(name:  "Example User",
-             email: "ex@mple.com",
+             email: "user@example.com",
              password:              "foobar",
              password_confirmation: "foobar",
              # admin:     true,
