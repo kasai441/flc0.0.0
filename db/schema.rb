@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200120051222) do
+ActiveRecord::Schema.define(version: 2020_01_20_051222) do
 
   create_table "quizcards", force: :cascade do |t|
     t.string "fail_seq"
