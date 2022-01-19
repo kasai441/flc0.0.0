@@ -4,7 +4,7 @@
   "dependencies": {
     "dot-prop": "^4.2.1",
     "glob-parent": "^5.1.2",
-    "node-forge": "^0.10.0",
+    "node-forge": "^1.0.0",
     "printf": "^0.6.1",
     "trim-newlines": "^3.0.1"
   }
