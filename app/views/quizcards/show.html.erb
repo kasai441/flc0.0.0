@@ -1,5 +1,5 @@
 <div class="row">
-  <% if @user.quizcards.any? %>
+  <% if @user.present? && @user.quizcards.any? %>
     <span class="border">
       <h1>＜今日の練習：残り（<%= @quizcards_today.count %>）＞</h1>
       <% session[:hint] = "on" %>

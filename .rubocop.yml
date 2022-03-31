@@ -1,0 +1,23 @@
+inherit_mode:
+  merge:
+    - Exclude
+
+AllCops:
+  TargetRubyVersion: 3.1
+  SuggestExtensions: false
+  NewCops: disable
+  Exclude:
+    - bin/**/*
+    - config/**/*
+    - db/migrate/*
+    - db/schema.rb
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
+
+Style/HashSyntax:
+  EnforcedShorthandSyntax: never

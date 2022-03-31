@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'test_helper'
 
 class QuizcardsPracticeTest < ActionDispatch::IntegrationTest
@@ -6,22 +8,21 @@ class QuizcardsPracticeTest < ActionDispatch::IntegrationTest
     @no_card_user = users(:archer)
   end
 
+  # test "temp practice without login" do
+  # get root_path
+  # assert_template 'home_page/index'
+  # assert_not is_logged_in?
+  # assert_equal @user.name, assigns(:user).name
+  # assert_select 'a[href=?]', practice_path, count: 1
+  # get practice_path
+  # assert_not is_logged_in?
+  # assert_equal @user.name, assigns(:user).name
+  # assert assigns(:user).quizcards
+  # assert_equal 3, assigns(:quizcards_today).count
+  # assert_template 'quizcards/practice'
+  # end
 
-  test "temp practice without login" do
-    get root_path
-    assert_template 'home_page/index'
-    assert_not is_logged_in?
-    assert_equal @user.name, assigns(:user).name
-    assert_select 'a[href=?]', practice_path, count: 1
-    get practice_path
-    assert_not is_logged_in?
-    assert_equal @user.name, assigns(:user).name
-    assert assigns(:user).quizcards
-    assert_equal 3, assigns(:quizcards_today).count
-    assert_template 'quizcards/practice'
-  end
-
-  test "practice with login having cards" do
+  test 'practice with login having cards' do
     get root_path
     log_in_as @user
     get root_path
@@ -37,7 +38,7 @@ class QuizcardsPracticeTest < ActionDispatch::IntegrationTest
     assert_template 'quizcards/practice'
   end
 
-  test "practice with login not having cards" do
+  test 'practice with login not having cards' do
     get root_path
     log_in_as @no_card_user
     get root_path

@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class QuizcardsController < ApplicationController
-  before_action :logged_in_user, only: [:create, :edit, :destroy]
+  before_action :logged_in_user, only: %i[create edit destroy]
   before_action :correct_user, only: :destroy
 
   def practice
@@ -17,8 +19,8 @@ class QuizcardsController < ApplicationController
         redirect_to root_url
       end
     else
-      @user = User.find(cookies[:temp_user_id])
-      if (ids = JSON.parse(cookies[:quizcards_today_ids])).any?
+      @user = User.find(cookies[:temp_user_id]) if cookies[:temp_user_id].present?
+      if cookies[:quizcards_today_ids] && (ids = JSON.parse(cookies[:quizcards_today_ids])).any?
         @quizcards_today = ids
         @quizcard = Quizcard.find(ids.first)
         @begin_answer = Time.zone.now
@@ -29,41 +31,38 @@ class QuizcardsController < ApplicationController
   end
 
   def judge
+    redirect_to root_url and return if params[:quizcard].nil?
+
+    @quizcard = Quizcard.find(params[:quizcard][:card_id])
+    @answer = params[:quizcard][:name]
+    begin_answer = params[:quizcard][:begin_answer]
+    @answer_time = answer_time(@quizcard, begin_answer) if begin_answer
     if logged_in?
-      redirect_to root_url and return if params[:quizcard].nil?
-      @quizcard = Quizcard.find(params[:quizcard][:card_id])
-      @answer = params[:quizcard][:name]
-      begin_answer = params[:quizcard][:begin_answer]
-      @answer_time = answer_time(@quizcard, begin_answer) if begin_answer
+
       model_sequences(@quizcard)
       if @quizcard.name == @answer
-        flash.now[:success] = "正解"
+        flash.now[:success] = '正解'
         next_waitday(@quizcard, true)
         assort_today_cards(@quizcard, true)
       else
-        flash.now[:danger] = "不正解"
+        flash.now[:danger] = '不正解'
         next_waitday(@quizcard, false)
         assort_today_cards(@quizcard, false)
       end
       set_total_time(@quizcard.user_id, @answer_time)
-    else
-      redirect_to root_url and return if params[:quizcard].nil?
-      @quizcard = Quizcard.find(params[:quizcard][:card_id])
-      @answer = params[:quizcard][:name]
-      begin_answer = params[:quizcard][:begin_answer]
-      @answer_time = answer_time(@quizcard, begin_answer) if begin_answer
+    elsif @quizcard.name == @answer
 
-      if @quizcard.name == @answer
-        flash.now[:success] = "正解"
+      flash.now[:success] = '正解'
+      if cookies[:quizcards_today_ids]
         @quizcards_today = JSON.parse(cookies[:quizcards_today_ids])
         @quizcards_today.delete(@quizcard.id)
         cookies[:quizcards_today_ids] = JSON.generate(@quizcards_today)
-        @quizcards_right = []
-        @quizcards_right << @quizcard.id
-        cookies[:quizcards_right_ids] = JSON.generate(@quizcards_right)
-      else
-        flash.now[:danger] = "不正解"
       end
+      @quizcards_right = []
+      @quizcards_right << @quizcard.id
+      cookies[:quizcards_right_ids] = JSON.generate(@quizcards_right)
+    else
+      flash.now[:danger] = '不正解'
     end
   end
 
@@ -73,7 +72,8 @@ class QuizcardsController < ApplicationController
       @user = current_user
       # カードを持っている場合、今日のカードを絞り込む
       if @user.quizcards.any?
-        @quizcards_today = @user.quizcards.where('appearing_at < ?', Time.zone.tomorrow).paginate(page: params[:page], per_page: 8)
+        @quizcards_today = @user.quizcards.where('appearing_at < ?', Time.zone.tomorrow).paginate(page: params[:page],
+                                                                                                  per_page: 8)
       end
     end
     # cookie情報を取得
@@ -89,9 +89,7 @@ class QuizcardsController < ApplicationController
     if logged_in?
       # ログインの場合、current_userを取得する
       @user = current_user
-      if @user.quizcards.any?
-        @quizcards = @user.quizcards.paginate(page: params[:page], per_page: 15)
-      end
+      @quizcards = @user.quizcards.paginate(page: params[:page], per_page: 15) if @user.quizcards.any?
     end
   end
 
@@ -105,7 +103,7 @@ class QuizcardsController < ApplicationController
     @quizcard.appearing_at = Time.zone.today
     if @quizcard.save
       @quizcard.waitdays.create(wait_sequence: 0, wait_day: 1)
-      flash[:success] = "新しい単語を追加しました"
+      flash[:success] = '新しい単語を追加しました'
       redirect_to root_url
     else
       render 'new'
@@ -120,8 +118,8 @@ class QuizcardsController < ApplicationController
 
   def update
     @quizcard = Quizcard.find(params[:id])
-    if @quizcard.update_attributes(quizcard_params)
-      flash[:success] = "単語が更新されました"
+    if @quizcard.update(quizcard_params)
+      flash[:success] = '単語が更新されました'
       redirect_to request.referrer || root_url
     else
       render 'edit'
@@ -130,25 +128,26 @@ class QuizcardsController < ApplicationController
 
   def destroy
     @quizcard.destroy
-    flash[:success] = "単語を削除しました"
+    flash[:success] = '単語を削除しました'
     redirect_to request.referrer || root_url
   end
 
   private
-    def quizcard_params
-      params.require(:quizcard).permit(:name, :description, :connotation, :pronunciation, :origin)
-    end
 
-    def logged_in_user
-      unless logged_in?
-        store_location
-        flash[:danger] = "ログインしてください"
-        redirect_to login_url
-      end
-    end
+  def quizcard_params
+    params.require(:quizcard).permit(:name, :description, :connotation, :pronunciation, :origin)
+  end
 
-    def correct_user
-      @quizcard = current_user.quizcards.find_by(id: params[:id])
-      redirect_to root_url if @quizcard.nil?
+  def logged_in_user
+    unless logged_in?
+      store_location
+      flash[:danger] = 'ログインしてください'
+      redirect_to login_url
     end
+  end
+
+  def correct_user
+    @quizcard = current_user.quizcards.find_by(id: params[:id])
+    redirect_to root_url if @quizcard.nil?
+  end
 end
