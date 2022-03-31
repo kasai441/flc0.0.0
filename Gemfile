@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby '2.7.5'
 gem 'rails',        '5.2.6'
 gem 'bcrypt',         '3.1.12'
 gem 'faker',          '1.7.3'
@@ -21,6 +22,7 @@ gem 'lazy_high_charts'
 group :development, :test do
   gem 'sqlite3', '1.3.13'
   gem 'byebug',  '9.0.6', platform: :mri
+  gem 'rubocop'
 end
 
 group :development do

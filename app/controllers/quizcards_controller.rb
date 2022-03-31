@@ -17,8 +17,8 @@ class QuizcardsController < ApplicationController
         redirect_to root_url
       end
     else
-      @user = User.find(cookies[:temp_user_id])
-      if (ids = JSON.parse(cookies[:quizcards_today_ids])).any?
+      @user = User.find(cookies[:temp_user_id]) if cookies[:temp_user_id].present?
+      if cookies[:quizcards_today_ids] && (ids = JSON.parse(cookies[:quizcards_today_ids])).any?
         @quizcards_today = ids
         @quizcard = Quizcard.find(ids.first)
         @begin_answer = Time.zone.now
@@ -55,9 +55,11 @@ class QuizcardsController < ApplicationController
 
       if @quizcard.name == @answer
         flash.now[:success] = "正解"
-        @quizcards_today = JSON.parse(cookies[:quizcards_today_ids])
-        @quizcards_today.delete(@quizcard.id)
-        cookies[:quizcards_today_ids] = JSON.generate(@quizcards_today)
+        if cookies[:quizcards_today_ids]
+          @quizcards_today = JSON.parse(cookies[:quizcards_today_ids])
+          @quizcards_today.delete(@quizcard.id)
+          cookies[:quizcards_today_ids] = JSON.generate(@quizcards_today)
+        end
         @quizcards_right = []
         @quizcards_right << @quizcard.id
         cookies[:quizcards_right_ids] = JSON.generate(@quizcards_right)

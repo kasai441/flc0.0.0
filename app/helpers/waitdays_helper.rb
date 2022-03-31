@@ -5,7 +5,11 @@ module WaitdaysHelper
 
     get_num = 32
     get_num.times do |number|
+      begin
       csv_data = CSV.read("db/xlsx_csv/#{number}.csv")
+      rescue
+      csv_data = []
+      end
 
       count = 0
       csv_data.each do |data|
@@ -36,11 +40,13 @@ module WaitdaysHelper
   end
 
   def get_xy(raw)
-    linear = get_linear_function(raw)
-    y1, y2, x1, x2 = linear[4], linear[5], linear[6], linear[7]
     linear_f = []
-    linear_f[x1] = y1
-    linear_f[x2] = y2
+    linear = get_linear_function(raw)
+    if linear.present?
+      y1, y2, x1, x2 = linear[4], linear[5], linear[6], linear[7]
+      linear_f[x1] = y1
+      linear_f[x2] = y2
+    end
     linear_f
   end
 
@@ -53,26 +59,30 @@ module WaitdaysHelper
   end
 
   def get_linear_line(raw)
-    linear = get_linear_function(raw)
-    gradients = linear[-2]
-    intercepts = linear[-1]
     linear_line = []
-    raw.size.times do |num|
-      linear_line[num] = gradients * num + intercepts
+    linear = get_linear_function(raw)
+    if linear.present?
+      gradients = linear[-2]
+      intercepts = linear[-1]
+      raw.size.times do |num|
+        linear_line[num] = gradients * num + intercepts
+      end
     end
     linear_line
     # debugger
   end
 
   def get_intercept(raw)
-    linear = get_linear_function(raw)
-    x_intercept = linear[0].size - linear[1].size #+ 0.5
-    center_p = x_intercept + linear[2].size #+ 0.5
-    last_p = center_p + linear[3].size #+ 0.5
     intercept_line = []
-    intercept_line[x_intercept] = 0
-    intercept_line[center_p] = 0
-    intercept_line[last_p] = 0
+    linear = get_linear_function(raw)
+    if linear.present?
+      x_intercept = linear[0].size - linear[1].size #+ 0.5
+      center_p = x_intercept + linear[2].size #+ 0.5
+      last_p = center_p + linear[3].size #+ 0.5
+      intercept_line[x_intercept] = 0
+      intercept_line[center_p] = 0
+      intercept_line[last_p] = 0
+    end
     intercept_line
   end
 

@@ -29,10 +29,10 @@ class HomePageController < ApplicationController
       # ログインしていない場合、一時利用ユーザーを取得する
       @user = User.find_by(email: "user@example.com")
       # 一覧のためのユーザー所属カード全取得
-      @quizcards = @user.quizcards.paginate(page: params[:page])
+      @quizcards = @user.quizcards.paginate(page: params[:page]) if @user.present?
 
       # クッキーにユーザーIDを記憶
-      cookies[:temp_user_id] = @user.id
+      cookies[:temp_user_id] = @user.id if @user.present?
       # 今日のクッキーが保存されているか確認（ログイン時はクッキーを利用しないのでクッキー情報は必ず一時利用ユーザー）
       if cookies[:quizcards_today_ids]
         # クッキーに保存されている今日のクッキーを取得
@@ -40,8 +40,8 @@ class HomePageController < ApplicationController
          @quizcards_today = ids.map { |id| Quizcard.find(id) }
       else
         # クッキーにない場合はデータベースから新たに取得
-        @quizcards_today = @user.quizcards.take(500) if @user.quizcards.any?
-        cookies[:quizcards_today_ids] = JSON.generate(@quizcards_today.map { |quizcard| quizcard.id })
+        @quizcards_today = @user.quizcards.take(500) if @user.present? && @user.quizcards.any?
+        cookies[:quizcards_today_ids] = JSON.generate(@quizcards_today.map { |quizcard| quizcard.id }) if @quizcards_today.present?
       end
       @quizcard = @quizcards_today.first if @quizcards_today
       cookies[:quizcard_id] = @quizcard.id if @quizcard
