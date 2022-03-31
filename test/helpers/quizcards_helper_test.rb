@@ -1,7 +1,8 @@
+# frozen_string_literal: true
+
 require 'test_helper'
 
 class QuizcardsHelperTest < ActionView::TestCase
-
   def setup
     @user = users(:michael)
     @quizcard = @user.quizcards.first
@@ -10,16 +11,17 @@ class QuizcardsHelperTest < ActionView::TestCase
     @quizcard3 = quizcards(:q_five)
   end
 
-  test "answer time rightly calculated" do
+  test 'answer time rightly calculated' do
     assert_equal 3, answer_time(@quizcard, 3.seconds.ago)
   end
 
-  test "get model sequences" do
-    assert_equal '{1=>100, 0=>35}' ,model_sequences(@quizcard)[0].to_s
-    assert_equal '{9=>45, 8=>40, 7=>35, 6=>30, 5=>25, 4=>20, 3=>15, 2=>10, 1=>5, 0=>0}' ,model_sequences(@quizcard2)[0].to_s
+  test 'get model sequences' do
+    assert_equal '{1=>100, 0=>35}', model_sequences(@quizcard)[0].to_s
+    assert_equal '{9=>45, 8=>40, 7=>35, 6=>30, 5=>25, 4=>20, 3=>15, 2=>10, 1=>5, 0=>0}',
+                 model_sequences(@quizcard2)[0].to_s
   end
 
-  test "get linear function" do
+  test 'get linear function' do
     model_sequences(@quizcard)
     assert_equal 65, @quizcard.gradients
 
@@ -72,10 +74,10 @@ class QuizcardsHelperTest < ActionView::TestCase
   end
 
   test 'update_appearing' do
-      model_sequences(@quizcard)
-      @quizcard.calc_beta
-      wait_day = @quizcard.calc_waitday(true)
-      assert @quizcard.update_appearing(wait_day)
+    model_sequences(@quizcard)
+    @quizcard.calc_beta
+    wait_day = @quizcard.calc_waitday(true)
+    assert @quizcard.update_appearing(wait_day)
   end
 
   test 'set total time for the first time' do
@@ -91,5 +93,4 @@ class QuizcardsHelperTest < ActionView::TestCase
     @user.set_total_time(0)
     assert_equal 1, @user.total_practices
   end
-
 end

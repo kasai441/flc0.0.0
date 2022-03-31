@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Waitday < ApplicationRecord
   belongs_to :quizcard
   default_scope -> { order(wait_sequence: :desc) }

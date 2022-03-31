@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module QuizcardsHelper
   def answer_time(quizcard, begin_answer)
     time = (Time.zone.now.to_time - begin_answer.to_time).to_i
@@ -19,25 +21,25 @@ module QuizcardsHelper
 
   def assort_today_cards(quizcard, result)
     if result
-      if (ids = cookies[:quizcards_right_ids])
-        @quizcards_right = JSON.parse(ids)
-      else
-        @quizcards_right = []
-      end
+      @quizcards_right = if (ids = cookies[:quizcards_right_ids])
+                           JSON.parse(ids)
+                         else
+                           []
+                         end
       @quizcards_right << quizcard.id
-      cookies[:quizcards_right_ids] = { value: JSON.generate(@quizcards_right), expires: Time.zone.today + 1}
+      cookies[:quizcards_right_ids] = { value: JSON.generate(@quizcards_right), expires: Time.zone.today + 1 }
     else
-      if (ids = cookies[:quizcards_wrong_ids])
-        @quizcards_wrong = JSON.parse(ids)
-      else
-        @quizcards_wrong = []
-      end
+      @quizcards_wrong = if (ids = cookies[:quizcards_wrong_ids])
+                           JSON.parse(ids)
+                         else
+                           []
+                         end
       @quizcards_wrong << quizcard.id
-      cookies[:quizcards_wrong_ids] =  { value: JSON.generate(@quizcards_wrong), expires: Time.zone.today + 1}
+      cookies[:quizcards_wrong_ids] = { value: JSON.generate(@quizcards_wrong), expires: Time.zone.today + 1 }
     end
   end
 
-  def set_total_time(user_id, answer_time)
+  def set_total_time(_user_id, answer_time)
     User.find(@quizcard.user_id).set_total_time(answer_time)
   end
 
@@ -55,5 +57,4 @@ module QuizcardsHelper
     str[1..-1] = hide
     str
   end
-
 end

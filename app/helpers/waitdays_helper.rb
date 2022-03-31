@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'csv'
 module WaitdaysHelper
   def basic_sequences
@@ -6,14 +8,15 @@ module WaitdaysHelper
     get_num = 32
     get_num.times do |number|
       begin
-      csv_data = CSV.read("db/xlsx_csv/#{number}.csv")
-      rescue
-      csv_data = []
+        csv_data = CSV.read("db/xlsx_csv/#{number}.csv")
+      rescue StandardError
+        csv_data = []
       end
 
       count = 0
       csv_data.each do |data|
         next if data[3].nil?
+
         count += 1
       end
 
@@ -28,9 +31,9 @@ module WaitdaysHelper
     cut_seq = seq.map { |key, val| [key, val] if val > get_gradients }.compact.to_h
     if cut_seq.size >= 2
       first = cut_seq.to_a[0..(cut_seq.size / 2 - 1)]
-      second =  cut_seq.to_a[(cut_seq.size / 2)..cut_seq.size]
-      y1 = second.inject(0) { |result, e| result + e[1] }.to_f / second.size.to_f
-      y2 = first.inject(0) { |result, e| result + e[1] }.to_f / first.size.to_f
+      second = cut_seq.to_a[(cut_seq.size / 2)..cut_seq.size]
+      y1 = second.inject(0) { |result, e| result + e[1] }.to_f / second.size
+      y2 = first.inject(0) { |result, e| result + e[1] }.to_f / first.size
       x2 = cut_seq.size.to_f / 4.0 + seq.size - cut_seq.size
       x1 = cut_seq.size.to_f * 3.0 / 4.0 + seq.size - cut_seq.size
       gradients = (y2 - y1) / (x2 - x1)
@@ -43,7 +46,10 @@ module WaitdaysHelper
     linear_f = []
     linear = get_linear_function(raw)
     if linear.present?
-      y1, y2, x1, x2 = linear[4], linear[5], linear[6], linear[7]
+      y1 = linear[4]
+      y2 = linear[5]
+      x1 = linear[6]
+      x2 = linear[7]
       linear_f[x1] = y1
       linear_f[x2] = y2
     end
@@ -96,7 +102,8 @@ module WaitdaysHelper
   end
 
   private
-    def get_gradients
-      10
-    end
+
+  def get_gradients
+    10
+  end
 end
