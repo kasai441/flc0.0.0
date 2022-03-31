@@ -307,7 +307,6 @@ DEPENDENCIES
   sass-rails
   spring
   spring-watcher-listen
-  sprockets-rails (= 2.3.3)
   sqlite3
   turbolinks
   twitter-bootstrap-rails
