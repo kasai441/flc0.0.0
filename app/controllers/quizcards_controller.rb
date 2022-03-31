@@ -118,7 +118,7 @@ class QuizcardsController < ApplicationController
 
   def update
     @quizcard = Quizcard.find(params[:id])
-    if @quizcard.update_attributes(quizcard_params)
+    if @quizcard.update(quizcard_params)
       flash[:success] = '単語が更新されました'
       redirect_to request.referrer || root_url
     else
