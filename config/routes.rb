@@ -1,7 +1,4 @@
 Rails.application.routes.draw do
-
-  get 'waitdays/chart'
-
   root 'home_page#index'
   get '/help', to: 'home_page#help'
   get '/signup', to: 'users#new'
@@ -20,4 +17,5 @@ Rails.application.routes.draw do
   resources :account_activations, only: [:edit]
   resources :password_resets, only: [:new, :create, :edit, :update]
   resources :quizcards
+  get 'waitdays/chart'
 end
