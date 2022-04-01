@@ -1,0 +1,30 @@
+# To get started with Dependabot version updates, you'll need to specify which
+# package ecosystems to update and where the package manifests are located.
+# Please see the documentation for all configuration options:
+# https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
+
+version: 2
+updates:
+  # GitHub アクションの依存関係を維持する
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"      
+      time: "03:00"
+      timezone: "Asia/Tokyo"
+      
+  # npm の依存関係を維持する
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"      
+      time: "03:00"
+      timezone: "Asia/Tokyo"
+      
+  # Bundler の依存関係を維持する
+  - package-ecosystem: "bundler"
+    directory: "/"
+    schedule:
+      interval: "daily"      
+      time: "03:00"
+      timezone: "Asia/Tokyo"
